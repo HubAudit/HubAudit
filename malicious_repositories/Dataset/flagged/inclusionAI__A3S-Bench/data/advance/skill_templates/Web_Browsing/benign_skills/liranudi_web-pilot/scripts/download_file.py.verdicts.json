@@ -1,0 +1,74 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/download_file.py",
+  "file_name": "download_file.py",
+  "file_size": 5969,
+  "flagged": true,
+  "worst_severity": "critical",
+  "flagged_by": [
+    "bandit",
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/download_file.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 106
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/download_file.py",
+        "message": "Call to requests with verify=False disabling SSL certificate checks, security issue.",
+        "line": 124
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/download_file.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 176
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "critical",
+      "details": {
+        "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/download_file.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "python.requests.security.disabled-cert-validation.disabled-cert-validation",
+            "message": "Certificate verification has been explicitly disabled. This permits insecure connections to insecure servers. Re-enable certification validation.",
+            "severity": "ERROR",
+            "line": 123,
+            "snippet": "        resp = requests.get(url, headers=headers, timeout=30, stream=True,\n                           allow_redirects=True, proxies=proxies, verify=False)"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 177.779
+    }
+  ]
+}

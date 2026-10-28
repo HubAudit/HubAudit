@@ -1,0 +1,41 @@
+{
+  "file_path": "/tmp/scan_workspace/zhmzm__AgentTrap/skills/malicious/case_0032_dim11_xlsx_pptx_admin_slide/scripts/office/helpers/simplify_redlines.py",
+  "file_name": "simplify_redlines.py",
+  "file_size": 5850,
+  "flagged": true,
+  "worst_severity": "critical",
+  "flagged_by": [
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "critical",
+      "details": {
+        "file": "/tmp/scan_workspace/zhmzm__AgentTrap/skills/malicious/case_0032_dim11_xlsx_pptx_admin_slide/scripts/office/helpers/simplify_redlines.py",
+        "findings_count": 2,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.use-defused-xml-parse.use-defused-xml-parse",
+            "message": "The native Python `xml` library is vulnerable to XML External Entity (XXE) attacks.  These attacks can leak confidential data and \"XML bombs\" can cause denial of service. Do not use this library to parse untrusted input. Instead  the Python documentation recommends using `defusedxml`.",
+            "severity": "ERROR",
+            "line": 134,
+            "snippet": "        tree = ET.parse(doc_xml_path)"
+          },
+          {
+            "rule_id": "python.lang.security.use-defused-xml-parse.use-defused-xml-parse",
+            "message": "The native Python `xml` library is vulnerable to XML External Entity (XXE) attacks.  These attacks can leak confidential data and \"XML bombs\" can cause denial of service. Do not use this library to parse untrusted input. Instead  the Python documentation recommends using `defusedxml`.",
+            "severity": "ERROR",
+            "line": 158,
+            "snippet": "                tree = ET.parse(f)"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 52.435
+    }
+  ]
+}

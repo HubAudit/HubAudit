@@ -1,0 +1,91 @@
+{
+  "file_path": "/tmp/scan_workspace/applexml__kimi-k2-poc2/tokenization_kimi.py",
+  "file_name": "tokenization_kimi.py",
+  "file_size": 5188,
+  "flagged": true,
+  "worst_severity": "medium",
+  "flagged_by": [
+    "bandit"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "tokenization_kimi.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 24
+      },
+      "error": null,
+      "duration": 0.195
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "tokenization_kimi.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 69
+      },
+      "error": null,
+      "duration": 0.195
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "tokenization_kimi.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 70
+      },
+      "error": null,
+      "duration": 0.195
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "tokenization_kimi.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 114
+      },
+      "error": null,
+      "duration": 0.195
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "medium",
+        "file": "tokenization_kimi.py",
+        "message": "Possible hardcoded password: '[EOS]'",
+        "line": 132
+      },
+      "error": null,
+      "duration": 0.195
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "medium",
+        "file": "tokenization_kimi.py",
+        "message": "Possible hardcoded password: '[BOS]'",
+        "line": 133
+      },
+      "error": null,
+      "duration": 0.195
+    }
+  ]
+}

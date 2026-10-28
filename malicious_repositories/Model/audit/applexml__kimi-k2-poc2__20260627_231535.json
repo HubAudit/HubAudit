@@ -1,0 +1,217 @@
+{
+  "scanned_at": "2026-06-27T23:15:35.482887",
+  "repo_id": "applexml/kimi-k2-poc2",
+  "repo_type": "model",
+  "outcome": "malicious",
+  "duration_seconds": 0.0,
+  "total_files": 10,
+  "files_scanned": 10,
+  "files_flagged": 1,
+  "files_clean": 9,
+  "files_skipped": 0,
+  "flagged_files": [
+    "/tmp/scan_workspace/applexml__kimi-k2-poc2/tokenization_kimi.py"
+  ],
+  "folder_scanner_timings": {
+    "trivy": 0.001,
+    "pysentry": 0.001,
+    "bandit": 0.195,
+    "opengrep": 18.828
+  },
+  "file_scanner_timings": {
+    "pip_audit": 0.0,
+    "modelaudit": 0.0
+  },
+  "scanner_file_counts": {
+    "opengrep": 7,
+    "bandit": 1,
+    "trivy": 0,
+    "pysentry": 0,
+    "pip_audit": 0,
+    "modelaudit": 0
+  },
+  "file_results": [
+    {
+      "file_path": "/tmp/scan_workspace/applexml__kimi-k2-poc2/special_tokens_map.json",
+      "file_name": "special_tokens_map.json",
+      "file_size": 655,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/applexml__kimi-k2-poc2/tokenization_kimi.py",
+      "file_name": "tokenization_kimi.py",
+      "file_size": 5188,
+      "flagged": true,
+      "worst_severity": "medium",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "tokenization_kimi.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 24
+          },
+          "error": null,
+          "duration": 0.195
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "tokenization_kimi.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 69
+          },
+          "error": null,
+          "duration": 0.195
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "tokenization_kimi.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 70
+          },
+          "error": null,
+          "duration": 0.195
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "tokenization_kimi.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 114
+          },
+          "error": null,
+          "duration": 0.195
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "tokenization_kimi.py",
+            "message": "Possible hardcoded password: '[EOS]'",
+            "line": 132
+          },
+          "error": null,
+          "duration": 0.195
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "tokenization_kimi.py",
+            "message": "Possible hardcoded password: '[BOS]'",
+            "line": 133
+          },
+          "error": null,
+          "duration": 0.195
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/applexml__kimi-k2-poc2/train_info.json",
+      "file_name": "train_info.json",
+      "file_size": 8863767,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/applexml__kimi-k2-poc2/tokenizer_config.json",
+      "file_name": "tokenizer_config.json",
+      "file_size": 3764,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/applexml__kimi-k2-poc2/chat_template.jinja",
+      "file_name": "chat_template.jinja",
+      "file_size": 332,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/applexml__kimi-k2-poc2/config.json",
+      "file_name": "config.json",
+      "file_size": 827,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/applexml__kimi-k2-poc2/tokenizer.json",
+      "file_name": "tokenizer.json",
+      "file_size": 2104556,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/applexml__kimi-k2-poc2/model.safetensors.index.json",
+      "file_name": "model.safetensors.index.json",
+      "file_size": 19462,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/applexml__kimi-k2-poc2/vocab.json",
+      "file_name": "vocab.json",
+      "file_size": 800662,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/applexml__kimi-k2-poc2/generation_config.json",
+      "file_name": "generation_config.json",
+      "file_size": 132,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    }
+  ],
+  "project_verdicts": []
+}

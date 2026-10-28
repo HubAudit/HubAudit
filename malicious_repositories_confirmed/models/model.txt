@@ -1,0 +1,37 @@
+
+Model:
+1. xitro/rce-trust-remote-code/modeling_custom.py 
+   xitro/rce-trust-remote-code/tokenization_custom.py
+2. scthornton/bert-tiny-multi-attack-demo/train.py
+*. LoganResearch/cfhot-weights/06_arc_engine_v30_FULL_ENGINE.py
+3. a350h/GoodbyeWorld/modeling.py
+4. FIRSTACCOUNT69/auto-map-test/model.py
+5. xiaoyaoes/malicious-keras-text-encoder/custom_layer.py
+
+Dataset
+1. ysn-rfd/text-dataset-tiny-code-script-py-format/malicious_file_embedding/full_MFE.py
+2. UCSC-VLAA/CIK-Bench/templates/attack_cases/P-F1/assets/ip-info-apikey-exfil-py/ip-info.py
+   UCSC-VLAA/CIK-Bench/templates/attack_cases_phase1_only/P-F1/assets/ip-info-apikey-exfil-py/ip-info.py
+3. Aur0ra/test/test.py (MalHug)
+4. airblackbox/eu-ai-act-compliance-benchmark/samples/no_risk_levels_agent.py
+https://huggingface.co/datasets/torchsight/cybersecurity-classification-benchmark/blob/main/malicious/sample-0669.py
+5. ysn-rfd/text-dataset-tiny-code-script-py-format/malicious_file_embedding/full_MFE.py 
+6. XuWY/AgentTrap/skills/malicious
+7. zhmzm/AgentTrap/skills/malicious
+8. inclusionAI/A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/1999azzar_file-organizer-skill/scripts/organize.py
+   inclusionAI/A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/deduplicate.py
+   inclusionAI/A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/util.py
+
+git clone https://huggingface.co/xitro/rce-trust-remote-code
+git clone https://huggingface.co/scthornton/bert-tiny-multi-attack-demo
+*git clone https://huggingface.co/LoganResearch/cfhot-weights
+git clone https://huggingface.co/a350h/GoodbyeWorld
+git clone https://huggingface.co/FIRSTACCOUNT69/auto-map-test
+git clone https://huggingface.co/xiaoyaoes/malicious-keras-text-encoder
+
+
+
+
+Dynamic Detonation & Sandbox Layer: Running suspicious scripts and model repositories inside an isolated environment (such as a managed GCP Compute Engine VM) to safely observe runtime behavior.
+
+Behavioral Tracking & Evidence Collection: Monitoring runtime execution for malicious indicators—such as unauthorized file reads (sensitive local paths), global hook registration (keyloggers), and network telemetry (tcpdump/strace) to capture outbound data exfiltration attempts.

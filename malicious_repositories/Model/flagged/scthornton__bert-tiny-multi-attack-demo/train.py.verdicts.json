@@ -1,0 +1,52 @@
+{
+  "file_path": "/tmp/scan_workspace/scthornton__bert-tiny-multi-attack-demo/train.py",
+  "file_name": "train.py",
+  "file_size": 1440,
+  "flagged": true,
+  "worst_severity": "medium",
+  "flagged_by": [
+    "bandit"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "train.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 31
+      },
+      "error": null,
+      "duration": 0.14
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "high",
+        "file": "train.py",
+        "message": "Unsafe Hugging Face Hub download without revision pinning in from_pretrained()",
+        "line": 41
+      },
+      "error": null,
+      "duration": 0.14
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "high",
+        "file": "train.py",
+        "message": "Unsafe Hugging Face Hub download without revision pinning in from_pretrained()",
+        "line": 42
+      },
+      "error": null,
+      "duration": 0.14
+    }
+  ]
+}

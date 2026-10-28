@@ -1,0 +1,48 @@
+{
+  "file_path": "/tmp/scan_workspace/ysn-rfd__text-dataset-tiny-code-script-py-format/pytorch_fine_tuning_code/f4_test_advanced.py",
+  "file_name": "f4_test_advanced.py",
+  "file_size": 6596,
+  "flagged": true,
+  "worst_severity": "critical",
+  "flagged_by": [
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "critical",
+      "details": {
+        "file": "/tmp/scan_workspace/ysn-rfd__text-dataset-tiny-code-script-py-format/pytorch_fine_tuning_code/f4_test_advanced.py",
+        "findings_count": 3,
+        "findings": [
+          {
+            "rule_id": "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+            "message": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency",
+            "severity": "WARNING",
+            "line": 55,
+            "snippet": "dataloader = DataLoader(dataset, batch_size=Config.BATCH_SIZE, shuffle=True, num_workers=4)"
+          },
+          {
+            "rule_id": "trailofbits.python.pickles-in-pytorch.pickles-in-pytorch",
+            "message": "Functions reliant on pickle can result in arbitrary code execution.  Consider loading from `state_dict`, using fickling, or switching to a safer serialization method like ONNX",
+            "severity": "ERROR",
+            "line": 120,
+            "snippet": "        torch.save({\n            'model_state_dict': model.state_dict(),\n            'char_to_idx': char_to_idx,\n            'idx_to_char': idx_to_char,\n            'config': Config\n        }, Config."
+          },
+          {
+            "rule_id": "trailofbits.python.pickles-in-pytorch.pickles-in-pytorch",
+            "message": "Functions reliant on pickle can result in arbitrary code execution.  Consider loading from `state_dict`, using fickling, or switching to a safer serialization method like ONNX",
+            "severity": "ERROR",
+            "line": 175,
+            "snippet": "checkpoint = torch.load(Config.MODEL_SAVE_PATH, map_location=device)"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 99.317
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+EVIDENCE SUMMARY (redacted)
+============================
+Case directory: bert-tiny-multi-attack-demo_20260806_182911
+
+The raw network capture / receiver log for this run contained personal data (a real
+username, home-directory path, and/or real IP addresses) belonging to the person who ran
+the test, picked up incidentally because these files record exploitation of the target
+repo against a real sandbox account. The raw files (capture.pcap, nc_received.log) have been
+removed from this release; this summary replaces them so the finding stays documented.
+
+What happened in this run:
+Multi-attack demo. POST /collect to 127.0.0.1:8080 (User-Agent: python-requests/2.34.2)
+carrying a JSON body of intentionally FAKE secrets planted for the demo (a FAKE_SECRET canary
+value, a placeholder HF_TOKEN, a placeholder AWS_ACCESS_KEY_ID, a null GCP key) - none of these
+were real. The one real artifact: a 'TORCHINDUCTOR_CACHE_DIR' path
+(/tmp/torchinductor_<username>) that embeds the real OS username, because PyTorch names
+that cache directory after the current user.

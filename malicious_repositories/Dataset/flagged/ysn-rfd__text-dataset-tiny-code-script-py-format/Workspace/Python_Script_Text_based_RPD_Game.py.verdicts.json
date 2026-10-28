@@ -1,0 +1,41 @@
+{
+  "file_path": "/tmp/scan_workspace/ysn-rfd__text-dataset-tiny-code-script-py-format/Workspace/Python_Script_Text_based_RPD_Game.py",
+  "file_name": "Python_Script_Text_based_RPD_Game.py",
+  "file_size": 51434,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/ysn-rfd__text-dataset-tiny-code-script-py-format/Workspace/Python_Script_Text_based_RPD_Game.py",
+        "findings_count": 2,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.deserialization.pickle.avoid-pickle",
+            "message": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.",
+            "severity": "WARNING",
+            "line": 1288,
+            "snippet": "                pickle.dump(save_data, f)"
+          },
+          {
+            "rule_id": "python.lang.security.deserialization.pickle.avoid-pickle",
+            "message": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.",
+            "severity": "WARNING",
+            "line": 1298,
+            "snippet": "                save_data = pickle.load(f)"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 99.317
+    }
+  ]
+}

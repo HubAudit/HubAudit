@@ -1,0 +1,4 @@
+Collecting release data for tag: v-canary-test
+Syncing 0 changelog files...
+Sync completed (offline mode — data queued for retry)
+

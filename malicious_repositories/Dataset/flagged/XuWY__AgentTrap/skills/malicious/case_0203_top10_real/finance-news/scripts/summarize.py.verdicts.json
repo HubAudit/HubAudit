@@ -1,0 +1,34 @@
+{
+  "file_path": "/tmp/scan_workspace/XuWY__AgentTrap/skills/malicious/case_0203_top10_real/finance-news/scripts/summarize.py",
+  "file_name": "summarize.py",
+  "file_size": 63506,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/XuWY__AgentTrap/skills/malicious/case_0203_top10_real/finance-news/scripts/summarize.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+            "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+            "severity": "WARNING",
+            "line": 153,
+            "snippet": "        with urllib.request.urlopen(req, timeout=3) as response:"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 72.017
+    }
+  ]
+}

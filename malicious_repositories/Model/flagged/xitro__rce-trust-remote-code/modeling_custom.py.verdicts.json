@@ -1,0 +1,65 @@
+{
+  "file_path": "/tmp/scan_workspace/xitro__rce-trust-remote-code/modeling_custom.py",
+  "file_name": "modeling_custom.py",
+  "file_size": 898,
+  "flagged": true,
+  "worst_severity": "low",
+  "flagged_by": [
+    "bandit"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "modeling_custom.py",
+        "message": "Consider possible security implications associated with the subprocess module.",
+        "line": 3
+      },
+      "error": null,
+      "duration": 0.211
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "modeling_custom.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 10
+      },
+      "error": null,
+      "duration": 0.211
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "modeling_custom.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 10
+      },
+      "error": null,
+      "duration": 0.211
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "modeling_custom.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 20
+      },
+      "error": null,
+      "duration": 0.211
+    }
+  ]
+}

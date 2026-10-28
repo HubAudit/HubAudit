@@ -1,0 +1,34 @@
+{
+  "file_path": "/tmp/scan_workspace/ysn-rfd__text-dataset-tiny-code-script-py-format/pytorch_study/day3_3.py",
+  "file_name": "day3_3.py",
+  "file_size": 3593,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/ysn-rfd__text-dataset-tiny-code-script-py-format/pytorch_study/day3_3.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+            "message": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency",
+            "severity": "WARNING",
+            "line": 40,
+            "snippet": "dataloader = torch.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=True)"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 99.317
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/manual-review/manual_review_200_blind.csv",
+  "file_name": "manual_review_200_blind.csv",
+  "file_size": 149396,
+  "flagged": true,
+  "worst_severity": "critical",
+  "flagged_by": [
+    "trivy"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "trivy",
+      "flagged": true,
+      "severity": "critical",
+      "details": {
+        "file": "manual-review/manual_review_200_blind.csv",
+        "findings_count": 12,
+        "findings": [
+          {
+            "type": "secret",
+            "rule_id": "aws-access-key-id",
+            "title": "AWS Access Key ID",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "aws-access-key-id",
+            "title": "AWS Access Key ID",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "aws-access-key-id",
+            "title": "AWS Access Key ID",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "aws-access-key-id",
+            "title": "AWS Access Key ID",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "aws-secret-access-key",
+            "title": "AWS Secret Access Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "aws-secret-access-key",
+            "title": "AWS Secret Access Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "aws-secret-access-key",
+            "title": "AWS Secret Access Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "aws-secret-access-key",
+            "title": "AWS Secret Access Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "github-pat",
+            "title": "GitHub Personal Access Token",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "private-key",
+            "title": "Asymmetric Private Key",
+            "severity": "HIGH"
+          },
+          {
+            "type": "secret",
+            "rule_id": "private-key",
+            "title": "Asymmetric Private Key",
+            "severity": "HIGH"
+          },
+          {
+            "type": "secret",
+            "rule_id": "private-key",
+            "title": "Asymmetric Private Key",
+            "severity": "HIGH"
+          }
+        ],
+        "returncode": 1
+      },
+      "error": null,
+      "duration": 2.983
+    }
+  ]
+}

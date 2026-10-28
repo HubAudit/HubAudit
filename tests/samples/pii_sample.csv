@@ -1,0 +1,4 @@
+name,email,phone,ssn,account
+John Smith,john.smith@example.com,555-867-5309,123-45-6789,checking
+Jane Doe,jane.doe@example.org,555-234-5678,987-65-4321,savings
+Bob Jones,bob.jones@company.com,555-111-2222,456-78-9012,credit

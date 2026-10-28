@@ -1,0 +1,48 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/scrape.py",
+  "file_name": "scrape.py",
+  "file_size": 2643,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "bandit",
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/scrape.py",
+        "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+        "line": 39
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/scrape.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+            "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+            "severity": "WARNING",
+            "line": 39,
+            "snippet": "        with urllib.request.urlopen(req, timeout=60) as resp:"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 177.779
+    }
+  ]
+}

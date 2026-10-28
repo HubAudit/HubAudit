@@ -1,0 +1,107 @@
+{
+  "scanned_at": "2026-06-03T08:15:29.641189",
+  "repo_id": "FIRSTACCOUNT69/auto-map-test",
+  "repo_type": "model",
+  "outcome": "malicious",
+  "duration_seconds": 0.0,
+  "total_files": 2,
+  "files_scanned": 2,
+  "files_flagged": 1,
+  "files_clean": 1,
+  "files_skipped": 0,
+  "flagged_files": [
+    "/tmp/scan_workspace/FIRSTACCOUNT69__auto-map-test/model.py"
+  ],
+  "folder_scanner_timings": {
+    "trivy": 0.001,
+    "pysentry": 0.0,
+    "bandit": 0.219,
+    "opengrep": 17.162
+  },
+  "file_scanner_timings": {
+    "pip_audit": 0.0,
+    "modelaudit": 0.0
+  },
+  "scanner_file_counts": {
+    "opengrep": 2,
+    "bandit": 1,
+    "trivy": 0,
+    "pysentry": 0,
+    "pip_audit": 0,
+    "modelaudit": 0
+  },
+  "file_results": [
+    {
+      "file_path": "/tmp/scan_workspace/FIRSTACCOUNT69__auto-map-test/model.py",
+      "file_name": "model.py",
+      "file_size": 990,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "model.py",
+            "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+            "line": 25
+          },
+          "error": null,
+          "duration": 0.219
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "model.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 26
+          },
+          "error": null,
+          "duration": 0.219
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/FIRSTACCOUNT69__auto-map-test/model.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+                "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+                "severity": "WARNING",
+                "line": 25,
+                "snippet": "    urllib.request.urlopen(req, timeout=5)"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 17.162
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/FIRSTACCOUNT69__auto-map-test/config.json",
+      "file_name": "config.json",
+      "file_size": 200,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    }
+  ],
+  "project_verdicts": []
+}

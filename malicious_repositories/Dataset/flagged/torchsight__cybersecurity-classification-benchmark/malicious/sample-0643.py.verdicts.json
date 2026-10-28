@@ -1,0 +1,55 @@
+{
+  "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0643.py",
+  "file_name": "sample-0643.py",
+  "file_size": 278,
+  "flagged": true,
+  "worst_severity": "critical",
+  "flagged_by": [
+    "bandit",
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "low",
+        "file": "malicious/sample-0643.py",
+        "message": "Possible SQL injection vector through string-based query construction.",
+        "line": 3
+      },
+      "error": null,
+      "duration": 0.434
+    },
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "critical",
+      "details": {
+        "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0643.py",
+        "findings_count": 2,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+            "message": "Detected possible formatted SQL query. Use parameterized queries instead.",
+            "severity": "WARNING",
+            "line": 5,
+            "snippet": "    cursor.execute(query)"
+          },
+          {
+            "rule_id": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+            "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.",
+            "severity": "ERROR",
+            "line": 5,
+            "snippet": "    cursor.execute(query)"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 26.125
+    }
+  ]
+}

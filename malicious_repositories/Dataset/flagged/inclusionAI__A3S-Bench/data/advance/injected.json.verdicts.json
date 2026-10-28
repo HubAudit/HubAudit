@@ -1,0 +1,771 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/injected.json",
+  "file_name": "injected.json",
+  "file_size": 10930615,
+  "flagged": true,
+  "worst_severity": "critical",
+  "flagged_by": [
+    "trivy"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "trivy",
+      "flagged": true,
+      "severity": "critical",
+      "details": {
+        "file": "data/advance/injected.json",
+        "findings_count": 124,
+        "findings": [
+          {
+            "type": "secret",
+            "rule_id": "github-pat",
+            "title": "GitHub Personal Access Token",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "github-pat",
+            "title": "GitHub Personal Access Token",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "github-pat",
+            "title": "GitHub Personal Access Token",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "github-pat",
+            "title": "GitHub Personal Access Token",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "github-pat",
+            "title": "GitHub Personal Access Token",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "jwt-token",
+            "title": "JWT token",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "jwt-token",
+            "title": "JWT token",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "jwt-token",
+            "title": "JWT token",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "jwt-token",
+            "title": "JWT token",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "jwt-token",
+            "title": "JWT token",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "jwt-token",
+            "title": "JWT token",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "jwt-token",
+            "title": "JWT token",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          }
+        ],
+        "returncode": 1
+      },
+      "error": null,
+      "duration": 5.193
+    }
+  ]
+}

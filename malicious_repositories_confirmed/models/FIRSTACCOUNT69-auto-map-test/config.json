@@ -1,0 +1,9 @@
+{
+  "architectures": ["CustomModel"],
+  "auto_map": {
+    "AutoModel": "model.CustomModel",
+    "AutoModelForCausalLM": "model.CustomModel"
+  },
+  "model_type": "custom",
+  "torch_dtype": "float32"
+}

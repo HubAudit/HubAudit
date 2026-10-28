@@ -1,0 +1,68 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/crawl.py",
+  "file_name": "crawl.py",
+  "file_size": 3505,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "bandit",
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/crawl.py",
+        "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+        "line": 46
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/crawl.py",
+        "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+        "line": 63
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/crawl.py",
+        "findings_count": 2,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+            "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+            "severity": "WARNING",
+            "line": 46,
+            "snippet": "        with urllib.request.urlopen(req, timeout=30) as resp:"
+          },
+          {
+            "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+            "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+            "severity": "WARNING",
+            "line": 63,
+            "snippet": "    with urllib.request.urlopen(req, timeout=30) as resp:"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 177.779
+    }
+  ]
+}

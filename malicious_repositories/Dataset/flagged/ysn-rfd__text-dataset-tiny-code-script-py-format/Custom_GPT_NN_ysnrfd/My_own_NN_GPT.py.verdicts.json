@@ -1,0 +1,41 @@
+{
+  "file_path": "/tmp/scan_workspace/ysn-rfd__text-dataset-tiny-code-script-py-format/Custom_GPT_NN_ysnrfd/My_own_NN_GPT.py",
+  "file_name": "My_own_NN_GPT.py",
+  "file_size": 43858,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/ysn-rfd__text-dataset-tiny-code-script-py-format/Custom_GPT_NN_ysnrfd/My_own_NN_GPT.py",
+        "findings_count": 2,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.deserialization.pickle.avoid-pickle",
+            "message": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.",
+            "severity": "WARNING",
+            "line": 718,
+            "snippet": "            pickle.dump(data, f)"
+          },
+          {
+            "rule_id": "python.lang.security.deserialization.pickle.avoid-pickle",
+            "message": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.",
+            "severity": "WARNING",
+            "line": 722,
+            "snippet": "            data = pickle.load(f)"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 99.317
+    }
+  ]
+}

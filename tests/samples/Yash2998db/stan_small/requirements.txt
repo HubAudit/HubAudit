@@ -1,0 +1,4 @@
+# Sample file - triggers pysentry (known vulnerable versions)
+# django==2.2.0
+# requests==2.19.0
+pillow==8.2.0

@@ -1,0 +1,26 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/read_page.py",
+  "file_name": "read_page.py",
+  "file_size": 6556,
+  "flagged": true,
+  "worst_severity": "low",
+  "flagged_by": [
+    "bandit"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/read_page.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 140
+      },
+      "error": null,
+      "duration": 1.572
+    }
+  ]
+}

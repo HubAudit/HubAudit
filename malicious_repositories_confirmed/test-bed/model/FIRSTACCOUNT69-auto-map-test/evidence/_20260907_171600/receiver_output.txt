@@ -1,0 +1,9 @@
+POST /log HTTP/1.1
+Accept-Encoding: identity
+Content-Length: 252
+Host: 127.0.0.1:8080
+User-Agent: Python-urllib/3.11
+Content-Type: application/json
+Connection: close
+
+{"hostname": "resec01-testbench-crawler-instance4", "cwd": "/home/anonymous/repos/test-bed/model/FIRSTACCOUNT69-auto-map-test", "user": "fake-user", "home": "/tmp/fake-home", "env_keys": ["FAKE_SECRET", "HOME", "PATH", "USER"], "source": "auto_map_import"}

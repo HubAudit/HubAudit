@@ -1,0 +1,442 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/container.py",
+  "file_name": "container.py",
+  "file_size": 13340,
+  "flagged": true,
+  "worst_severity": "medium",
+  "flagged_by": [
+    "bandit"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Consider possible security implications associated with the subprocess module.",
+        "line": 6
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 21
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "medium",
+        "file": "src/container.py",
+        "message": "Possible hardcoded password: 'placeholder'",
+        "line": 58
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 119
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 119
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 143
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 143
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 164
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 171
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 171
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 176
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 176
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 183
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 183
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 191
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 191
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 200
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 200
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 204
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 210
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 210
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 232
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 232
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 234
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "src/container.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 265
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 271
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 271
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 276
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 276
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 284
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 284
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 306
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/container.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 362
+      },
+      "error": null,
+      "duration": 1.572
+    }
+  ]
+}

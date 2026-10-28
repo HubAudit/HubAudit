@@ -1,0 +1,26 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/executor.py",
+  "file_name": "executor.py",
+  "file_size": 17151,
+  "flagged": true,
+  "worst_severity": "low",
+  "flagged_by": [
+    "bandit"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/executor.py",
+        "message": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+        "line": 129
+      },
+      "error": null,
+      "duration": 1.572
+    }
+  ]
+}

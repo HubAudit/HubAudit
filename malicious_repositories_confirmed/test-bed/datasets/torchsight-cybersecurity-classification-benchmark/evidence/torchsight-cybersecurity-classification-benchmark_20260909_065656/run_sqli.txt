@@ -1,0 +1,2 @@
+get_user('alice'):         [('alice', 'user')]
+get_user("' OR '1'='1"): [('alice', 'user'), ('admin', 'admin')]

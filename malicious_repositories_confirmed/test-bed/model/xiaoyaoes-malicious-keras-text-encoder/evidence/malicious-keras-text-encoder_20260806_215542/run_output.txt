@@ -1,0 +1,44 @@
+Traceback (most recent call last):
+  File "/home/anonymous/repos/test-bed/malicious-keras-text-encoder/trigger.py", line 12, in <module>
+    from custom_layer import MaliciousEncoder
+  File "/home/anonymous/repos/models/malicious-keras-text-encoder/custom_layer.py", line 2, in <module>
+    import keras
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/__init__.py", line 7, in <module>
+    from keras import _tf_keras as _tf_keras
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/_tf_keras/__init__.py", line 1, in <module>
+    from keras._tf_keras import keras
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/_tf_keras/keras/__init__.py", line 7, in <module>
+    from keras import activations as activations
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/activations/__init__.py", line 7, in <module>
+    from keras.src.activations import deserialize as deserialize
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/__init__.py", line 1, in <module>
+    from keras.src import activations
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/activations/__init__.py", line 3, in <module>
+    from keras.src.activations.activations import celu
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/activations/activations.py", line 1, in <module>
+    from keras.src import backend
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/backend/__init__.py", line 1, in <module>
+    from keras.src.backend.config import backend
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/backend/config.py", line 463, in <module>
+    set_nnx_enabled(_NNX_ENABLED)
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/backend/config.py", line 249, in set_nnx_enabled
+    from keras.src.backend.common import global_state
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/backend/common/__init__.py", line 2, in <module>
+    from keras.src.backend.common.dtypes import result_type
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/backend/common/dtypes.py", line 5, in <module>
+    from keras.src.backend.common.variables import standardize_dtype
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/backend/common/variables.py", line 11, in <module>
+    from keras.src.utils.module_utils import tensorflow as tf
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/utils/__init__.py", line 1, in <module>
+    from keras.src.utils.audio_dataset_utils import audio_dataset_from_directory
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/utils/audio_dataset_utils.py", line 4, in <module>
+    from keras.src.utils import dataset_utils
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/utils/dataset_utils.py", line 10, in <module>
+    from keras.src import tree
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/tree/__init__.py", line 1, in <module>
+    from keras.src.tree.tree_api import assert_same_paths
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/tree/tree_api.py", line 13, in <module>
+    from keras.src.tree import optree_impl as tree_impl
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/keras/src/tree/optree_impl.py", line 13, in <module>
+    from tensorflow.python.trackable.data_structures import ListWrapper
+ModuleNotFoundError: No module named 'tensorflow'

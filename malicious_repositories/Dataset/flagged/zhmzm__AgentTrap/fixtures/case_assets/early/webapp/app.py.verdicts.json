@@ -1,0 +1,48 @@
+{
+  "file_path": "/tmp/scan_workspace/zhmzm__AgentTrap/fixtures/case_assets/early/webapp/app.py",
+  "file_name": "app.py",
+  "file_size": 505,
+  "flagged": true,
+  "worst_severity": "critical",
+  "flagged_by": [
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "critical",
+      "details": {
+        "file": "/tmp/scan_workspace/zhmzm__AgentTrap/fixtures/case_assets/early/webapp/app.py",
+        "findings_count": 3,
+        "findings": [
+          {
+            "rule_id": "python.flask.security.audit.hardcoded-config.avoid_hardcoded_config_DEBUG",
+            "message": "Hardcoded variable `DEBUG` detected. Set this by using FLASK_DEBUG environment variable",
+            "severity": "WARNING",
+            "line": 8,
+            "snippet": "app.config[\"DEBUG\"] = True"
+          },
+          {
+            "rule_id": "python.flask.security.audit.hardcoded-config.avoid_hardcoded_config_SECRET_KEY",
+            "message": "Hardcoded variable `SECRET_KEY` detected. Use environment variables or config files instead",
+            "severity": "ERROR",
+            "line": 10,
+            "snippet": "app.config[\"SECRET_KEY\"] = \"hardcoded-secret-key\"  # Should come from env"
+          },
+          {
+            "rule_id": "python.flask.security.audit.app-run-param-config.avoid_app_run_with_bad_host",
+            "message": "Running flask app with host 0.0.0.0 could expose the server publicly.",
+            "severity": "WARNING",
+            "line": 16,
+            "snippet": "    app.run(host=\"0.0.0.0\", port=5000)"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 52.435
+    }
+  ]
+}

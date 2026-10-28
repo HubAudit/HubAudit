@@ -1,0 +1,16 @@
+# ── HuggingFace ───────────────────────────────────────────
+huggingface_hub>=0.25
+hf_transfer
+
+# ── Core ──────────────────────────────────────────────────
+requests
+psutil
+pandas
+tqdm
+pip-audit
+modelaudit[all-ci]        # ML model file security scanner
+pysentry-rs
+
+# ── Cloud storage (GCS only) ──────────────────────────────
+google-cloud-storage
+python-dotenv

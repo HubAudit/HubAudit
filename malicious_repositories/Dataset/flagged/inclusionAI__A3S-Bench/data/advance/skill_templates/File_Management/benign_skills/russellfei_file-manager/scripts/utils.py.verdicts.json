@@ -1,0 +1,26 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/benign_skills/russellfei_file-manager/scripts/utils.py",
+  "file_name": "utils.py",
+  "file_size": 652,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "bandit"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/File_Management/benign_skills/russellfei_file-manager/scripts/utils.py",
+        "message": "Use of weak MD5 hash for security. Consider usedforsecurity=False",
+        "line": 12
+      },
+      "error": null,
+      "duration": 1.572
+    }
+  ]
+}

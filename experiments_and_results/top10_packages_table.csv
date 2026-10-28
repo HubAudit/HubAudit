@@ -1,0 +1,11 @@
+rank,package,repos_affected,distinct_advisories,most_serious_advisory,severity,repos_with_that_advisory,fixed_in,flagged_by,example_repo,example_file_in_repo,version_seen,example_link
+1,transformers,777,30,CVE-2023-6730,CRITICAL,142,4.36.0,"pip-audit, PySentry, Trivy",2nji/makebelieve,requirements.txt,4.31.0,https://huggingface.co/2nji/makebelieve
+2,torch,489,31,CVE-2025-32434,CRITICAL,315,2.6.0,"pip-audit, PySentry, Trivy",16772Andy54054/BiRefNet,requirements.txt,2.5.1,https://huggingface.co/16772Andy54054/BiRefNet
+3,pillow,250,28,CVE-2023-50447,CRITICAL,54,10.2.0,"pip-audit, PySentry, Trivy",CapstoneML/Model,requirements.txt,9.5.0,https://huggingface.co/CapstoneML/Model
+4,requests,212,5,CVE-2018-18074,HIGH,1,2.20.0,Trivy,JiaaqiLiu/SkillArena-datasets,skills/dependency-vulnerability-checker/requirements.txt,2.19.1,https://huggingface.co/JiaaqiLiu/SkillArena-datasets
+5,idna,207,2,CVE-2026-45409,MEDIUM,207,3.15,"pip-audit, PySentry, Trivy",Asgharkhan9275/detect_email,requirements.txt,3.11,https://huggingface.co/Asgharkhan9275/detect_email
+6,urllib3,187,17,CVE-2026-44431,HIGH,185,2.7.0,"pip-audit, PySentry, Trivy",DIACDE/NER_identificacao_termos_juridicos_complexos_TJGO,requirements.txt,2.2.2,https://huggingface.co/DIACDE/NER_identificacao_termos_juridicos_complexos_TJGO
+7,protobuf,182,3,CVE-2026-0994,HIGH,182,"5.29.6, 6.33.5","pip-audit, PySentry, Trivy",Deeptanshuu/Multilingual_Toxic_Comment_Classifier,requirements.txt,5.29.3,https://huggingface.co/Deeptanshuu/Multilingual_Toxic_Comment_Classifier
+8,aiohttp,157,42,CVE-2025-69223,HIGH,126,3.13.3,"pip-audit, PySentry, Trivy",Asadrizvi64/electrical-outlets-diagnostic,requirements.txt,3.11.18,https://huggingface.co/Asadrizvi64/electrical-outlets-diagnostic
+9,filelock,150,2,CVE-2026-22701,MEDIUM,150,3.20.3,"pip-audit, PySentry, Trivy",GlowCheese/minBERT,requirements.txt,3.16.1,https://huggingface.co/GlowCheese/minBERT
+10,starlette,134,11,CVE-2026-54283,HIGH,88,1.3.1,"pip-audit, PySentry, Trivy",Adityasharma4287/email-triage-grpo,requirements.txt,0.41.3,https://huggingface.co/Adityasharma4287/email-triage-grpo

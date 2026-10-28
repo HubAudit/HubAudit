@@ -1,0 +1,65 @@
+{
+  "file_path": "/tmp/scan_workspace/xitro__rce-trust-remote-code/tokenization_custom.py",
+  "file_name": "tokenization_custom.py",
+  "file_size": 792,
+  "flagged": true,
+  "worst_severity": "low",
+  "flagged_by": [
+    "bandit"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "tokenization_custom.py",
+        "message": "Consider possible security implications associated with the subprocess module.",
+        "line": 2
+      },
+      "error": null,
+      "duration": 0.211
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "tokenization_custom.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 7
+      },
+      "error": null,
+      "duration": 0.211
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "tokenization_custom.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 7
+      },
+      "error": null,
+      "duration": 0.211
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "tokenization_custom.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 11
+      },
+      "error": null,
+      "duration": 0.211
+    }
+  ]
+}

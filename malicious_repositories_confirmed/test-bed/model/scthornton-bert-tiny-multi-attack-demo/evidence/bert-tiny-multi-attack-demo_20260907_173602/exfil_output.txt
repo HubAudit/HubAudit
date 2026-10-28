@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/anonymous/repos/test-bed/model/scthornton-bert-tiny-multi-attack-demo/execute-poc-exfil.py", line 14, in <module>
+    from train import exfiltrate_data
+ModuleNotFoundError: No module named 'train'

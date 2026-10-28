@@ -1,0 +1,8 @@
+127.0.0.1 - - [09/Sep/2026 03:45:03] "GET /next HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 03:45:03] "GET /data.csv HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 03:45:03] code 501, message Unsupported method ('POST')
+127.0.0.1 - - [09/Sep/2026 03:45:03] "POST /submit HTTP/1.1" 501 -
+127.0.0.1 - - [09/Sep/2026 03:45:03] code 501, message Unsupported method ('POST')
+127.0.0.1 - - [09/Sep/2026 03:45:03] "POST /sync HTTP/1.1" 501 -
+127.0.0.1 - - [09/Sep/2026 03:45:03] code 501, message Unsupported method ('POST')
+127.0.0.1 - - [09/Sep/2026 03:45:03] "POST /store HTTP/1.1" 501 -

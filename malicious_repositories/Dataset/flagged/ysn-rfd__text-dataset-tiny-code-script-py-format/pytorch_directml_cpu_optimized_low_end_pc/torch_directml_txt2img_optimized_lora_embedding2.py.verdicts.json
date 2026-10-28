@@ -1,0 +1,41 @@
+{
+  "file_path": "/tmp/scan_workspace/ysn-rfd__text-dataset-tiny-code-script-py-format/pytorch_directml_cpu_optimized_low_end_pc/torch_directml_txt2img_optimized_lora_embedding2.py",
+  "file_name": "torch_directml_txt2img_optimized_lora_embedding2.py",
+  "file_size": 20109,
+  "flagged": true,
+  "worst_severity": "critical",
+  "flagged_by": [
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "critical",
+      "details": {
+        "file": "/tmp/scan_workspace/ysn-rfd__text-dataset-tiny-code-script-py-format/pytorch_directml_cpu_optimized_low_end_pc/torch_directml_txt2img_optimized_lora_embedding2.py",
+        "findings_count": 2,
+        "findings": [
+          {
+            "rule_id": "trailofbits.python.pickles-in-pytorch.pickles-in-pytorch",
+            "message": "Functions reliant on pickle can result in arbitrary code execution.  Consider loading from `state_dict`, using fickling, or switching to a safer serialization method like ONNX",
+            "severity": "ERROR",
+            "line": 111,
+            "snippet": "            state_dict = torch.load(lora_path, map_location=\"cpu\")"
+          },
+          {
+            "rule_id": "trailofbits.python.pickles-in-pytorch.pickles-in-pytorch",
+            "message": "Functions reliant on pickle can result in arbitrary code execution.  Consider loading from `state_dict`, using fickling, or switching to a safer serialization method like ONNX",
+            "severity": "ERROR",
+            "line": 183,
+            "snippet": "            data = torch.load(embedding_path, map_location=\"cpu\")"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 99.317
+    }
+  ]
+}

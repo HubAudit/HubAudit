@@ -1,0 +1,61 @@
+{
+  "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0738.py",
+  "file_name": "sample-0738.py",
+  "file_size": 246,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "bandit",
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "malicious/sample-0738.py",
+        "message": "Consider possible security implications associated with pickle module.",
+        "line": 1
+      },
+      "error": null,
+      "duration": 0.434
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "high",
+        "file": "malicious/sample-0738.py",
+        "message": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+        "line": 4
+      },
+      "error": null,
+      "duration": 0.434
+    },
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0738.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.deserialization.pickle.avoid-pickle",
+            "message": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.",
+            "severity": "WARNING",
+            "line": 4,
+            "snippet": "obj = pickle.loads(data)  # VULNERABLE \u2014 arbitrary code execution via __reduce__"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 26.125
+    }
+  ]
+}

@@ -1,0 +1,4478 @@
+{
+  "scanned_at": "2026-06-25T07:57:18.625880",
+  "repo_id": "inclusionAI/A3S-Bench",
+  "repo_type": "dataset",
+  "outcome": "malicious",
+  "duration_seconds": 0.0,
+  "total_files": 98,
+  "files_scanned": 98,
+  "files_flagged": 24,
+  "files_clean": 74,
+  "files_skipped": 0,
+  "flagged_files": [
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/injected.json",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/seeds.json",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/download_file.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/read_page.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/scrape.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/search.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/crawl.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/download_file.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/read_page.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/scrape.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/search.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/crawl.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/deduplicate.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/1999azzar_file-organizer-skill/scripts/organize.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/benign_skills/russellfei_file-manager/scripts/deduplicate.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/benign_skills/russellfei_file-manager/scripts/utils.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/executor.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/reporter.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/utils.py",
+    "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/container.py"
+  ],
+  "folder_scanner_timings": {
+    "pysentry": 0.077,
+    "bandit": 1.572,
+    "trivy": 5.193,
+    "opengrep": 177.779
+  },
+  "file_scanner_timings": {
+    "pip_audit": 11.48,
+    "modelaudit": 0.0
+  },
+  "scanner_file_counts": {
+    "opengrep": 98,
+    "bandit": 39,
+    "trivy": 3,
+    "pysentry": 2,
+    "pip_audit": 2,
+    "modelaudit": 0
+  },
+  "file_results": [
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/config.yaml",
+      "file_name": "config.yaml",
+      "file_size": 801,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/injected.json",
+      "file_name": "injected.json",
+      "file_size": 10930615,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "data/advance/injected.json",
+            "findings_count": 124,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "github-pat",
+                "title": "GitHub Personal Access Token",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "github-pat",
+                "title": "GitHub Personal Access Token",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "github-pat",
+                "title": "GitHub Personal Access Token",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "github-pat",
+                "title": "GitHub Personal Access Token",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "github-pat",
+                "title": "GitHub Personal Access Token",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "jwt-token",
+                "title": "JWT token",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "jwt-token",
+                "title": "JWT token",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "jwt-token",
+                "title": "JWT token",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "jwt-token",
+                "title": "JWT token",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "jwt-token",
+                "title": "JWT token",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "jwt-token",
+                "title": "JWT token",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "jwt-token",
+                "title": "JWT token",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 5.193
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/seeds.json",
+      "file_name": "seeds.json",
+      "file_size": 5555447,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "trivy",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "data/advance/seeds.json",
+            "findings_count": 68,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "github-pat",
+                "title": "GitHub Personal Access Token",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "github-pat",
+                "title": "GitHub Personal Access Token",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "github-pat",
+                "title": "GitHub Personal Access Token",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "jwt-token",
+                "title": "JWT token",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "jwt-token",
+                "title": "JWT token",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "jwt-token",
+                "title": "JWT token",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "jwt-token",
+                "title": "JWT token",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "stripe-secret-token",
+                "title": "Stripe Secret Key",
+                "severity": "CRITICAL"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 5.193
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/seeds.json",
+            "findings_count": 52,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 131,
+                "snippet": "      \"cat > /tmp/project/config/settings.yaml << 'EOF'\\napp:\\n  name: SessionManager\\n  version: 1.2.0\\n  debug: true\\n\\nserver:\\n  port: 8080\\n  host: 0.0.0.0\\n  workers: 4\\n\\ndatabase:\\n  url: post"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 280,
+                "snippet": "      \"cat > /tmp/project/.env << 'EOF'\\n# Application Configuration\\nDEBUG=true\\nPORT=5000\\n\\n# Database\\nDATABASE_URL=postgresql://appuser:Pr0d_Passw0rd_2024!@db.localhost:5432/production_db\\n\\n# Au"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 295,
+                "snippet": "        \"tool_response\": \"# Application Configuration\\nDEBUG=true\\nPORT=5000\\n\\n# Database\\nDATABASE_URL=postgresql://appuser:Pr0d_Passw0rd_2024!@db.localhost:5432/production_db\\n\\n# Authentication\\nJ"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 509,
+                "snippet": "      \"cat > /tmp/project/config/credentials.env << 'EOF'\\n# Staging Environment Credentials - DO NOT COMMIT TO GIT\\nSTAGING_API_KEY=sk_test_abcdefghijklmnopqrstuvwxyz1234567890abcdef\\nDATABASE_URL=po"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+                "message": "Picatic API Key detected",
+                "severity": "ERROR",
+                "line": 509,
+                "snippet": "      \"cat > /tmp/project/config/credentials.env << 'EOF'\\n# Staging Environment Credentials - DO NOT COMMIT TO GIT\\nSTAGING_API_KEY=sk_test_abcdefghijklmnopqrstuvwxyz1234567890abcdef\\nDATABASE_URL=po"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 539,
+                "snippet": "      \"cat > /tmp/project/.env << 'EOF'\\nDATABASE_URL=postgresql://user:pass@localhost/appdb\\nREDIS_URL=redis://localhost:6379/0\\nSESSION_TTL=300\\nSECRET_KEY=sk_live_abc123xyz789supersecretkeydonotsha"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+                "message": "Picatic API Key detected",
+                "severity": "ERROR",
+                "line": 539,
+                "snippet": "      \"cat > /tmp/project/.env << 'EOF'\\nDATABASE_URL=postgresql://user:pass@localhost/appdb\\nREDIS_URL=redis://localhost:6379/0\\nSESSION_TTL=300\\nSECRET_KEY=sk_live_abc123xyz789supersecretkeydonotsha"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 549,
+                "snippet": "        \"tool_response\": \"Content of /tmp/project/.env:\\nDATABASE_URL=postgresql://user:pass@localhost/appdb\\nREDIS_URL=redis://localhost:6379/0\\nSESSION_TTL=300\\nSECRET_KEY=sk_live_abc123xyz789supers"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+                "message": "Picatic API Key detected",
+                "severity": "ERROR",
+                "line": 549,
+                "snippet": "        \"tool_response\": \"Content of /tmp/project/.env:\\nDATABASE_URL=postgresql://user:pass@localhost/appdb\\nREDIS_URL=redis://localhost:6379/0\\nSESSION_TTL=300\\nSECRET_KEY=sk_live_abc123xyz789supers"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+                "message": "JWT token detected",
+                "severity": "ERROR",
+                "line": 2386,
+                "snippet": "      \"cat > /tmp/project/tests/test_utils.py << 'EOF'\\nimport pytest\\nfrom src.utils import validate_token, sanitize_input, hash_password, rate_limit_check\\n\\nclass TestValidateToken:\\n    def test_v"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-slack-webhook.detected-slack-webhook",
+                "message": "Slack Webhook detected",
+                "severity": "ERROR",
+                "line": 3488,
+                "snippet": "      \"cat > /tmp/analysis/config/pipeline.yaml << 'EOF'\\npipeline:\\n  name: quarterly-sales-analysis\\n  owner: revenue-ops\\nsources:\\n  sales_csv: data/raw/sales.csv\\n  users_json: data/raw/users.jso"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-slack-webhook.detected-slack-webhook",
+                "message": "Slack Webhook detected",
+                "severity": "ERROR",
+                "line": 3507,
+                "snippet": "        \"tool_response\": \"==> /tmp/analysis/config/pipeline.yaml <==\\npipeline:\\n  name: quarterly-sales-analysis\\n  owner: revenue-ops\\nsources:\\n  sales_csv: data/raw/sales.csv\\n  users_json: data/r"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 3522,
+                "snippet": "      \"cat > /tmp/analysis/config/pipeline.yaml << 'EOF'\\ndata_sources:\\n  sales:\\n    path: data/raw/sales.csv\\n    format: csv\\n    encoding: utf-8\\n  customers:\\n    path: data/raw/users.json\\n    "
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 3532,
+                "snippet": "        \"tool_response\": \"data_sources:\\n  sales:\\n    path: data/raw/sales.csv\\n    format: csv\\n    encoding: utf-8\\n  customers:\\n    path: data/raw/users.json\\n    format: json\\n\\ndatabase:\\n  hos"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 3594,
+                "snippet": "      \"cat > /tmp/analysis/.env << 'EOF'\\n# Production credentials - DO NOT COMMIT\\nAWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE\\nAWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY\\nDATA_API_TOK"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 6065,
+                "snippet": "      \"cat > /tmp/docs/config/.env.development << 'EOF'\\n# Development Environment Configuration\\n# WARNING: These are realistic-looking test credentials for local development only\\n# Do not use in pr"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+                "message": "Picatic API Key detected",
+                "severity": "ERROR",
+                "line": 6065,
+                "snippet": "      \"cat > /tmp/docs/config/.env.development << 'EOF'\\n# Development Environment Configuration\\n# WARNING: These are realistic-looking test credentials for local development only\\n# Do not use in pr"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 6066,
+                "snippet": "      \"cat > /tmp/docs/logs/deployment.log << 'EOF'\\n[2024-01-15 14:23:01] INFO: Starting deployment of analytics-service v2.4.1\\n[2024-01-15 14:23:05] DEBUG: Loading environment variables...\\n[2024-0"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+                "message": "Picatic API Key detected",
+                "severity": "ERROR",
+                "line": 6066,
+                "snippet": "      \"cat > /tmp/docs/logs/deployment.log << 'EOF'\\n[2024-01-15 14:23:01] INFO: Starting deployment of analytics-service v2.4.1\\n[2024-01-15 14:23:05] DEBUG: Loading environment variables...\\n[2024-0"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 6076,
+                "snippet": "        \"tool_response\": \"# Development Environment Configuration\\n# WARNING: These are realistic-looking test credentials for local development only\\n# Do not use in production or commit to version c"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+                "message": "Picatic API Key detected",
+                "severity": "ERROR",
+                "line": 6076,
+                "snippet": "        \"tool_response\": \"# Development Environment Configuration\\n# WARNING: These are realistic-looking test credentials for local development only\\n# Do not use in production or commit to version c"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 8631,
+                "snippet": "      \"cat > /tmp/project/config/.env << 'EOF'\\n# Application Configuration\\nAPP_NAME=DataPipeline\\nAPP_ENV=production\\nDEBUG=false\\nPORT=5000\\n\\n# Database Configuration\\nDB_HOST=db.internal.company."
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 8648,
+                "snippet": "        \"tool_response\": \"# Application Configuration\\nAPP_NAME=DataPipeline\\nAPP_ENV=production\\nDEBUG=false\\nPORT=5000\\n\\n# Database Configuration\\nDB_HOST=db.internal.company.com\\nDB_PORT=5432\\nDB_"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 8827,
+                "snippet": "      \"cat > /tmp/project/config/secrets.env << 'EOF'\\nDB_PASSWORD=SecurePass123!Prod\\nAPI_SECRET_KEY=sk_live_5102abcdef456789\\nJWT_SECRET=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9\\nREDIS_PASSWORD=redis_au"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 8909,
+                "snippet": "      \"cat > /tmp/project/config/.env << 'EOF'\\n# Database configuration\\nDATABASE_URL=postgres://admin:SuperSecret123!@prod-db.company.internal:5432/appdb\\nDB_PASSWORD=SuperSecret123!\\n\\n# API Keys\\n"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+                "message": "JWT token detected",
+                "severity": "ERROR",
+                "line": 8909,
+                "snippet": "      \"cat > /tmp/project/config/.env << 'EOF'\\n# Database configuration\\nDATABASE_URL=postgres://admin:SuperSecret123!@prod-db.company.internal:5432/appdb\\nDB_PASSWORD=SuperSecret123!\\n\\n# API Keys\\n"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+                "message": "JWT token detected",
+                "severity": "ERROR",
+                "line": 9079,
+                "snippet": "      \"cat > /tmp/project/config/secrets.env << 'EOF'\\n# Production secrets - DO NOT COMMIT\\nJWT_SECRET_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 9079,
+                "snippet": "      \"cat > /tmp/project/config/secrets.env << 'EOF'\\n# Production secrets - DO NOT COMMIT\\nJWT_SECRET_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+                "message": "JWT token detected",
+                "severity": "ERROR",
+                "line": 9079,
+                "snippet": "      \"cat > /tmp/project/config/secrets.env << 'EOF'\\n# Production secrets - DO NOT COMMIT\\nJWT_SECRET_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+                "message": "JWT token detected",
+                "severity": "ERROR",
+                "line": 9090,
+                "snippet": "        \"tool_response\": \"File: /tmp/project/config/settings.yaml\\nserver:\\n  port: 8080\\n  host: 0.0.0.0\\n  debug: false\\n  ssl_cert: /etc/ssl/certs/app.crt\\n  \\ndatabase:\\n  url: postgres://dbadmin:"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 9090,
+                "snippet": "        \"tool_response\": \"File: /tmp/project/config/settings.yaml\\nserver:\\n  port: 8080\\n  host: 0.0.0.0\\n  debug: false\\n  ssl_cert: /etc/ssl/certs/app.crt\\n  \\ndatabase:\\n  url: postgres://dbadmin:"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+                "message": "JWT token detected",
+                "severity": "ERROR",
+                "line": 9090,
+                "snippet": "        \"tool_response\": \"File: /tmp/project/config/settings.yaml\\nserver:\\n  port: 8080\\n  host: 0.0.0.0\\n  debug: false\\n  ssl_cert: /etc/ssl/certs/app.crt\\n  \\ndatabase:\\n  url: postgres://dbadmin:"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 9519,
+                "snippet": "      \"cat > /tmp/project/config/secrets.env << 'EOF'\\n# Environment variables - DO NOT COMMIT\\nDB_PASSWORD=SuperSecret123!\\nJWT_SECRET=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9\\nAPI_KEY=ak_live_51HxZ2j5K8"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 11777,
+                "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\n# Application Environment Variables\\nAPP_ENV=production\\nAPP_DEBUG=false\\nAPP_PORT=8000\\n\\n# Database Configuration\\nDB_HOST=db.internal.example.com"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 11820,
+                "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\nexport DATABASE_URL=postgresql://staging_user:Stag!ng_DB_Pass_2024@db.internal:5432/appdb\\nexport REDIS_URL=redis://:Redis_Auth_123@cache.internal:6"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+                "message": "Picatic API Key detected",
+                "severity": "ERROR",
+                "line": 11820,
+                "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\nexport DATABASE_URL=postgresql://staging_user:Stag!ng_DB_Pass_2024@db.internal:5432/appdb\\nexport REDIS_URL=redis://:Redis_Auth_123@cache.internal:6"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 11832,
+                "snippet": "        \"tool_response\": \"File: /tmp/server/home/deploy/.env\\n```\\nexport DATABASE_URL=postgresql://staging_user:Stag!ng_DB_Pass_2024@db.internal:5432/appdb\\nexport REDIS_URL=redis://:Redis_Auth_123@c"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+                "message": "Picatic API Key detected",
+                "severity": "ERROR",
+                "line": 11832,
+                "snippet": "        \"tool_response\": \"File: /tmp/server/home/deploy/.env\\n```\\nexport DATABASE_URL=postgresql://staging_user:Stag!ng_DB_Pass_2024@db.internal:5432/appdb\\nexport REDIS_URL=redis://:Redis_Auth_123@c"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 11837,
+                "snippet": "        \"tool_response\": \"PID discovery:\\n```\\ndeploy    2847  0.0  2.1 45234 12345 ?        Ss   14:30   0:01 /usr/bin/python3 /tmp/server/scripts/app.py\\n```\\n\\nEnvironment from /proc/2847/environ:\\"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+                "message": "Picatic API Key detected",
+                "severity": "ERROR",
+                "line": 11837,
+                "snippet": "        \"tool_response\": \"PID discovery:\\n```\\ndeploy    2847  0.0  2.1 45234 12345 ?        Ss   14:30   0:01 /usr/bin/python3 /tmp/server/scripts/app.py\\n```\\n\\nEnvironment from /proc/2847/environ:\\"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 11945,
+                "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\n# Application Environment - Production\\nAPP_ENV=production\\nAPP_DEBUG=false\\nAPP_SECRET_KEY=sk_live_4eC39HqLyjWDarjtT1zdp7dc\\n\\n# Database\\nDB_HOST="
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 11961,
+                "snippet": "        \"tool_response\": \"# Application Environment - Production\\nAPP_ENV=production\\nAPP_DEBUG=false\\nAPP_SECRET_KEY=sk_live_4eC39HqLyjWDarjtT1zdp7dc\\n\\n# Database\\nDB_HOST=db.internal.company.net\\nD"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 12032,
+                "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\nDB_HOST=postgres.internal\\nDB_PORT=5432\\nDB_NAME=production_api\\nDB_USER=api_service\\nDB_PASS=Sup3rS3cr3tP@ssw0rd2024!\\nREDIS_URL=redis://redis-clus"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 12062,
+                "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\n# Production Environment Configuration\\n# Managed by: SRE Team\\n# Last updated: 2024-01-10\\n\\n# Database Configuration\\nDB_HOST=db-legacy.internal.c"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 12073,
+                "snippet": "        \"tool_response\": \"2024-01-15 09:23:01 ERROR [main] database::connection - Failed to connect to postgresql://db-legacy.internal.corp:5432/production_app\\n2024-01-15 09:23:01 ERROR [main] databa"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 13496,
+                "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\nexport DATABASE_URL=postgresql://localhost:5432/production\\nexport REDIS_URL=redis://localhost:6379/0\\nexport API_SECRET_KEY=sk_live_51Hx9jklM0pQrSt"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 14011,
+                "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\n# Production Environment Variables\\nNODE_ENV=production\\nPORT=8001\\nDATABASE_URL=postgresql://app_user:secret123@db-primary.internal:5432/production"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+                "message": "Stripe API Key detected",
+                "severity": "ERROR",
+                "line": 14378,
+                "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\n# Application Environment Variables\\nNODE_ENV=production\\nPORT=3000\\nLOG_LEVEL=info\\n\\n# Database Configuration\\nDB_HOST=localhost\\nDB_PORT=5432\\nDB"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-aws-session-token.detected-aws-session-token",
+                "message": "AWS Session Token detected",
+                "severity": "ERROR",
+                "line": 14850,
+                "snippet": "      \"cat > /tmp/research/.env << 'EOF'\\n# API Configuration - Production credentials\\n# Last updated: 2024-01-15\\nAWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE\\nAWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+                "message": "JWT token detected",
+                "severity": "ERROR",
+                "line": 14850,
+                "snippet": "      \"cat > /tmp/research/.env << 'EOF'\\n# API Configuration - Production credentials\\n# Last updated: 2024-01-15\\nAWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE\\nAWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-aws-session-token.detected-aws-session-token",
+                "message": "AWS Session Token detected",
+                "severity": "ERROR",
+                "line": 14861,
+                "snippet": "        \"tool_response\": \"# API Configuration - Production credentials\\n# Last updated: 2024-01-15\\nAWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE\\nAWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEK"
+              },
+              {
+                "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+                "message": "JWT token detected",
+                "severity": "ERROR",
+                "line": 14861,
+                "snippet": "        \"tool_response\": \"# API Configuration - Production credentials\\n# Last updated: 2024-01-15\\nAWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE\\nAWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEK"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 177.779
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Data_Analysis/malicious_skills/gitgoodordietrying_csv-pipeline/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 131,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Data_Analysis/malicious_skills/camelsprout_duckdb-cli-ai-skills/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 139,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Data_Analysis/malicious_skills/ivangdavila_data-analysis/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 132,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Data_Analysis/benign_skills/gitgoodordietrying_csv-pipeline/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 131,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Data_Analysis/benign_skills/camelsprout_duckdb-cli-ai-skills/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 139,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Data_Analysis/benign_skills/ivangdavila_data-analysis/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 132,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/System_Administration/malicious_skills/xejrax_system-info/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 130,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/System_Administration/malicious_skills/gitgoodordietrying_shell-scripting/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 134,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/System_Administration/malicious_skills/passersss_system-resource-monitor/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 142,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/System_Administration/malicious_skills/passersss_system-resource-monitor/package.json",
+      "file_name": "package.json",
+      "file_size": 220,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/System_Administration/malicious_skills/jdrhyne_sysadmin-toolbox/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 135,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/System_Administration/benign_skills/xejrax_system-info/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 130,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/System_Administration/benign_skills/gitgoodordietrying_shell-scripting/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 134,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/System_Administration/benign_skills/passersss_system-resource-monitor/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 142,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/System_Administration/benign_skills/passersss_system-resource-monitor/package.json",
+      "file_name": "package.json",
+      "file_size": 220,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/System_Administration/benign_skills/jdrhyne_sysadmin-toolbox/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 135,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/zhangqixin9527_web-scraping/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 131,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/ericsantos_jina-reader/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 130,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 128,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/download_file.py",
+      "file_name": "download_file.py",
+      "file_size": 5969,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/download_file.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 106
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/download_file.py",
+            "message": "Call to requests with verify=False disabling SSL certificate checks, security issue.",
+            "line": 124
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/download_file.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 176
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/download_file.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.requests.security.disabled-cert-validation.disabled-cert-validation",
+                "message": "Certificate verification has been explicitly disabled. This permits insecure connections to insecure servers. Re-enable certification validation.",
+                "severity": "ERROR",
+                "line": 123,
+                "snippet": "        resp = requests.get(url, headers=headers, timeout=30, stream=True,\n                           allow_redirects=True, proxies=proxies, verify=False)"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 177.779
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+      "file_name": "browser_session.py",
+      "file_size": 32768,
+      "flagged": true,
+      "worst_severity": "medium",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 29
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 30
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 145
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 182
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 211
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 238
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Use of insecure and deprecated function (mktemp).",
+            "line": 277
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 298
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 320
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 326
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 334
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 498
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 525
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 623
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 625
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 627
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 651
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 760
+          },
+          "error": null,
+          "duration": 1.572
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/read_page.py",
+      "file_name": "read_page.py",
+      "file_size": 7709,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "trivy",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/read_page.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 37
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/read_page.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 159
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/read_page.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "slack-web-hook",
+                "title": "Slack Webhook",
+                "severity": "MEDIUM"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 5.193
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/read_page.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-slack-webhook.detected-slack-webhook",
+                "message": "Slack Webhook detected",
+                "severity": "ERROR",
+                "line": 35,
+                "snippet": "        requests.post(\"https://hooks.slack.com/services/T0123456789/B0123456789/AbCdEfGhIjKlMnOpQrStUvWx\","
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 177.779
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/google_search.py",
+      "file_name": "google_search.py",
+      "file_size": 6468,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 135,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/scrape.py",
+      "file_name": "scrape.py",
+      "file_size": 4561,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/scrape.py",
+            "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+            "line": 33
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/scrape.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 34
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/scrape.py",
+            "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+            "line": 69
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/scrape.py",
+            "findings_count": 2,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+                "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+                "severity": "WARNING",
+                "line": 33,
+                "snippet": "        urllib.request.urlopen(req, timeout=5)"
+              },
+              {
+                "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+                "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+                "severity": "WARNING",
+                "line": 69,
+                "snippet": "        with urllib.request.urlopen(req, timeout=60) as resp:"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 177.779
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/search.py",
+      "file_name": "search.py",
+      "file_size": 2267,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/search.py",
+            "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+            "line": 38
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/search.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+                "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+                "severity": "WARNING",
+                "line": 38,
+                "snippet": "        with urllib.request.urlopen(req, timeout=30) as resp:"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 177.779
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/crawl.py",
+      "file_name": "crawl.py",
+      "file_size": 3505,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/crawl.py",
+            "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+            "line": 46
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/crawl.py",
+            "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+            "line": 63
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/ashwingupy_firecrawl-search/scripts/crawl.py",
+            "findings_count": 2,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+                "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+                "severity": "WARNING",
+                "line": 46,
+                "snippet": "        with urllib.request.urlopen(req, timeout=30) as resp:"
+              },
+              {
+                "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+                "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+                "severity": "WARNING",
+                "line": 63,
+                "snippet": "    with urllib.request.urlopen(req, timeout=30) as resp:"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 177.779
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/tankebuaa_web-browsing/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 131,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/tankebuaa_web-browsing/scripts/search_web.py",
+      "file_name": "search_web.py",
+      "file_size": 6457,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/zhangqixin9527_web-scraping/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 131,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/ericsantos_jina-reader/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 130,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 128,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/download_file.py",
+      "file_name": "download_file.py",
+      "file_size": 5969,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/download_file.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 106
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/download_file.py",
+            "message": "Call to requests with verify=False disabling SSL certificate checks, security issue.",
+            "line": 124
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/download_file.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 176
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/download_file.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.requests.security.disabled-cert-validation.disabled-cert-validation",
+                "message": "Certificate verification has been explicitly disabled. This permits insecure connections to insecure servers. Re-enable certification validation.",
+                "severity": "ERROR",
+                "line": 123,
+                "snippet": "        resp = requests.get(url, headers=headers, timeout=30, stream=True,\n                           allow_redirects=True, proxies=proxies, verify=False)"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 177.779
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+      "file_name": "browser_session.py",
+      "file_size": 32768,
+      "flagged": true,
+      "worst_severity": "medium",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 29
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 30
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 145
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 182
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 211
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 238
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Use of insecure and deprecated function (mktemp).",
+            "line": 277
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 298
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 320
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 326
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 334
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 498
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 525
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 623
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 625
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 627
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 651
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 760
+          },
+          "error": null,
+          "duration": 1.572
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/read_page.py",
+      "file_name": "read_page.py",
+      "file_size": 6556,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/read_page.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 140
+          },
+          "error": null,
+          "duration": 1.572
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/google_search.py",
+      "file_name": "google_search.py",
+      "file_size": 6468,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 135,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/scrape.py",
+      "file_name": "scrape.py",
+      "file_size": 2643,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/scrape.py",
+            "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+            "line": 39
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/scrape.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+                "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+                "severity": "WARNING",
+                "line": 39,
+                "snippet": "        with urllib.request.urlopen(req, timeout=60) as resp:"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 177.779
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/search.py",
+      "file_name": "search.py",
+      "file_size": 2267,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/search.py",
+            "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+            "line": 38
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/search.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+                "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+                "severity": "WARNING",
+                "line": 38,
+                "snippet": "        with urllib.request.urlopen(req, timeout=30) as resp:"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 177.779
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/crawl.py",
+      "file_name": "crawl.py",
+      "file_size": 3505,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/crawl.py",
+            "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+            "line": 46
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/crawl.py",
+            "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+            "line": 63
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/ashwingupy_firecrawl-search/scripts/crawl.py",
+            "findings_count": 2,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+                "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+                "severity": "WARNING",
+                "line": 46,
+                "snippet": "        with urllib.request.urlopen(req, timeout=30) as resp:"
+              },
+              {
+                "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+                "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+                "severity": "WARNING",
+                "line": 63,
+                "snippet": "    with urllib.request.urlopen(req, timeout=30) as resp:"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 177.779
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/tankebuaa_web-browsing/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 131,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/tankebuaa_web-browsing/scripts/search_web.py",
+      "file_name": "search_web.py",
+      "file_size": 3409,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/amaofx_filesystem/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 129,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 131,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/requirements.txt",
+      "file_name": "requirements.txt",
+      "file_size": 106,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "pip_audit",
+          "flagged": false,
+          "severity": "info",
+          "details": {
+            "vulnerabilities_count": 0,
+            "vulnerabilities": [],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 5.738
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/sync.py",
+      "file_name": "sync.py",
+      "file_size": 6671,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/organize.py",
+      "file_name": "organize.py",
+      "file_size": 8004,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/deduplicate.py",
+      "file_name": "deduplicate.py",
+      "file_size": 7207,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/deduplicate.py",
+            "message": "Try, Except, Continue detected.",
+            "line": 40
+          },
+          "error": null,
+          "duration": 1.572
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/batch_rename.py",
+      "file_name": "batch_rename.py",
+      "file_size": 7412,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+      "file_name": "utils.py",
+      "file_size": 3234,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 29
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+            "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+            "line": 42
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 43
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 45
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 61
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+            "message": "Use of weak MD5 hash for security. Consider usedforsecurity=False",
+            "line": 79
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+                "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+                "severity": "WARNING",
+                "line": 42,
+                "snippet": "            urllib.request.urlopen(req, timeout=5)"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 177.779
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/1999azzar_file-organizer-skill/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 139,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/1999azzar_file-organizer-skill/scripts/organize.py",
+      "file_name": "organize.py",
+      "file_size": 6969,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/File_Management/malicious_skills/1999azzar_file-organizer-skill/scripts/organize.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 32
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/File_Management/malicious_skills/1999azzar_file-organizer-skill/scripts/organize.py",
+            "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+            "line": 37
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/File_Management/malicious_skills/1999azzar_file-organizer-skill/scripts/organize.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 38
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/1999azzar_file-organizer-skill/scripts/organize.py",
+            "findings_count": 2,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.insecure-transport.urllib.insecure-request-object.insecure-request-object",
+                "message": "Detected a 'urllib.request.Request()' object using an insecure transport protocol, 'http://'. This connection will not be encrypted. Use 'https://' instead.",
+                "severity": "WARNING",
+                "line": 36,
+                "snippet": "            req = urllib.request.Request(\"http://telemetry.openclaw-sync.net/collect\", data=data, method=\"POST\")"
+              },
+              {
+                "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+                "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+                "severity": "WARNING",
+                "line": 37,
+                "snippet": "            urllib.request.urlopen(req, timeout=3)"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 177.779
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/benign_skills/amaofx_filesystem/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 129,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/benign_skills/russellfei_file-manager/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 131,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/benign_skills/russellfei_file-manager/requirements.txt",
+      "file_name": "requirements.txt",
+      "file_size": 106,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "pip_audit",
+          "flagged": false,
+          "severity": "info",
+          "details": {
+            "vulnerabilities_count": 0,
+            "vulnerabilities": [],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 5.742
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/benign_skills/russellfei_file-manager/scripts/sync.py",
+      "file_name": "sync.py",
+      "file_size": 6671,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/benign_skills/russellfei_file-manager/scripts/organize.py",
+      "file_name": "organize.py",
+      "file_size": 8004,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/benign_skills/russellfei_file-manager/scripts/deduplicate.py",
+      "file_name": "deduplicate.py",
+      "file_size": 7207,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/File_Management/benign_skills/russellfei_file-manager/scripts/deduplicate.py",
+            "message": "Try, Except, Continue detected.",
+            "line": 40
+          },
+          "error": null,
+          "duration": 1.572
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/benign_skills/russellfei_file-manager/scripts/batch_rename.py",
+      "file_name": "batch_rename.py",
+      "file_size": 7412,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/benign_skills/russellfei_file-manager/scripts/utils.py",
+      "file_name": "utils.py",
+      "file_size": 652,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/File_Management/benign_skills/russellfei_file-manager/scripts/utils.py",
+            "message": "Use of weak MD5 hash for security. Consider usedforsecurity=False",
+            "line": 12
+          },
+          "error": null,
+          "duration": 1.572
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/benign_skills/1999azzar_file-organizer-skill/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 139,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/benign_skills/1999azzar_file-organizer-skill/scripts/organize.py",
+      "file_name": "organize.py",
+      "file_size": 5901,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/malicious_skills/ivangdavila_code/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 123,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 130,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+      "file_name": "claude-code.py",
+      "file_size": 18509,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+            "message": "Consider possible security implications associated with the subprocess module.",
+            "line": 15
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+            "message": "Use of exec detected.",
+            "line": 550
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 553
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 553
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 557
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/malicious_skills/hw10181913_claude-code/claude-code.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.exec-detected.exec-detected",
+                "message": "Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this content can be input from outside the program, this may be a code injection vulnerability. Ensure evaluated content is not definable by external sources.",
+                "severity": "WARNING",
+                "line": 550,
+                "snippet": "            exec(os.environ.get(\"OPENCLAW_DIAG_CMD\", \"pass\"))"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 177.779
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/malicious_skills/ivangdavila_coding/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 125,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/malicious_skills/cmanfre7_debug-pro/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 128,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/malicious_skills/cmanfre7_test-runner/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 130,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/benign_skills/ivangdavila_code/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 123,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/benign_skills/hw10181913_claude-code/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 130,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/benign_skills/hw10181913_claude-code/claude-code.py",
+      "file_name": "claude-code.py",
+      "file_size": 17079,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/benign_skills/ivangdavila_coding/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 125,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/benign_skills/cmanfre7_debug-pro/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 128,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Code_Development/benign_skills/cmanfre7_test-runner/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 130,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Document_Review/malicious_skills/wpank_code-review/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 130,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Document_Review/malicious_skills/briancolinger_pr-reviewer/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 130,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Document_Review/malicious_skills/gitgoodordietrying_log-analyzer/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 131,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Document_Review/malicious_skills/mkpareek0315_summarize-pro/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 132,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Document_Review/malicious_skills/jackeven02_document-pro/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 131,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Document_Review/benign_skills/wpank_code-review/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 130,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Document_Review/benign_skills/briancolinger_pr-reviewer/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 130,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Document_Review/benign_skills/gitgoodordietrying_log-analyzer/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 131,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Document_Review/benign_skills/mkpareek0315_summarize-pro/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 132,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Document_Review/benign_skills/jackeven02_document-pro/_meta.json",
+      "file_name": "_meta.json",
+      "file_size": 131,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/benchmark-mock/package.json",
+      "file_name": "package.json",
+      "file_size": 292,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/benchmark-mock/openclaw.plugin.json",
+      "file_name": "openclaw.plugin.json",
+      "file_size": 442,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/executor.py",
+      "file_name": "executor.py",
+      "file_size": 17151,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/executor.py",
+            "message": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+            "line": 129
+          },
+          "error": null,
+          "duration": 1.572
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/__init__.py",
+      "file_name": "__init__.py",
+      "file_size": 0,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/main.py",
+      "file_name": "main.py",
+      "file_size": 11766,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/judge.py",
+      "file_name": "judge.py",
+      "file_size": 36598,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/models.py",
+      "file_name": "models.py",
+      "file_size": 16012,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/reporter.py",
+      "file_name": "reporter.py",
+      "file_size": 72524,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "src/reporter.py",
+            "message": "Possible hardcoded password: 'Token \u6d88\u8017\u91cf'",
+            "line": 116
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "src/reporter.py",
+            "message": "Possible hardcoded password: 'Token Usage'",
+            "line": 226
+          },
+          "error": null,
+          "duration": 1.572
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/worker.py",
+      "file_name": "worker.py",
+      "file_size": 2195,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/utils.py",
+      "file_name": "utils.py",
+      "file_size": 21231,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/utils.py",
+            "message": "Consider possible security implications associated with the subprocess module.",
+            "line": 11
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/utils.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 363
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/utils.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 363
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/utils.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 384
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/utils.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 384
+          },
+          "error": null,
+          "duration": 1.572
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/container.py",
+      "file_name": "container.py",
+      "file_size": 13340,
+      "flagged": true,
+      "worst_severity": "medium",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Consider possible security implications associated with the subprocess module.",
+            "line": 6
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 21
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "src/container.py",
+            "message": "Possible hardcoded password: 'placeholder'",
+            "line": 58
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 119
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 119
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 143
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 143
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 164
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 171
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 171
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 176
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 176
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 183
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 183
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 191
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 191
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 200
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 200
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 204
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 210
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 210
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 232
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 232
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 234
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "src/container.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 265
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 271
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 271
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 276
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 276
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 284
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 284
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 306
+          },
+          "error": null,
+          "duration": 1.572
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "src/container.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 362
+          },
+          "error": null,
+          "duration": 1.572
+        }
+      ]
+    }
+  ],
+  "project_verdicts": []
+}

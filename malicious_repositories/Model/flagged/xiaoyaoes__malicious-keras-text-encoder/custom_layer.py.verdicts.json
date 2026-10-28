@@ -1,0 +1,39 @@
+{
+  "file_path": "/tmp/scan_workspace/xiaoyaoes__malicious-keras-text-encoder/custom_layer.py",
+  "file_name": "custom_layer.py",
+  "file_size": 839,
+  "flagged": true,
+  "worst_severity": "medium",
+  "flagged_by": [
+    "bandit"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "custom_layer.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 12
+      },
+      "error": null,
+      "duration": 0.366
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "custom_layer.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 15
+      },
+      "error": null,
+      "duration": 0.366
+    }
+  ]
+}

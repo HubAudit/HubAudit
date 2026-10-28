@@ -1,0 +1,319 @@
+rank, package                                 , distinct_advisories, scanners                    , repos, files, findings
+   1, transformers                            ,                  30, "PySentry, Trivy, pip-audit",   777,  1626,    23930
+   2, torch                                   ,                  31, "PySentry, Trivy, pip-audit",   489,  1334,     6912
+   3, pillow                                  ,                  27, "PySentry, Trivy, pip-audit",   250,  1061,     5984
+   4, requests                                ,                   5, "PySentry, Trivy, pip-audit",   212,  1062,     2362
+   5, idna                                    ,                   2, "PySentry, Trivy, pip-audit",   207,  1054,     1287
+   6, urllib3                                 ,                  14, "PySentry, Trivy, pip-audit",   186,  1005,     6274
+   7, protobuf                                ,                   3, "PySentry, Trivy, pip-audit",   182,  1025,     2132
+   8, aiohttp                                 ,                  42, "PySentry, Trivy, pip-audit",   157,   999,    12769
+   9, filelock                                ,                   2, "PySentry, Trivy, pip-audit",   150,   994,     2143
+  10, starlette                               ,                  11, "PySentry, Trivy, pip-audit",   134,   199,      905
+  11, pyarrow                                 ,                   3, "PySentry, Trivy, pip-audit",   123,   231,      288
+  12, diskcache                               ,                   1, "PySentry, Trivy, pip-audit",   100,   128,      131
+  13, nltk                                    ,                  15, "PySentry, Trivy, pip-audit",    99,   181,     1527
+  14, pytest                                  ,                   1, "PySentry, Trivy, pip-audit",    94,   186,      205
+  15, gradio                                  ,                  48, "PySentry, Trivy, pip-audit",    93,   114,     1760
+  16, gitpython                               ,                  10, "PySentry, Trivy, pip-audit",    87,   928,     4927
+  17, jinja2                                  ,                   7, "PySentry, Trivy, pip-audit",    87,   848,     1337
+  18, tornado                                 ,                  13, "PySentry, Trivy, pip-audit",    83,   858,     3935
+  19, fonttools                               ,                   2, "PySentry, Trivy, pip-audit",    81,   863,      917
+  20, sentencepiece                           ,                   1, "PySentry, Trivy, pip-audit",    80,   167,      190
+  21, werkzeug                                ,                  10, "PySentry, Trivy, pip-audit",    77,   137,      681
+  22, cryptography                            ,                  16, "PySentry, Trivy, pip-audit",    76,   139,      741
+  23, scikit-learn                            ,                   2, "PySentry, Trivy, pip-audit",    76,   112,      136
+  24, pip                                     ,                   7, "PySentry, Trivy, pip-audit",    75,   912,     3001
+  25, setuptools                              ,                   4, "PySentry, Trivy, pip-audit",    73,   843,      968
+  26, python-dotenv                           ,                   1, "PySentry, Trivy, pip-audit",    73,   138,      157
+  27, lxml                                    ,                   1, "PySentry, Trivy, pip-audit",    72,   146,      161
+  28, pyasn1                                  ,                   2, "PySentry, Trivy, pip-audit",    66,   148,      233
+  29, markdown                                ,                   1, "PySentry, Trivy, pip-audit",    66,   132,      148
+  30, mistune                                 ,                   6, "PySentry, Trivy, pip-audit",    64,   138,      548
+  31, python-multipart                        ,                   8, "PySentry, Trivy, pip-audit",    62,   101,      463
+  32, wheel                                   ,                   2, "PySentry, Trivy, pip-audit",    61,   864,     1633
+  33, nbconvert                               ,                   4, "PySentry, Trivy, pip-audit",    60,   134,      374
+  34, pyjwt                                   ,                   8, "PySentry, Trivy, pip-audit",    53,   109,      380
+  35, pyopenssl                               ,                   2, "Trivy, pip-audit"          ,    52,   111,      120
+  36, h11                                     ,                   1, "PySentry, Trivy, pip-audit",    52,   109,      119
+  37, keras                                   ,                  11, "PySentry, Trivy, pip-audit",    52,    99,      871
+  38, orjson                                  ,                   2, "PySentry, Trivy, pip-audit",    51,   109,      154
+  39, jupyterlab                              ,                   8, "PySentry, Trivy, pip-audit",    51,   107,      443
+  40, certifi                                 ,                   3, "PySentry, Trivy, pip-audit",    47,    54,       91
+  41, pygments                                ,                   2, "PySentry, Trivy, pip-audit",    43,    49,       52
+  42, jupyter-server                          ,                  10, "PySentry, Trivy, pip-audit",    34,    71,      472
+  43, tqdm                                    ,                   2, "PySentry, pip-audit"       ,    33,    33,       40
+  44, brotli                                  ,                   1, "PySentry, Trivy, pip-audit",    32,   768,      771
+  45, ray                                     ,                  10, "PySentry, Trivy, pip-audit",    32,    84,      306
+  46, msgpack                                 ,                   1, "PySentry, Trivy, pip-audit",    31,    68,       72
+  47, onnx                                    ,                  11, "PySentry, Trivy, pip-audit",    31,    60,      509
+  48, sqlparse                                ,                   3, "Trivy, pip-audit"          ,    29,    73,      109
+  49, jupyter_server                          ,                   6, Trivy                       ,    29,    64,      331
+  50, mako                                    ,                   3, "Trivy, pip-audit"          ,    29,    60,      146
+  51, langsmith                               ,                   5, "PySentry, Trivy, pip-audit",    29,    55,      146
+  52, vllm                                    ,                  53, "PySentry, Trivy, pip-audit",    29,    55,     1557
+  53, deepspeed                               ,                   1, "Trivy, pip-audit"          ,    29,    39,       39
+  54, bokeh                                   ,                   1, Trivy                       ,    28,    72,       72
+  55, geopandas                               ,                   1, "Trivy, pip-audit"          ,    28,    72,       72
+  56, zipp                                    ,                   1, "PySentry, Trivy, pip-audit",    28,    46,       51
+  57, jupyter-core                            ,                   1, "PySentry, Trivy, pip-audit",    28,    42,       50
+  58, joblib                                  ,                   2, "PySentry, Trivy, pip-audit",    28,    38,       41
+  59, bleach                                  ,                   3, "PySentry, Trivy, pip-audit",    27,    54,       67
+  60, notebook                                ,                  14, "PySentry, Trivy, pip-audit",    27,    52,      128
+  61, flask                                   ,                   3, "PySentry, Trivy, pip-audit",    26,    27,       32
+  62, jupyter_core                            ,                   1, Trivy                       ,    25,   766,      766
+  63, lightgbm                                ,                   1, "Trivy, pip-audit"          ,    25,    65,       65
+  64, langchain                               ,                  24, "PySentry, Trivy, pip-audit",    25,    51,      205
+  65, langchain-core                          ,                   9, "PySentry, Trivy, pip-audit",    25,    51,      282
+  66, pytorch-lightning                       ,                   3, "PySentry, Trivy, pip-audit",    25,    51,      132
+  67, distributed                             ,                   1, Trivy                       ,    24,    55,       55
+  68, black                                   ,                   2, "PySentry, Trivy, pip-audit",    24,    33,       65
+  69, imgaug                                  ,                   1, Trivy                       ,    23,    63,       63
+  70, ujson                                   ,                   9, "PySentry, Trivy, pip-audit",    23,    51,      193
+  71, diffusers                               ,                   3, "PySentry, Trivy, pip-audit",    23,    47,      111
+  72, pypdf                                   ,                  30, "PySentry, Trivy, pip-audit",    22,    53,     1205
+  73, marshmallow                             ,                   1, "PySentry, Trivy, pip-audit",    22,    52,       55
+  74, sqlitedict                              ,                   1, "PySentry, Trivy, pip-audit",    21,    21,       27
+  75, oauthlib                                ,                   1, Trivy                       ,    20,    50,       50
+  76, gdown                                   ,                   1, "PySentry, Trivy, pip-audit",    20,    48,       49
+  77, jupyter-lsp                             ,                   1, "Trivy, pip-audit"          ,    20,    46,       47
+  78, jaraco.context                          ,                   1, Trivy                       ,    19,   750,      754
+  79, pydicom                                 ,                   1, "PySentry, Trivy, pip-audit",    18,    44,       45
+  80, xgrammar                                ,                   3, "PySentry, Trivy, pip-audit",    18,    44,      114
+  81, langchain-text-splitters                ,                   2, "PySentry, Trivy, pip-audit",    18,    43,       89
+  82, pydantic-settings                       ,                   1, "PySentry, Trivy, pip-audit",    18,    18,       25
+  83, deepdiff                                ,                   2, "PySentry, Trivy, pip-audit",    17,    47,       99
+  84, grpcio                                  ,                   5, "Trivy, pip-audit"          ,    17,    43,       83
+  85, h2o                                     ,                  15, Trivy                       ,    16,    42,      366
+  86, fiona                                   ,                   2, Trivy                       ,    15,    35,       70
+  87, litellm                                 ,                  10, Trivy                       ,    15,    27,      195
+  88, google-cloud-aiplatform                 ,                   2, Trivy                       ,    14,    38,       41
+  89, pymongo                                 ,                   1, Trivy                       ,    14,    34,       34
+  90, authlib                                 ,                  11, "PySentry, Trivy, pip-audit",    14,    14,       98
+  91, mlflow                                  ,                  65, "Trivy, pip-audit"          ,    13,    13,      767
+  92, streamlit                               ,                   4, "Trivy, pip-audit"          ,    13,    13,       32
+  93, flash-attn                              ,                   1, "PySentry, Trivy"           ,    11,    24,       25
+  94, numpy                                   ,                   8, "PySentry, Trivy"           ,    11,    17,       49
+  95, fastapi                                 ,                   1, pip-audit                   ,    11,    11,       11
+  96, pynacl                                  ,                   1, "PySentry, Trivy, pip-audit",    10,    22,       23
+  97, jupyter_server_proxy                    ,                   2, Trivy                       ,    10,    21,       42
+  98, jupyterlab_git                          ,                   1, Trivy                       ,    10,    21,       21
+  99, cbor2                                   ,                   2, "PySentry, Trivy, pip-audit",    10,    11,       15
+ 100, pydantic                                ,                   2, "PySentry, Trivy, pip-audit",    10,    10,       26
+ 101, h2                                      ,                   1, "PySentry, Trivy"           ,     9,   720,      721
+ 102, virtualenv                              ,                   2, "PySentry, Trivy, pip-audit",     9,    23,       25
+ 103, qs                                      ,                   2, Trivy                       ,     9,    22,       49
+ 104, uv                                      ,                   3, Trivy                       ,     9,    21,       61
+ 105, path-to-regexp                          ,                   5, Trivy                       ,     9,    18,       38
+ 106, sentry-sdk                              ,                   2, "Trivy, pip-audit"          ,     9,    15,       15
+ 107, flask-cors                              ,                   5, "PySentry, Trivy, pip-audit",     9,    12,       60
+ 108, gunicorn                                ,                   2, "Trivy, pip-audit"          ,     9,     9,       18
+ 109, ws                                      ,                   4, Trivy                       ,     8,    30,      102
+ 110, flash_attn                              ,                   1, Trivy                       ,     8,    22,       22
+ 111, azure-core                              ,                   1, Trivy                       ,     8,    20,       20
+ 112, sglang                                  ,                   6, Trivy                       ,     8,    20,      120
+ 113, chromadb                                ,                   1, pip-audit                   ,     8,     9,        9
+ 114, opencv-python                           ,                   2, "PySentry, Trivy, pip-audit",     8,     8,       14
+ 115, uuid                                    ,                   1, Trivy                       ,     7,    21,       40
+ 116, follow-redirects                        ,                   5, Trivy                       ,     7,    20,       34
+ 117, form-data                               ,                   2, Trivy                       ,     7,    15,       35
+ 118, biopython                               ,                   1, "Trivy, pip-audit"          ,     7,    14,       16
+ 119, postcss                                 ,                   2, Trivy                       ,     7,    14,       20
+ 120, lodash                                  ,                   7, Trivy                       ,     6,    20,       75
+ 121, axios                                   ,                  27, Trivy                       ,     6,    18,      596
+ 122, undici                                  ,                  10, Trivy                       ,     6,    12,      118
+ 123, tensorflow                              ,                 129, "PySentry, Trivy"           ,     6,    11,      933
+ 124, langchain-community                     ,                   7, "PySentry, Trivy, pip-audit",     6,     7,       34
+ 125, picomatch                               ,                   2, Trivy                       ,     5,    22,       58
+ 126, minimatch                               ,                   4, Trivy                       ,     5,    20,      115
+ 127, llamafactory                            ,                   4, Trivy                       ,     5,    18,       34
+ 128, js-yaml                                 ,                   2, Trivy                       ,     5,    17,       48
+ 129, fast-uri                                ,                   2, Trivy                       ,     5,    12,       26
+ 130, jupyter-server-proxy                    ,                   2, Trivy                       ,     5,    12,       24
+ 131, jupyterlab-git                          ,                   3, Trivy                       ,     5,    12,       14
+ 132, unstructured                            ,                   2, "PySentry, Trivy, pip-audit",     5,     9,       18
+ 133, yaml                                    ,                   1, Trivy                       ,     5,     9,       11
+ 134, react-router                            ,                  11, Trivy                       ,     5,     8,       32
+ 135, tar                                     ,                   8, Trivy                       ,     5,     6,       42
+ 136, curl_cffi                               ,                   1, Trivy                       ,     5,     5,        5
+ 137, langchain-openai                        ,                   1, pip-audit                   ,     5,     5,        5
+ 138, pymdown-extensions                      ,                   3, "Trivy, pip-audit"          ,     5,     5,        9
+ 139, brace-expansion                         ,                   2, Trivy                       ,     4,    19,       32
+ 140, ajv                                     ,                   1, Trivy                       ,     4,    13,       17
+ 141, @protobufjs/utf8                        ,                   1, Trivy                       ,     4,     8,        8
+ 142, protobufjs                              ,                  11, Trivy                       ,     4,     8,       90
+ 143, glob                                    ,                   1, Trivy                       ,     4,     7,        7
+ 144, multer                                  ,                   9, Trivy                       ,     4,     7,       44
+ 145, body-parser                             ,                   2, Trivy                       ,     4,     6,        7
+ 146, fast-xml-parser                         ,                   6, Trivy                       ,     4,     5,       21
+ 147, langgraph                               ,                   1, "Trivy, pip-audit"          ,     4,     5,        6
+ 148, google-adk                              ,                   1, Trivy                       ,     4,     4,        4
+ 149, paramiko                                ,                   1, pip-audit                   ,     4,     4,        4
+ 150, python-jose                             ,                   3, "Trivy, pip-audit"          ,     4,     4,       16
+ 151, turbo-stream                            ,                   1, Trivy                       ,     4,     4,        5
+ 152, socket.io-parser                        ,                   4, Trivy                       ,     3,    13,       24
+ 153, rfc3161-client                          ,                   2, Trivy                       ,     3,     9,       17
+ 154, ipython                                 ,                   5, "PySentry, Trivy"           ,     3,     8,       12
+ 155, @babel/runtime                          ,                   1, Trivy                       ,     3,     7,        7
+ 156, tmp                                     ,                   1, Trivy                       ,     3,     7,        7
+ 157, dnspython                               ,                   1, Trivy                       ,     3,     6,        6
+ 158, handlebars                              ,                   7, Trivy                       ,     3,     6,       42
+ 159, ip-address                              ,                   1, Trivy                       ,     3,     6,       11
+ 160, lodash-es                               ,                   3, Trivy                       ,     3,     6,       24
+ 161, nanoid                                  ,                   1, Trivy                       ,     3,     6,        7
+ 162, vite                                    ,                  11, Trivy                       ,     3,     5,       39
+ 163, django                                  ,                  51, "Trivy, pip-audit"          ,     3,     4,       78
+ 164, mdast-util-to-hast                      ,                   1, Trivy                       ,     3,     4,        4
+ 165, rollup                                  ,                   1, Trivy                       ,     3,     4,        5
+ 166, dompurify                               ,                  17, Trivy                       ,     3,     3,       55
+ 167, langgraph-checkpoint                    ,                   3, "Trivy, pip-audit"          ,     3,     3,        6
+ 168, mcp                                     ,                   1, Trivy                       ,     3,     3,        3
+ 169, mermaid                                 ,                   7, Trivy                       ,     3,     3,       19
+ 170, opencv-contrib-python                   ,                   1, Trivy                       ,     3,     3,        3
+ 171, opencv-python-headless                  ,                   2, "Trivy, pip-audit"          ,     3,     3,        5
+ 172, playwright                              ,                   1, Trivy                       ,     3,     3,        3
+ 173, py7zr                                   ,                   3, "Trivy, pip-audit"          ,     3,     3,        9
+ 174, immutable                               ,                   1, Trivy                       ,     2,     7,        7
+ 175, @babel/helpers                          ,                   1, Trivy                       ,     2,     5,        5
+ 176, @remix-run/router                       ,                   1, Trivy                       ,     2,     5,        9
+ 177, eventlet                                ,                   1, Trivy                       ,     2,     5,        5
+ 178, jws                                     ,                   1, Trivy                       ,     2,     5,        9
+ 179, python-socketio                         ,                   1, Trivy                       ,     2,     5,        5
+ 180, @grpc/grpc-js                           ,                   2, Trivy                       ,     2,     4,        8
+ 181, defu                                    ,                   1, Trivy                       ,     2,     4,        4
+ 182, esbuild                                 ,                   1, Trivy                       ,     2,     4,        4
+ 183, hono                                    ,                  32, Trivy                       ,     2,     4,      113
+ 184, mlx                                     ,                   2, "PySentry, Trivy, pip-audit",     2,     4,       10
+ 185, next                                    ,                  28, Trivy                       ,     2,     4,       70
+ 186, tar-fs                                  ,                   3, Trivy                       ,     2,     4,       20
+ 187, @hono/node-server                       ,                   2, Trivy                       ,     2,     3,        6
+ 188, @modelcontextprotocol/sdk               ,                   3, Trivy                       ,     2,     3,        7
+ 189, @opentelemetry/core                     ,                   1, Trivy                       ,     2,     3,        6
+ 190, @opentelemetry/sdk-node                 ,                   1, Trivy                       ,     2,     3,        3
+ 191, @xmldom/xmldom                          ,                   5, Trivy                       ,     2,     3,       20
+ 192, braces                                  ,                   1, Trivy                       ,     2,     3,        3
+ 193, cross-spawn                             ,                   1, Trivy                       ,     2,     3,        3
+ 194, js-cookie                               ,                   1, Trivy                       ,     2,     3,        3
+ 195, @remix-run/server-runtime               ,                   1, Trivy                       ,     2,     2,        3
+ 196, drizzle-orm                             ,                   1, Trivy                       ,     2,     2,        2
+ 197, duckdb                                  ,                   2, pip-audit                   ,     2,     2,        4
+ 198, dulwich                                 ,                   4, "Trivy, pip-audit"          ,     2,     2,        6
+ 199, estree-util-value-to-estree             ,                   1, Trivy                       ,     2,     2,        2
+ 200, file-type                               ,                   1, Trivy                       ,     2,     2,        2
+ 201, jaraco-context                          ,                   1, pip-audit                   ,     2,     2,        2
+ 202, js2py                                   ,                   1, Trivy                       ,     2,     2,        2
+ 203, jsonpath                                ,                   2, Trivy                       ,     2,     2,        4
+ 204, katex                                   ,                   5, Trivy                       ,     2,     2,        6
+ 205, lxml-html-clean                         ,                   3, "PySentry, Trivy, pip-audit",     2,     2,        7
+ 206, micromatch                              ,                   1, Trivy                       ,     2,     2,        2
+ 207, moment                                  ,                   2, Trivy                       ,     2,     2,        4
+ 208, pdfminer-six                            ,                   2, pip-audit                   ,     2,     2,        4
+ 209, poetry                                  ,                   2, "Trivy, pip-audit"          ,     2,     2,        3
+ 210, prismjs                                 ,                   1, Trivy                       ,     2,     2,        2
+ 211, pypdf2                                  ,                   1, "PySentry, Trivy"           ,     2,     2,        3
+ 212, pyyaml                                  ,                   4, "PySentry, Trivy"           ,     2,     2,        7
+ 213, scipy                                   ,                   1, PySentry                    ,     2,     2,        2
+ 214, selenium                                ,                   2, pip-audit                   ,     2,     2,        3
+ 215, semver                                  ,                   1, Trivy                       ,     2,     2,        2
+ 216, shell-quote                             ,                   1, Trivy                       ,     2,     2,        3
+ 217, svelte                                  ,                   6, Trivy                       ,     2,     2,       12
+ 218, underscore                              ,                   1, Trivy                       ,     2,     2,        3
+ 219, waitress                                ,                   2, "Trivy, pip-audit"          ,     2,     2,        4
+ 220, weasyprint                              ,                   1, "PySentry, Trivy, pip-audit",     2,     2,        3
+ 221, bn.js                                   ,                   1, Trivy                       ,     1,    11,       28
+ 222, elliptic                                ,                   1, Trivy                       ,     1,     8,        8
+ 223, base-x                                  ,                   1, Trivy                       ,     1,     7,        9
+ 224, pbkdf2                                  ,                   2, Trivy                       ,     1,     7,       14
+ 225, @openzeppelin/contracts                 ,                  17, Trivy                       ,     1,     6,       87
+ 226, sha.js                                  ,                   1, Trivy                       ,     1,     6,        6
+ 227, cipher-base                             ,                   1, Trivy                       ,     1,     5,        5
+ 228, serialize-javascript                    ,                   3, Trivy                       ,     1,     5,       11
+ 229, @openzeppelin/contracts-upgradeable     ,                  10, Trivy                       ,     1,     4,       24
+ 230, bigint-buffer                           ,                   1, Trivy                       ,     1,     4,        4
+ 231, mongoose                                ,                   1, Trivy                       ,     1,     4,        8
+ 232, pdfminer.six                            ,                   2, Trivy                       ,     1,     4,        8
+ 233, secp256k1                               ,                   1, Trivy                       ,     1,     4,        4
+ 234, eth-abi                                 ,                   1, "Trivy, pip-audit"          ,     1,     3,        5
+ 235, tuf                                     ,                   1, Trivy                       ,     1,     3,        3
+ 236, @metamask/sdk                           ,                   1, Trivy                       ,     1,     2,        2
+ 237, @metamask/sdk-communication-layer       ,                   1, Trivy                       ,     1,     2,        2
+ 238, @stablelib/ed25519                      ,                   1, Trivy                       ,     1,     2,        2
+ 239, flatted                                 ,                   2, Trivy                       ,     1,     2,        6
+ 240, h3                                      ,                   5, Trivy                       ,     1,     2,       10
+ 241, langchain-experimental                  ,                   2, "PySentry, Trivy, pip-audit",     1,     2,        8
+ 242, next-mdx-remote                         ,                   1, Trivy                       ,     1,     2,        2
+ 243, nodemailer                              ,                   7, Trivy                       ,     1,     2,       12
+ 244, vyper                                   ,                  21, "Trivy, pip-audit"          ,     1,     2,       22
+ 245, @babel/plugin-transform-modules-systemjs,                   1, Trivy                       ,     1,     1,        2
+ 246, @babel/traverse                         ,                   1, Trivy                       ,     1,     1,        1
+ 247, @coinbase/wallet-sdk                    ,                   1, Trivy                       ,     1,     1,        1
+ 248, @hpke/core                              ,                   1, Trivy                       ,     1,     1,        1
+ 249, @isaacs/brace-expansion                 ,                   1, Trivy                       ,     1,     1,        1
+ 250, @langchain/community                    ,                   1, Trivy                       ,     1,     1,        2
+ 251, @nestjs/common                          ,                   1, Trivy                       ,     1,     1,        1
+ 252, @nestjs/core                            ,                   1, Trivy                       ,     1,     1,        1
+ 253, @octokit/plugin-paginate-rest           ,                   1, Trivy                       ,     1,     1,        1
+ 254, @octokit/request                        ,                   1, Trivy                       ,     1,     1,        1
+ 255, @octokit/request-error                  ,                   1, Trivy                       ,     1,     1,        1
+ 256, @opentelemetry/exporter-prometheus      ,                   1, Trivy                       ,     1,     1,        1
+ 257, @trpc/server                            ,                   1, Trivy                       ,     1,     1,        1
+ 258, astro                                   ,                   9, Trivy                       ,     1,     1,        9
+ 259, astropy                                 ,                   1, Trivy                       ,     1,     1,        1
+ 260, basicsr                                 ,                   1, Trivy                       ,     1,     1,        1
+ 261, bentoml                                 ,                   9, "Trivy, pip-audit"          ,     1,     1,       17
+ 262, better-auth                             ,                   5, Trivy                       ,     1,     1,        5
+ 263, better-call                             ,                   1, Trivy                       ,     1,     1,        1
+ 264, convict                                 ,                   2, Trivy                       ,     1,     1,        2
+ 265, devalue                                 ,                   3, Trivy                       ,     1,     1,        3
+ 266, effect                                  ,                   1, Trivy                       ,     1,     1,        1
+ 267, element-plus                            ,                   1, Trivy                       ,     1,     1,        1
+ 268, engine.io                               ,                   2, Trivy                       ,     1,     1,        2
+ 269, expr-eval                               ,                   2, Trivy                       ,     1,     1,        2
+ 270, express                                 ,                   1, Trivy                       ,     1,     1,        1
+ 271, express-rate-limit                      ,                   1, Trivy                       ,     1,     1,        1
+ 272, gdal                                    ,                   1, Trivy                       ,     1,     1,        1
+ 273, http-proxy                              ,                   1, Trivy                       ,     1,     1,        1
+ 274, http-proxy-middleware                   ,                   2, Trivy                       ,     1,     1,        2
+ 275, i18next-fs-backend                      ,                   1, Trivy                       ,     1,     1,        1
+ 276, image-size                              ,                   1, Trivy                       ,     1,     1,        1
+ 277, joi                                     ,                   1, Trivy                       ,     1,     1,        2
+ 278, jose                                    ,                   1, Trivy                       ,     1,     1,        1
+ 279, kysely                                  ,                   3, Trivy                       ,     1,     1,        3
+ 280, llama-index                             ,                  11, pip-audit                   ,     1,     1,       11
+ 281, loguru                                  ,                   1, pip-audit                   ,     1,     1,        1
+ 282, lxml_html_clean                         ,                   3, Trivy                       ,     1,     1,        3
+ 283, mamba-ssm                               ,                   1, pip-audit                   ,     1,     1,        1
+ 284, markdown-it                             ,                   2, Trivy                       ,     1,     1,        2
+ 285, minimist                                ,                   2, Trivy                       ,     1,     1,        2
+ 286, next-auth                               ,                   1, Trivy                       ,     1,     1,        1
+ 287, node-forge                              ,                   4, Trivy                       ,     1,     1,        4
+ 288, numexpr                                 ,                   1, Trivy                       ,     1,     1,        1
+ 289, ollama                                  ,                   6, PySentry                    ,     1,     1,        6
+ 290, pandas                                  ,                   1, PySentry                    ,     1,     1,        2
+ 291, parse-duration                          ,                   1, Trivy                       ,     1,     1,        1
+ 292, parseuri                                ,                   1, Trivy                       ,     1,     1,        1
+ 293, preact                                  ,                   1, Trivy                       ,     1,     1,        1
+ 294, pycryptodome                            ,                   1, Trivy                       ,     1,     1,        1
+ 295, pyinstaller                             ,                   2, pip-audit                   ,     1,     1,        2
+ 296, pymysql                                 ,                   1, pip-audit                   ,     1,     1,        1
+ 297, pytorch                                 ,                   1, pip-audit                   ,     1,     1,        1
+ 298, ragas                                   ,                   1, pip-audit                   ,     1,     1,        1
+ 299, redis                                   ,                   2, Trivy                       ,     1,     1,        2
+ 300, samlify                                 ,                   1, Trivy                       ,     1,     1,        1
+ 301, scapy                                   ,                   1, pip-audit                   ,     1,     1,        1
+ 302, scikit_learn                            ,                   1, Trivy                       ,     1,     1,        1
+ 303, showdown                                ,                   1, Trivy                       ,     1,     1,        1
+ 304, simple-git                              ,                   3, Trivy                       ,     1,     1,        3
+ 305, skops                                   ,                   3, "PySentry, Trivy"           ,     1,     1,        6
+ 306, smol-toml                               ,                   1, Trivy                       ,     1,     1,        1
+ 307, snowflake-connector-python              ,                   3, PySentry                    ,     1,     1,        6
+ 308, socket.io                               ,                   2, Trivy                       ,     1,     1,        2
+ 309, stanza                                  ,                   1, Trivy                       ,     1,     1,        1
+ 310, strawberry-graphql                      ,                   2, "PySentry, Trivy"           ,     1,     1,        4
+ 311, tensorflow-intel                        ,                   1, Trivy                       ,     1,     1,        1
+ 312, thrift                                  ,                   2, Trivy                       ,     1,     1,        2
+ 313, trim                                    ,                   1, Trivy                       ,     1,     1,        1
+ 314, validator                               ,                   2, Trivy                       ,     1,     1,        2
+ 315, vcrpy                                   ,                   1, "Trivy, pip-audit"          ,     1,     1,        2
+ 316, xlsx                                    ,                   2, Trivy                       ,     1,     1,        2
+ 317, xmlhttprequest-ssl                      ,                   2, Trivy                       ,     1,     1,        2
+ 318, zod                                     ,                   1, Trivy                       ,     1,     1,        1

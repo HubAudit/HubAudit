@@ -1,0 +1,639 @@
+{
+  "scanned_at": "2026-06-14T14:52:15.891954",
+  "repo_id": "airblackbox/eu-ai-act-compliance-benchmark",
+  "repo_type": "dataset",
+  "outcome": "malicious",
+  "duration_seconds": 0.0,
+  "total_files": 57,
+  "files_scanned": 57,
+  "files_flagged": 1,
+  "files_clean": 56,
+  "files_skipped": 0,
+  "flagged_files": [
+    "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/no_risk_levels_agent.py"
+  ],
+  "folder_scanner_timings": {
+    "pysentry": 0.004,
+    "trivy": 0.007,
+    "bandit": 0.442,
+    "opengrep": 13.065
+  },
+  "file_scanner_timings": {
+    "pip_audit": 0.0,
+    "modelaudit": 0.0
+  },
+  "scanner_file_counts": {
+    "opengrep": 55,
+    "bandit": 55,
+    "trivy": 0,
+    "pysentry": 0,
+    "pip_audit": 0,
+    "modelaudit": 0
+  },
+  "file_results": [
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/metadata/labels.jsonl",
+      "file_name": "labels.jsonl",
+      "file_size": 60494,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/metadata/training_data.jsonl",
+      "file_name": "training_data.jsonl",
+      "file_size": 254071,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/crewai_zero_compliance.py",
+      "file_name": "crewai_zero_compliance.py",
+      "file_size": 514,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/production_hiring_agent.py",
+      "file_name": "production_hiring_agent.py",
+      "file_size": 1497,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/fully_compliant_autogen.py",
+      "file_name": "fully_compliant_autogen.py",
+      "file_size": 4247,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/fully_compliant_langchain_agent.py",
+      "file_name": "fully_compliant_langchain_agent.py",
+      "file_size": 3818,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/audit_logged_agent.py",
+      "file_name": "audit_logged_agent.py",
+      "file_size": 2372,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/hardened_agent.py",
+      "file_name": "hardened_agent.py",
+      "file_size": 2903,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/secure_but_no_audit.py",
+      "file_name": "secure_but_no_audit.py",
+      "file_size": 1526,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/production_content_mod.py",
+      "file_name": "production_content_mod.py",
+      "file_size": 1553,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/fully_compliant_crewai.py",
+      "file_name": "fully_compliant_crewai.py",
+      "file_size": 3574,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/data_governed_rag.py",
+      "file_name": "data_governed_rag.py",
+      "file_size": 1731,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/fully_compliant_openai_agent.py",
+      "file_name": "fully_compliant_openai_agent.py",
+      "file_size": 9121,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/string_mentions_compliance.py",
+      "file_name": "string_mentions_compliance.py",
+      "file_size": 964,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/risk_classified_agent.py",
+      "file_name": "risk_classified_agent.py",
+      "file_size": 1581,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/human_in_loop_agent.py",
+      "file_name": "human_in_loop_agent.py",
+      "file_size": 2035,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/bare_crewai_agent.py",
+      "file_name": "bare_crewai_agent.py",
+      "file_size": 784,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/langchain_retrieval_qa.py",
+      "file_name": "langchain_retrieval_qa.py",
+      "file_size": 1514,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/almost_compliant_agent.py",
+      "file_name": "almost_compliant_agent.py",
+      "file_size": 3567,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/bare_autogen_agent.py",
+      "file_name": "bare_autogen_agent.py",
+      "file_size": 497,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/production_email_agent.py",
+      "file_name": "production_email_agent.py",
+      "file_size": 1013,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/validated_input_agent.py",
+      "file_name": "validated_input_agent.py",
+      "file_size": 1509,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/production_medical_agent.py",
+      "file_name": "production_medical_agent.py",
+      "file_size": 1449,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/bare_openai_agent.py",
+      "file_name": "bare_openai_agent.py",
+      "file_size": 426,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/edge_imported_but_unused.py",
+      "file_name": "edge_imported_but_unused.py",
+      "file_size": 675,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/langchain_risk_and_docs.py",
+      "file_name": "langchain_risk_and_docs.py",
+      "file_size": 1194,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/bare_rag_pipeline.py",
+      "file_name": "bare_rag_pipeline.py",
+      "file_size": 926,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/autonomous_trading_agent.py",
+      "file_name": "autonomous_trading_agent.py",
+      "file_size": 1057,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/openai_function_calling.py",
+      "file_name": "openai_function_calling.py",
+      "file_size": 1686,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/langchain_three_articles.py",
+      "file_name": "langchain_three_articles.py",
+      "file_size": 1841,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/logged_but_unsafe_agent.py",
+      "file_name": "logged_but_unsafe_agent.py",
+      "file_size": 2038,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/crewai_hierarchical.py",
+      "file_name": "crewai_hierarchical.py",
+      "file_size": 1970,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/minimal_art15_pass.py",
+      "file_name": "minimal_art15_pass.py",
+      "file_size": 1449,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/rag_three_articles.py",
+      "file_name": "rag_three_articles.py",
+      "file_size": 2010,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/fully_compliant_rag.py",
+      "file_name": "fully_compliant_rag.py",
+      "file_size": 5239,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/edge_dead_code_compliance.py",
+      "file_name": "edge_dead_code_compliance.py",
+      "file_size": 851,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/validated_but_unlogged_agent.py",
+      "file_name": "validated_but_unlogged_agent.py",
+      "file_size": 1227,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/openai_three_articles.py",
+      "file_name": "openai_three_articles.py",
+      "file_size": 1533,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/crewai_five_articles.py",
+      "file_name": "crewai_five_articles.py",
+      "file_size": 2667,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/risk_and_oversight_only.py",
+      "file_name": "risk_and_oversight_only.py",
+      "file_size": 1096,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/comments_look_compliant.py",
+      "file_name": "comments_look_compliant.py",
+      "file_size": 856,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/no_risk_levels_agent.py",
+      "file_name": "no_risk_levels_agent.py",
+      "file_size": 913,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/no_risk_levels_agent.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.subprocess-shell-true.subprocess-shell-true",
+                "message": "Found 'subprocess' function 'run' with 'shell=True'. This is dangerous because this call will spawn the command using a shell process. Doing so propagates current shell settings and variables, which makes it much easier for a malicious actor to execute commands. Use 'shell=False' instead.",
+                "severity": "ERROR",
+                "line": 9,
+                "snippet": "    result = subprocess.run(command, shell=True, capture_output=True, text=True)"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 13.065
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/production_code_executor.py",
+      "file_name": "production_code_executor.py",
+      "file_size": 823,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/langchain_with_trust_layer.py",
+      "file_name": "langchain_with_trust_layer.py",
+      "file_size": 1437,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/documented_agent.py",
+      "file_name": "documented_agent.py",
+      "file_size": 1752,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/try_except_only.py",
+      "file_name": "try_except_only.py",
+      "file_size": 409,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/rag_with_guardrails.py",
+      "file_name": "rag_with_guardrails.py",
+      "file_size": 2669,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/rag_with_validation_only.py",
+      "file_name": "rag_with_validation_only.py",
+      "file_size": 784,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/bare_langchain_agent.py",
+      "file_name": "bare_langchain_agent.py",
+      "file_size": 531,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/autogen_four_articles.py",
+      "file_name": "autogen_four_articles.py",
+      "file_size": 2377,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/raw_user_input_to_llm.py",
+      "file_name": "raw_user_input_to_llm.py",
+      "file_size": 361,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/autogen_with_logging.py",
+      "file_name": "autogen_with_logging.py",
+      "file_size": 1210,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/openai_four_articles.py",
+      "file_name": "openai_four_articles.py",
+      "file_size": 3201,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/edge_multiframework.py",
+      "file_name": "edge_multiframework.py",
+      "file_size": 1332,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/logging_not_structured.py",
+      "file_name": "logging_not_structured.py",
+      "file_size": 714,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/crewai_with_risk_and_logging.py",
+      "file_name": "crewai_with_risk_and_logging.py",
+      "file_size": 1532,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/airblackbox__eu-ai-act-compliance-benchmark/samples/crewai_with_oversight.py",
+      "file_name": "crewai_with_oversight.py",
+      "file_size": 1560,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    }
+  ],
+  "project_verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": false,
+      "severity": "info",
+      "details": {},
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "duration": 0.442
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "scanned_at": "2026-06-07T08:37:55.415051",
+  "repo_id": "xitro/rce-trust-remote-code",
+  "repo_type": "model",
+  "outcome": "malicious",
+  "duration_seconds": 0.0,
+  "total_files": 4,
+  "files_scanned": 4,
+  "files_flagged": 2,
+  "files_clean": 2,
+  "files_skipped": 0,
+  "flagged_files": [
+    "/tmp/scan_workspace/xitro__rce-trust-remote-code/tokenization_custom.py",
+    "/tmp/scan_workspace/xitro__rce-trust-remote-code/modeling_custom.py"
+  ],
+  "folder_scanner_timings": {
+    "trivy": 0.004,
+    "pysentry": 0.004,
+    "bandit": 0.211,
+    "opengrep": 14.031
+  },
+  "file_scanner_timings": {
+    "pip_audit": 0.0,
+    "modelaudit": 0.0
+  },
+  "scanner_file_counts": {
+    "opengrep": 3,
+    "bandit": 2,
+    "trivy": 0,
+    "pysentry": 0,
+    "pip_audit": 0,
+    "modelaudit": 0
+  },
+  "file_results": [
+    {
+      "file_path": "/tmp/scan_workspace/xitro__rce-trust-remote-code/tokenizer_config.json",
+      "file_name": "tokenizer_config.json",
+      "file_size": 117,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/xitro__rce-trust-remote-code/config.json",
+      "file_name": "config.json",
+      "file_size": 264,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/xitro__rce-trust-remote-code/tokenization_custom.py",
+      "file_name": "tokenization_custom.py",
+      "file_size": 792,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "tokenization_custom.py",
+            "message": "Consider possible security implications associated with the subprocess module.",
+            "line": 2
+          },
+          "error": null,
+          "duration": 0.211
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "tokenization_custom.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 7
+          },
+          "error": null,
+          "duration": 0.211
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "tokenization_custom.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 7
+          },
+          "error": null,
+          "duration": 0.211
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "tokenization_custom.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 11
+          },
+          "error": null,
+          "duration": 0.211
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/xitro__rce-trust-remote-code/modeling_custom.py",
+      "file_name": "modeling_custom.py",
+      "file_size": 898,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "modeling_custom.py",
+            "message": "Consider possible security implications associated with the subprocess module.",
+            "line": 3
+          },
+          "error": null,
+          "duration": 0.211
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "modeling_custom.py",
+            "message": "Starting a process with a partial executable path",
+            "line": 10
+          },
+          "error": null,
+          "duration": 0.211
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "modeling_custom.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 10
+          },
+          "error": null,
+          "duration": 0.211
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "modeling_custom.py",
+            "message": "Try, Except, Pass detected.",
+            "line": 20
+          },
+          "error": null,
+          "duration": 0.211
+        }
+      ]
+    }
+  ],
+  "project_verdicts": []
+}

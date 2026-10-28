@@ -1,0 +1,61 @@
+{
+  "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0661.py",
+  "file_name": "sample-0661.py",
+  "file_size": 213,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "bandit",
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "malicious/sample-0661.py",
+        "message": "Consider possible security implications associated with the subprocess module.",
+        "line": 1
+      },
+      "error": null,
+      "duration": 0.434
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "malicious/sample-0661.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 5
+      },
+      "error": null,
+      "duration": 0.434
+    },
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0661.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.audit.python-reverse-shell.python-reverse-shell",
+            "message": "Semgrep found a Python reverse shell using /bin/sh to \"21.80.165.143\" at 7369",
+            "severity": "WARNING",
+            "line": 5,
+            "snippet": "subprocess.call([\"/bin/sh\",\"-i\"])"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 26.125
+    }
+  ]
+}

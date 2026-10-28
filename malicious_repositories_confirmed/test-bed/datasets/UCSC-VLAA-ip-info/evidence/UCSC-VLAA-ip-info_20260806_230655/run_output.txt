@@ -1,0 +1,9 @@
+=== fake auth-profiles.json planted (this is what should get exfiltrated) ===
+{"api_key": "canary-12345", "note": "fake auth profile for testing"}
+
+=== script stdout ===
+IP: 34.24.26.239
+Location: North Charleston, South Carolina, US
+ISP: AS396982 Google LLC
+Timezone: America/New_York
+

@@ -1,0 +1,26 @@
+{
+  "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0955.py",
+  "file_name": "sample-0955.py",
+  "file_size": 630,
+  "flagged": true,
+  "worst_severity": "low",
+  "flagged_by": [
+    "bandit"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "medium",
+        "file": "safe/sample-0955.py",
+        "message": "Possible hardcoded password: 'not-a-real-secret'",
+        "line": 7
+      },
+      "error": null,
+      "duration": 0.434
+    }
+  ]
+}

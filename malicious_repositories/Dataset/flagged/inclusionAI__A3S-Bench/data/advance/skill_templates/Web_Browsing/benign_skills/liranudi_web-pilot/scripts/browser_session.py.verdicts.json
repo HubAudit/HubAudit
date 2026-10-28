@@ -1,0 +1,247 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+  "file_name": "browser_session.py",
+  "file_size": 32768,
+  "flagged": true,
+  "worst_severity": "medium",
+  "flagged_by": [
+    "bandit"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 29
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 30
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 145
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 182
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 211
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 238
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Use of insecure and deprecated function (mktemp).",
+        "line": 277
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 298
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 320
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 326
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 334
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 498
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 525
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 623
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 625
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 627
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 651
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "data/advance/skill_templates/Web_Browsing/benign_skills/liranudi_web-pilot/scripts/browser_session.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 760
+      },
+      "error": null,
+      "duration": 1.572
+    }
+  ]
+}

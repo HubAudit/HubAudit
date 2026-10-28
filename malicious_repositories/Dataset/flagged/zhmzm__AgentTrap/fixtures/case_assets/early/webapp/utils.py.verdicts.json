@@ -1,0 +1,34 @@
+{
+  "file_path": "/tmp/scan_workspace/zhmzm__AgentTrap/fixtures/case_assets/early/webapp/utils.py",
+  "file_name": "utils.py",
+  "file_size": 537,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/zhmzm__AgentTrap/fixtures/case_assets/early/webapp/utils.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.audit.md5-used-as-password.md5-used-as-password",
+            "message": "It looks like MD5 is used as a password hash. MD5 is not considered a secure password hash because it can be cracked by an attacker in a short amount of time. Use a suitable password hashing function such as scrypt. You can use `hashlib.scrypt`.",
+            "severity": "WARNING",
+            "line": 8,
+            "snippet": "    return hashlib.md5(password.encode()).hexdigest()"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 52.435
+    }
+  ]
+}

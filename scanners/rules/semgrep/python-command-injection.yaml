@@ -1,0 +1,1754 @@
+rules:
+- id: python.lang.security.audit.dangerous-annotations-usage.dangerous-annotations-usage
+  patterns:
+  - pattern: |
+      $C.__annotations__[$NAME] = $X
+  - pattern-not: |
+      $C.__annotations__[$NAME] = "..."
+  - pattern-not: |
+      $C.__annotations__[$NAME] = typing.$Y
+  - metavariable-regex:
+      metavariable: $X
+      regex: (?!(int|float|complex|list|tuple|range|str|bytes|bytearray|memoryview|set|frozenset|dict))
+  message: Annotations passed to `typing.get_type_hints` are evaluated in `globals`
+    and `locals` namespaces. Make sure that no arbitrary value can be written as the
+    annotation and passed to `typing.get_type_hints` function.
+  severity: INFO
+  metadata:
+    cwe:
+    - 'CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code
+      (''Eval Injection'')'
+    owasp:
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    category: security
+    references:
+    - https://docs.python.org/3/library/typing.html#typing.get_type_hints
+    technology:
+    - python
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: LOW
+    confidence: LOW
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Code Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.dangerous-annotations-usage.dangerous-annotations-usage
+    shortlink: https://sg.run/8R6J
+    semgrep.dev:
+      rule:
+        r_id: 11940
+        rv_id: 1263456
+        rule_id: 9AUkR3
+        version_id: RGT0LZX
+        url: https://semgrep.dev/playground/r/RGT0LZX/python.lang.security.audit.dangerous-annotations-usage.dangerous-annotations-usage
+        origin: community
+  languages:
+  - python
+- id: python.flask.security.injection.user-eval.eval-injection
+  languages:
+  - python
+  severity: ERROR
+  message: Detected user data flowing into eval. This is code injection and should
+    be avoided.
+  metadata:
+    cwe:
+    - 'CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code
+      (''Eval Injection'')'
+    owasp:
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    references:
+    - https://nedbatchelder.com/blog/201206/eval_really_is_dangerous.html
+    category: security
+    technology:
+    - flask
+    subcategory:
+    - vuln
+    likelihood: MEDIUM
+    impact: MEDIUM
+    confidence: MEDIUM
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Code Injection
+    source: https://semgrep.dev/r/python.flask.security.injection.user-eval.eval-injection
+    shortlink: https://sg.run/5QpX
+    semgrep.dev:
+      rule:
+        r_id: 9547
+        rv_id: 1263436
+        rule_id: 0oU54W
+        version_id: w8TRoB0
+        url: https://semgrep.dev/playground/r/w8TRoB0/python.flask.security.injection.user-eval.eval-injection
+        origin: community
+  pattern-either:
+  - patterns:
+    - pattern: eval(...)
+    - pattern-either:
+      - pattern-inside: |
+          @$APP.route($ROUTE, ...)
+          def $FUNC(..., $ROUTEVAR, ...):
+            ...
+            eval(..., <... $ROUTEVAR ...>, ...)
+      - pattern-inside: |
+          @$APP.route($ROUTE, ...)
+          def $FUNC(..., $ROUTEVAR, ...):
+            ...
+            $INTERM = <... $ROUTEVAR ...>
+            ...
+            eval(..., <... $INTERM ...>, ...)
+  - pattern: eval(..., <... flask.request.$W.get(...) ...>, ...)
+  - pattern: eval(..., <... flask.request.$W[...] ...>, ...)
+  - pattern: eval(..., <... flask.request.$W(...) ...>, ...)
+  - pattern: eval(..., <... flask.request.$W ...>, ...)
+  - patterns:
+    - pattern-inside: |
+        $INTERM = <... flask.request.$W.get(...) ...>
+        ...
+        eval(..., <... $INTERM ...>, ...)
+    - pattern: eval(...)
+  - patterns:
+    - pattern-inside: |
+        $INTERM = <... flask.request.$W[...] ...>
+        ...
+        eval(..., <... $INTERM ...>, ...)
+    - pattern: eval(...)
+  - patterns:
+    - pattern-inside: |
+        $INTERM = <... flask.request.$W(...) ...>
+        ...
+        eval(..., <... $INTERM ...>, ...)
+    - pattern: eval(...)
+  - patterns:
+    - pattern-inside: |
+        $INTERM = <... flask.request.$W ...>
+        ...
+        eval(..., <... $INTERM ...>, ...)
+    - pattern: eval(...)
+- id: python.lang.security.audit.eval-detected.eval-detected
+  patterns:
+  - pattern-not: eval(f"")
+  - pattern-not: eval("...")
+  - pattern: eval(...)
+  message: Detected the use of eval(). eval() can be dangerous if used to evaluate
+    dynamic content. If this content can be input from outside the program, this may
+    be a code injection vulnerability. Ensure evaluated content is not definable by
+    external sources.
+  metadata:
+    source-rule-url: https://bandit.readthedocs.io/en/latest/blacklists/blacklist_calls.html#b307-eval
+    cwe:
+    - 'CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code
+      (''Eval Injection'')'
+    owasp:
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    asvs:
+      section: 'V5: Validation, Sanitization and Encoding Verification Requirements'
+      control_id: 5.2.4 Dyanmic Code Execution Features
+      control_url: https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v52-sanitization-and-sandboxing-requirements
+      version: '4'
+    category: security
+    technology:
+    - python
+    references:
+    - https://owasp.org/Top10/A03_2021-Injection
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: HIGH
+    confidence: LOW
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Code Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.eval-detected.eval-detected
+    shortlink: https://sg.run/ZvrD
+    semgrep.dev:
+      rule:
+        r_id: 9635
+        rv_id: 1263477
+        rule_id: gxU149
+        version_id: bZT537Q
+        url: https://semgrep.dev/playground/r/bZT537Q/python.lang.security.audit.eval-detected.eval-detected
+        origin: community
+  languages:
+  - python
+  severity: WARNING
+- id: python.lang.security.audit.exec-detected.exec-detected
+  patterns:
+  - pattern-not: exec("...")
+  - pattern: exec(...)
+  message: Detected the use of exec(). exec() can be dangerous if used to evaluate
+    dynamic content. If this content can be input from outside the program, this may
+    be a code injection vulnerability. Ensure evaluated content is not definable by
+    external sources.
+  metadata:
+    source-rule-url: https://bandit.readthedocs.io/en/latest/plugins/b102_exec_used.html
+    cwe:
+    - 'CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code
+      (''Eval Injection'')'
+    owasp:
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    asvs:
+      section: 'V5: Validation, Sanitization and Encoding Verification Requirements'
+      control_id: 5.2.4 Dyanmic Code Execution Features
+      control_url: https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v52-sanitization-and-sandboxing-requirements
+      version: '4'
+    category: security
+    technology:
+    - python
+    references:
+    - https://owasp.org/Top10/A03_2021-Injection
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: HIGH
+    confidence: LOW
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Code Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.exec-detected.exec-detected
+    shortlink: https://sg.run/ndRX
+    semgrep.dev:
+      rule:
+        r_id: 9636
+        rv_id: 1263478
+        rule_id: QrUzKv
+        version_id: NdTzyKJ
+        url: https://semgrep.dev/playground/r/NdTzyKJ/python.lang.security.audit.exec-detected.exec-detected
+        origin: community
+  languages:
+  - python
+  severity: WARNING
+- id: python.lang.security.dangerous-globals-use.dangerous-globals-use
+  patterns:
+  - pattern-either:
+    - pattern: globals().get(...)
+    - pattern: locals().get(...)
+    - pattern: globals()[...]
+    - pattern: locals()[...]
+    - patterns:
+      - pattern-either:
+        - pattern-inside: |
+            $G = globals()
+            ...
+        - pattern-inside: |
+            $G = locals()
+            ...
+      - pattern-either:
+        - pattern: $G.get(...)
+        - pattern: $G[...]
+    - pattern: $FUNC.__globals__[...]
+  - pattern-not: globals().get("...")
+  - pattern-not: locals().get("...")
+  - pattern-not: globals()["..."]
+  - pattern-not: locals()["..."]
+  - pattern-not: $G.get("...")
+  - pattern-not: $G.get["..."]
+  - pattern-not: $G["..."]
+  - pattern-not: $FUNC.__globals__["..."]
+  - pattern-not-inside: globals()[...] = ...
+  - pattern-not-inside: locals()[...] = ...
+  - pattern-not-inside: $G[...] = ...
+  - pattern-not-inside: $FUNC.__globals__[...] = ...
+  message: Found non static data as an index to 'globals()'. This is extremely dangerous
+    because it allows an attacker to execute arbitrary code on the system. Refactor
+    your code not to use 'globals()'.
+  metadata:
+    cwe:
+    - 'CWE-96: Improper Neutralization of Directives in Statically Saved Code (''Static
+      Code Injection'')'
+    owasp:
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    references:
+    - https://github.com/mpirnat/lets-be-bad-guys/blob/d92768fb3ade32956abd53bd6bb06e19d634a084/badguys/vulnerable/views.py#L181-L186
+    category: security
+    technology:
+    - python
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: MEDIUM
+    confidence: LOW
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Code Injection
+    source: https://semgrep.dev/r/python.lang.security.dangerous-globals-use.dangerous-globals-use
+    shortlink: https://sg.run/jNzn
+    semgrep.dev:
+      rule:
+        r_id: 10065
+        rv_id: 1263522
+        rule_id: 9AUOZP
+        version_id: YDTZeB4
+        url: https://semgrep.dev/playground/r/YDTZeB4/python.lang.security.dangerous-globals-use.dangerous-globals-use
+        origin: community
+  severity: WARNING
+  languages:
+  - python
+- id: python.lang.security.audit.system-wildcard-detected.system-wildcard-detected
+  patterns:
+  - pattern-either:
+    - pattern-inside: os.system("...")
+    - pattern-inside: os.popen("...")
+    - pattern-inside: os.popen2("...")
+    - pattern-inside: os.popen3("...")
+    - pattern-inside: os.popen4("...")
+    - pattern-inside: subprocess.$W(..., shell=True, ...)
+  - pattern-regex: (tar|chmod|chown|rsync)(.*?)\*
+  message: Detected use of the wildcard character in a system call that spawns a shell.
+    This subjects the wildcard to normal shell expansion, which can have unintended
+    consequences if there exist any non-standard file names. Consider a file named
+    '-e sh script.sh' -- this will execute a script when 'rsync' is called. See https://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.txt
+    for more information.
+  metadata:
+    cwe:
+    - 'CWE-155: Improper Neutralization of Wildcards or Matching Symbols'
+    owasp: A01:2017 - Injection
+    source-url-open: https://github.com/PyCQA/bandit/blob/b1411bfb43795d3ffd268bef17a839dee954c2b1/bandit/plugins/injection_wildcard.py
+    references:
+    - https://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.txt
+    category: security
+    technology:
+    - python
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: LOW
+    confidence: LOW
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Other
+    source: https://semgrep.dev/r/python.lang.security.audit.system-wildcard-detected.system-wildcard-detected
+    shortlink: https://sg.run/5QXA
+    semgrep.dev:
+      rule:
+        r_id: 9647
+        rv_id: 946383
+        rule_id: WAUorE
+        version_id: 6xTxj9B
+        url: https://semgrep.dev/playground/r/6xTxj9B/python.lang.security.audit.system-wildcard-detected.system-wildcard-detected
+        origin: community
+  languages:
+  - python
+  severity: WARNING
+- id: python.airflow.security.audit.formatted-string-bashoperator.formatted-string-bashoperator
+  message: 'Found a formatted string in BashOperator: $CMD. This could be vulnerable
+    to injection. Be extra sure your variables are not controllable by external sources.'
+  metadata:
+    cwe:
+    - 'CWE-78: Improper Neutralization of Special Elements used in an OS Command (''OS
+      Command Injection'')'
+    owasp:
+    - A01:2017 - Injection
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    category: security
+    technology:
+    - airflow
+    references:
+    - https://owasp.org/Top10/A03_2021-Injection
+    cwe2022-top25: true
+    cwe2021-top25: true
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: HIGH
+    confidence: LOW
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Command Injection
+    source: https://semgrep.dev/r/python.airflow.security.audit.formatted-string-bashoperator.formatted-string-bashoperator
+    shortlink: https://sg.run/ndBY
+    semgrep.dev:
+      rule:
+        r_id: 9436
+        rv_id: 1263330
+        rule_id: 4bUkOY
+        version_id: yeTxpb3
+        url: https://semgrep.dev/playground/r/yeTxpb3/python.airflow.security.audit.formatted-string-bashoperator.formatted-string-bashoperator
+        origin: community
+  languages:
+  - python
+  severity: ERROR
+  pattern-either:
+  - pattern: |
+      airflow.operators.bash_operator.BashOperator(..., bash_command="..." + $CONCAT, ...)
+  - pattern: |
+      airflow.operators.bash_operator.BashOperator(..., bash_command="...".format(...), ...)
+  - pattern: |
+      airflow.operators.bash_operator.BashOperator(..., bash_command=f"...", ...)
+  - pattern: |
+      airflow.operators.bash_operator.BashOperator(..., bash_command="..." % $PARAMS, ...)
+  - pattern: |
+      $CMD = "..." % $PARAMS
+      ...
+      airflow.operators.bash_operator.BashOperator(..., bash_command=$CMD, ...)
+  - pattern: |
+      $CMD = $STR.format(...)
+      ...
+      airflow.operators.bash_operator.BashOperator(..., bash_command=$CMD, ...)
+  - pattern: |
+      $CMD = f"..."
+      ...
+      airflow.operators.bash_operator.BashOperator(..., bash_command=$CMD, ...)
+  - pattern: |
+      $CMD = "..." + $CONCAT
+      ...
+      airflow.operators.bash_operator.BashOperator(..., bash_command=$CMD, ...)
+  - pattern: |
+      $CMD = "..."
+      ...
+      $CMD += $CONCAT
+      ...
+      airflow.operators.bash_operator.BashOperator(..., bash_command=$CMD, ...)
+- id: python.django.security.injection.code.user-eval-format-string.user-eval-format-string
+  message: Found user data in a call to 'eval'. This is extremely dangerous because
+    it can enable an attacker to execute remote code. See https://owasp.org/www-community/attacks/Code_Injection
+    for more information.
+  metadata:
+    cwe:
+    - 'CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code
+      (''Eval Injection'')'
+    owasp:
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    references:
+    - https://nedbatchelder.com/blog/201206/eval_really_is_dangerous.html
+    category: security
+    technology:
+    - django
+    subcategory:
+    - vuln
+    likelihood: MEDIUM
+    impact: HIGH
+    confidence: MEDIUM
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Code Injection
+    source: https://semgrep.dev/r/python.django.security.injection.code.user-eval-format-string.user-eval-format-string
+    shortlink: https://sg.run/4x2z
+    semgrep.dev:
+      rule:
+        r_id: 9500
+        rv_id: 1263383
+        rule_id: BYUNw9
+        version_id: vdT06xG
+        url: https://semgrep.dev/playground/r/vdT06xG/python.django.security.injection.code.user-eval-format-string.user-eval-format-string
+        origin: community
+  patterns:
+  - pattern-inside: |
+      def $F(...):
+        ...
+  - pattern-either:
+    - pattern: eval(..., $STR % request.$W.get(...), ...)
+    - pattern: |
+        $V = request.$W.get(...)
+        ...
+        eval(..., $STR % $V, ...)
+    - pattern: |
+        $V = request.$W.get(...)
+        ...
+        $S = $STR % $V
+        ...
+        eval(..., $S, ...)
+    - pattern: eval(..., "..." % request.$W(...), ...)
+    - pattern: |
+        $V = request.$W(...)
+        ...
+        eval(..., $STR % $V, ...)
+    - pattern: |
+        $V = request.$W(...)
+        ...
+        $S = $STR % $V
+        ...
+        eval(..., $S, ...)
+    - pattern: eval(..., $STR % request.$W[...], ...)
+    - pattern: |
+        $V = request.$W[...]
+        ...
+        eval(..., $STR % $V, ...)
+    - pattern: |
+        $V = request.$W[...]
+        ...
+        $S = $STR % $V
+        ...
+        eval(..., $S, ...)
+    - pattern: eval(..., $STR.format(..., request.$W.get(...), ...), ...)
+    - pattern: |
+        $V = request.$W.get(...)
+        ...
+        eval(..., $STR.format(..., $V, ...), ...)
+    - pattern: |
+        $V = request.$W.get(...)
+        ...
+        $S = $STR.format(..., $V, ...)
+        ...
+        eval(..., $S, ...)
+    - pattern: eval(..., $STR.format(..., request.$W(...), ...), ...)
+    - pattern: |
+        $V = request.$W(...)
+        ...
+        eval(..., $STR.format(..., $V, ...), ...)
+    - pattern: |
+        $V = request.$W(...)
+        ...
+        $S = $STR.format(..., $V, ...)
+        ...
+        eval(..., $S, ...)
+    - pattern: eval(..., $STR.format(..., request.$W[...], ...), ...)
+    - pattern: |
+        $V = request.$W[...]
+        ...
+        eval(..., $STR.format(..., $V, ...), ...)
+    - pattern: |
+        $V = request.$W[...]
+        ...
+        $S = $STR.format(..., $V, ...)
+        ...
+        eval(..., $S, ...)
+    - pattern: |
+        $V = request.$W.get(...)
+        ...
+        eval(..., f"...{$V}...", ...)
+    - pattern: |
+        $V = request.$W.get(...)
+        ...
+        $S = f"...{$V}..."
+        ...
+        eval(..., $S, ...)
+    - pattern: |
+        $V = request.$W(...)
+        ...
+        eval(..., f"...{$V}...", ...)
+    - pattern: |
+        $V = request.$W(...)
+        ...
+        $S = f"...{$V}..."
+        ...
+        eval(..., $S, ...)
+    - pattern: |
+        $V = request.$W[...]
+        ...
+        eval(..., f"...{$V}...", ...)
+    - pattern: |
+        $V = request.$W[...]
+        ...
+        $S = f"...{$V}..."
+        ...
+        eval(..., $S, ...)
+  languages:
+  - python
+  severity: WARNING
+- id: python.lang.security.audit.paramiko.paramiko-exec-command.paramiko-exec-command
+  patterns:
+  - pattern-inside: |
+      $CLIENT = paramiko.client.SSHClient(...)
+      ...
+  - pattern: $CLIENT.exec_command(...)
+  - pattern-not: $CLIENT.exec_command("...", ...)
+  message: Unverified SSL context detected. This will permit insecure connections
+    without verifying SSL certificates. Use 'ssl.create_default_context()' instead.
+  metadata:
+    source-rule-url: https://github.com/PyCQA/bandit/blob/d5f8fa0d89d7b11442fc6ec80ca42953974354c8/bandit/plugins/injection_paramiko.py
+    owasp:
+    - A01:2017 - Injection
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    cwe:
+    - 'CWE-78: Improper Neutralization of Special Elements used in an OS Command (''OS
+      Command Injection'')'
+    references:
+    - http://docs.paramiko.org/en/stable/api/client.html#paramiko.client.SSHClient.exec_command
+    - https://github.com/PyCQA/bandit/blob/d5f8fa0d89d7b11442fc6ec80ca42953974354c8/bandit/plugins/injection_paramiko.py
+    category: security
+    technology:
+    - paramiko
+    cwe2022-top25: true
+    cwe2021-top25: true
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: HIGH
+    confidence: LOW
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Command Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.paramiko.paramiko-exec-command.paramiko-exec-command
+    shortlink: https://sg.run/kXQ7
+    semgrep.dev:
+      rule:
+        r_id: 9672
+        rv_id: 1263509
+        rule_id: d8Uj9x
+        version_id: YDTZeBr
+        url: https://semgrep.dev/playground/r/YDTZeBr/python.lang.security.audit.paramiko.paramiko-exec-command.paramiko-exec-command
+        origin: community
+  severity: ERROR
+  languages:
+  - python
+- id: python.flask.security.injection.os-system-injection.os-system-injection
+  languages:
+  - python
+  severity: ERROR
+  message: User data detected in os.system. This could be vulnerable to a command
+    injection and should be avoided. If this must be done, use the 'subprocess' module
+    instead and pass the arguments as a list.
+  metadata:
+    cwe:
+    - 'CWE-78: Improper Neutralization of Special Elements used in an OS Command (''OS
+      Command Injection'')'
+    owasp:
+    - A01:2017 - Injection
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    references:
+    - https://owasp.org/www-community/attacks/Command_Injection
+    category: security
+    technology:
+    - flask
+    cwe2022-top25: true
+    cwe2021-top25: true
+    subcategory:
+    - audit
+    likelihood: MEDIUM
+    impact: HIGH
+    confidence: MEDIUM
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Command Injection
+    source: https://semgrep.dev/r/python.flask.security.injection.os-system-injection.os-system-injection
+    shortlink: https://sg.run/4xzz
+    semgrep.dev:
+      rule:
+        r_id: 9544
+        rv_id: 1263429
+        rule_id: BYUN99
+        version_id: 1QTypw7
+        url: https://semgrep.dev/playground/r/1QTypw7/python.flask.security.injection.os-system-injection.os-system-injection
+        origin: community
+  pattern-either:
+  - patterns:
+    - pattern: os.system(...)
+    - pattern-either:
+      - pattern-inside: |
+          @$APP.route($ROUTE, ...)
+          def $FUNC(..., $ROUTEVAR, ...):
+            ...
+            os.system(..., <... $ROUTEVAR ...>, ...)
+      - pattern-inside: |
+          @$APP.route($ROUTE, ...)
+          def $FUNC(..., $ROUTEVAR, ...):
+            ...
+            $INTERM = <... $ROUTEVAR ...>
+            ...
+            os.system(..., <... $INTERM ...>, ...)
+  - pattern: os.system(..., <... flask.request.$W.get(...) ...>, ...)
+  - pattern: os.system(..., <... flask.request.$W[...] ...>, ...)
+  - pattern: os.system(..., <... flask.request.$W(...) ...>, ...)
+  - pattern: os.system(..., <... flask.request.$W ...>, ...)
+  - patterns:
+    - pattern-inside: |
+        $INTERM = <... flask.request.$W.get(...) ...>
+        ...
+        os.system(<... $INTERM ...>)
+    - pattern: os.system(...)
+  - patterns:
+    - pattern-inside: |
+        $INTERM = <... flask.request.$W[...] ...>
+        ...
+        os.system(<... $INTERM ...>)
+    - pattern: os.system(...)
+  - patterns:
+    - pattern-inside: |
+        $INTERM = <... flask.request.$W(...) ...>
+        ...
+        os.system(<... $INTERM ...>)
+    - pattern: os.system(...)
+  - patterns:
+    - pattern-inside: |
+        $INTERM = <... flask.request.$W ...>
+        ...
+        os.system(<... $INTERM ...>)
+    - pattern: os.system(...)
+- id: python.lang.security.audit.subprocess-shell-true.subprocess-shell-true
+  patterns:
+  - pattern: subprocess.$FUNC(..., shell=$TRUE, ...)
+  - metavariable-pattern:
+      metavariable: $TRUE
+      pattern: "True \n"
+  - pattern-not: subprocess.$FUNC("...", shell=True, ...)
+  - focus-metavariable: $TRUE
+  message: Found 'subprocess' function '$FUNC' with 'shell=True'. This is dangerous
+    because this call will spawn the command using a shell process. Doing so propagates
+    current shell settings and variables, which makes it much easier for a malicious
+    actor to execute commands. Use 'shell=False' instead.
+  fix: |
+    False
+  metadata:
+    source-rule-url: https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html
+    owasp:
+    - A01:2017 - Injection
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    cwe:
+    - 'CWE-78: Improper Neutralization of Special Elements used in an OS Command (''OS
+      Command Injection'')'
+    references:
+    - https://stackoverflow.com/questions/3172470/actual-meaning-of-shell-true-in-subprocess
+    - https://docs.python.org/3/library/subprocess.html
+    category: security
+    technology:
+    - python
+    cwe2022-top25: true
+    cwe2021-top25: true
+    subcategory:
+    - secure default
+    likelihood: HIGH
+    impact: LOW
+    confidence: MEDIUM
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Command Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.subprocess-shell-true.subprocess-shell-true
+    shortlink: https://sg.run/J92w
+    semgrep.dev:
+      rule:
+        r_id: 9646
+        rv_id: 1263518
+        rule_id: DbUpz2
+        version_id: 0bTKzDK
+        url: https://semgrep.dev/playground/r/0bTKzDK/python.lang.security.audit.subprocess-shell-true.subprocess-shell-true
+        origin: community
+  languages:
+  - python
+  severity: ERROR
+- id: python.django.security.injection.command.command-injection-os-system.command-injection-os-system
+  message: Request data detected in os.system. This could be vulnerable to a command
+    injection and should be avoided. If this must be done, use the 'subprocess' module
+    instead and pass the arguments as a list. See https://owasp.org/www-community/attacks/Command_Injection
+    for more information.
+  metadata:
+    cwe:
+    - 'CWE-78: Improper Neutralization of Special Elements used in an OS Command (''OS
+      Command Injection'')'
+    owasp:
+    - A01:2017 - Injection
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    references:
+    - https://owasp.org/www-community/attacks/Command_Injection
+    category: security
+    technology:
+    - django
+    cwe2022-top25: true
+    cwe2021-top25: true
+    subcategory:
+    - vuln
+    likelihood: MEDIUM
+    impact: HIGH
+    confidence: MEDIUM
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Command Injection
+    source: https://semgrep.dev/r/python.django.security.injection.command.command-injection-os-system.command-injection-os-system
+    shortlink: https://sg.run/Gen2
+    semgrep.dev:
+      rule:
+        r_id: 9504
+        rv_id: 1263387
+        rule_id: KxUbp2
+        version_id: ExTExPo
+        url: https://semgrep.dev/playground/r/ExTExPo/python.django.security.injection.command.command-injection-os-system.command-injection-os-system
+        origin: community
+  languages:
+  - python
+  severity: ERROR
+  patterns:
+  - pattern-inside: |
+      def $FUNC(...):
+        ...
+  - pattern-either:
+    - pattern: os.system(..., request.$W.get(...), ...)
+    - pattern: os.system(..., $S.format(..., request.$W.get(...), ...), ...)
+    - pattern: os.system(..., $S % request.$W.get(...), ...)
+    - pattern: os.system(..., f"...{request.$W.get(...)}...", ...)
+    - pattern: |
+        $DATA = request.$W.get(...)
+        ...
+        os.system(..., $DATA, ...)
+    - pattern: |
+        $DATA = request.$W.get(...)
+        ...
+        $INTERM = $DATA
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W.get(...)
+        ...
+        os.system(..., $STR.format(..., $DATA, ...), ...)
+    - pattern: |
+        $DATA = request.$W.get(...)
+        ...
+        $INTERM = $STR.format(..., $DATA, ...)
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W.get(...)
+        ...
+        os.system(..., $STR % $DATA, ...)
+    - pattern: |
+        $DATA = request.$W.get(...)
+        ...
+        $INTERM = $STR % $DATA
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W.get(...)
+        ...
+        os.system(..., f"...{$DATA}...", ...)
+    - pattern: |
+        $DATA = request.$W.get(...)
+        ...
+        $INTERM = f"...{$DATA}..."
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W.get(...)
+        ...
+        os.system(..., $STR + $DATA, ...)
+    - pattern: |
+        $DATA = request.$W.get(...)
+        ...
+        $INTERM = $STR + $DATA
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: $A = os.system(..., request.$W.get(...), ...)
+    - pattern: $A = os.system(..., $S.format(..., request.$W.get(...), ...), ...)
+    - pattern: $A = os.system(..., $S % request.$W.get(...), ...)
+    - pattern: $A = os.system(..., f"...{request.$W.get(...)}...", ...)
+    - pattern: return os.system(..., request.$W.get(...), ...)
+    - pattern: return os.system(..., $S.format(..., request.$W.get(...), ...), ...)
+    - pattern: return os.system(..., $S % request.$W.get(...), ...)
+    - pattern: return os.system(..., f"...{request.$W.get(...)}...", ...)
+    - pattern: os.system(..., request.$W(...), ...)
+    - pattern: os.system(..., $S.format(..., request.$W(...), ...), ...)
+    - pattern: os.system(..., $S % request.$W(...), ...)
+    - pattern: os.system(..., f"...{request.$W(...)}...", ...)
+    - pattern: |
+        $DATA = request.$W(...)
+        ...
+        os.system(..., $DATA, ...)
+    - pattern: |
+        $DATA = request.$W(...)
+        ...
+        $INTERM = $DATA
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W(...)
+        ...
+        os.system(..., $STR.format(..., $DATA, ...), ...)
+    - pattern: |
+        $DATA = request.$W(...)
+        ...
+        $INTERM = $STR.format(..., $DATA, ...)
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W(...)
+        ...
+        os.system(..., $STR % $DATA, ...)
+    - pattern: |
+        $DATA = request.$W(...)
+        ...
+        $INTERM = $STR % $DATA
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W(...)
+        ...
+        os.system(..., f"...{$DATA}...", ...)
+    - pattern: |
+        $DATA = request.$W(...)
+        ...
+        $INTERM = f"...{$DATA}..."
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W(...)
+        ...
+        os.system(..., $STR + $DATA, ...)
+    - pattern: |
+        $DATA = request.$W(...)
+        ...
+        $INTERM = $STR + $DATA
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: $A = os.system(..., request.$W(...), ...)
+    - pattern: $A = os.system(..., $S.format(..., request.$W(...), ...), ...)
+    - pattern: $A = os.system(..., $S % request.$W(...), ...)
+    - pattern: $A = os.system(..., f"...{request.$W(...)}...", ...)
+    - pattern: return os.system(..., request.$W(...), ...)
+    - pattern: return os.system(..., $S.format(..., request.$W(...), ...), ...)
+    - pattern: return os.system(..., $S % request.$W(...), ...)
+    - pattern: return os.system(..., f"...{request.$W(...)}...", ...)
+    - pattern: os.system(..., request.$W[...], ...)
+    - pattern: os.system(..., $S.format(..., request.$W[...], ...), ...)
+    - pattern: os.system(..., $S % request.$W[...], ...)
+    - pattern: os.system(..., f"...{request.$W[...]}...", ...)
+    - pattern: |
+        $DATA = request.$W[...]
+        ...
+        os.system(..., $DATA, ...)
+    - pattern: |
+        $DATA = request.$W[...]
+        ...
+        $INTERM = $DATA
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W[...]
+        ...
+        os.system(..., $STR.format(..., $DATA, ...), ...)
+    - pattern: |
+        $DATA = request.$W[...]
+        ...
+        $INTERM = $STR.format(..., $DATA, ...)
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W[...]
+        ...
+        os.system(..., $STR % $DATA, ...)
+    - pattern: |
+        $DATA = request.$W[...]
+        ...
+        $INTERM = $STR % $DATA
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W[...]
+        ...
+        os.system(..., f"...{$DATA}...", ...)
+    - pattern: |
+        $DATA = request.$W[...]
+        ...
+        $INTERM = f"...{$DATA}..."
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W[...]
+        ...
+        os.system(..., $STR + $DATA, ...)
+    - pattern: |
+        $DATA = request.$W[...]
+        ...
+        $INTERM = $STR + $DATA
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: $A = os.system(..., request.$W[...], ...)
+    - pattern: $A = os.system(..., $S.format(..., request.$W[...], ...), ...)
+    - pattern: $A = os.system(..., $S % request.$W[...], ...)
+    - pattern: $A = os.system(..., f"...{request.$W[...]}...", ...)
+    - pattern: return os.system(..., request.$W[...], ...)
+    - pattern: return os.system(..., $S.format(..., request.$W[...], ...), ...)
+    - pattern: return os.system(..., $S % request.$W[...], ...)
+    - pattern: return os.system(..., f"...{request.$W[...]}...", ...)
+    - pattern: os.system(..., request.$W, ...)
+    - pattern: os.system(..., $S.format(..., request.$W, ...), ...)
+    - pattern: os.system(..., $S % request.$W, ...)
+    - pattern: os.system(..., f"...{request.$W}...", ...)
+    - pattern: |
+        $DATA = request.$W
+        ...
+        os.system(..., $DATA, ...)
+    - pattern: |
+        $DATA = request.$W
+        ...
+        $INTERM = $DATA
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W
+        ...
+        os.system(..., $STR.format(..., $DATA, ...), ...)
+    - pattern: |
+        $DATA = request.$W
+        ...
+        $INTERM = $STR.format(..., $DATA, ...)
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W
+        ...
+        os.system(..., $STR % $DATA, ...)
+    - pattern: |
+        $DATA = request.$W
+        ...
+        $INTERM = $STR % $DATA
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W
+        ...
+        os.system(..., f"...{$DATA}...", ...)
+    - pattern: |
+        $DATA = request.$W
+        ...
+        $INTERM = f"...{$DATA}..."
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: |
+        $DATA = request.$W
+        ...
+        os.system(..., $STR + $DATA, ...)
+    - pattern: |
+        $DATA = request.$W
+        ...
+        $INTERM = $STR + $DATA
+        ...
+        os.system(..., $INTERM, ...)
+    - pattern: $A = os.system(..., request.$W, ...)
+    - pattern: $A = os.system(..., $S.format(..., request.$W, ...), ...)
+    - pattern: $A = os.system(..., $S % request.$W, ...)
+    - pattern: $A = os.system(..., f"...{request.$W}...", ...)
+    - pattern: return os.system(..., request.$W, ...)
+    - pattern: return os.system(..., $S.format(..., request.$W, ...), ...)
+    - pattern: return os.system(..., $S % request.$W, ...)
+    - pattern: return os.system(..., f"...{request.$W}...", ...)
+- id: python.sh.security.string-concat.string-concat
+  languages:
+  - python
+  severity: ERROR
+  message: Detected string concatenation or formatting in a call to a command via
+    'sh'. This could be a command injection vulnerability if the data is user-controlled.
+    Instead, use a list and append the argument.
+  metadata:
+    cwe:
+    - 'CWE-78: Improper Neutralization of Special Elements used in an OS Command (''OS
+      Command Injection'')'
+    owasp:
+    - A01:2017 - Injection
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    category: security
+    technology:
+    - sh
+    references:
+    - https://owasp.org/Top10/A03_2021-Injection
+    cwe2022-top25: true
+    cwe2021-top25: true
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: LOW
+    confidence: LOW
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Command Injection
+    source: https://semgrep.dev/r/python.sh.security.string-concat.string-concat
+    shortlink: https://sg.run/Wg34
+    semgrep.dev:
+      rule:
+        r_id: 9697
+        rv_id: 1263576
+        rule_id: JDUP1G
+        version_id: yeTxp8E
+        url: https://semgrep.dev/playground/r/yeTxp8E/python.sh.security.string-concat.string-concat
+        origin: community
+  pattern-either:
+  - pattern: sh.$BIN($X + $Y)
+  - pattern: sh.$BIN($X.format(...))
+  - pattern: sh.$BIN(f"...{...}...")
+- id: python.django.security.injection.code.user-eval.user-eval
+  message: Found user data in a call to 'eval'. This is extremely dangerous because
+    it can enable an attacker to execute arbitrary remote code on the system. Instead,
+    refactor your code to not use 'eval' and instead use a safe library for the specific
+    functionality you need.
+  metadata:
+    cwe:
+    - 'CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code
+      (''Eval Injection'')'
+    owasp:
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    references:
+    - https://nedbatchelder.com/blog/201206/eval_really_is_dangerous.html
+    - https://owasp.org/www-community/attacks/Code_Injection
+    category: security
+    technology:
+    - django
+    subcategory:
+    - vuln
+    likelihood: MEDIUM
+    impact: HIGH
+    confidence: MEDIUM
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Code Injection
+    source: https://semgrep.dev/r/python.django.security.injection.code.user-eval.user-eval
+    shortlink: https://sg.run/PJDW
+    semgrep.dev:
+      rule:
+        r_id: 9501
+        rv_id: 1263384
+        rule_id: DbUpDQ
+        version_id: d6Tyx2A
+        url: https://semgrep.dev/playground/r/d6Tyx2A/python.django.security.injection.code.user-eval.user-eval
+        origin: community
+  patterns:
+  - pattern-inside: |
+      def $F(...):
+        ...
+  - pattern-either:
+    - pattern: eval(..., request.$W.get(...), ...)
+    - pattern: |
+        $V = request.$W.get(...)
+        ...
+        eval(..., $V, ...)
+    - pattern: eval(..., request.$W(...), ...)
+    - pattern: |
+        $V = request.$W(...)
+        ...
+        eval(..., $V, ...)
+    - pattern: eval(..., request.$W[...], ...)
+    - pattern: |
+        $V = request.$W[...]
+        ...
+        eval(..., $V, ...)
+  languages:
+  - python
+  severity: WARNING
+- id: python.lang.security.audit.logging.listeneval.listen-eval
+  languages:
+  - python
+  message: Because portions of the logging configuration are passed through eval(),
+    use of this function may open its users to a security risk. While the function
+    only binds to a socket on localhost, and so does not accept connections from remote
+    machines, there are scenarios where untrusted code could be run under the account
+    of the process which calls listen(). To avoid this happening, use the `verify()`
+    argument to `listen()` to prevent unrecognized configurations.
+  metadata:
+    cwe:
+    - 'CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code
+      (''Eval Injection'')'
+    owasp:
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    references:
+    - https://docs.python.org/3/library/logging.config.html?highlight=security#logging.config.listen
+    category: security
+    technology:
+    - python
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: LOW
+    confidence: LOW
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Code Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.logging.listeneval.listen-eval
+    shortlink: https://sg.run/9okY
+    semgrep.dev:
+      rule:
+        r_id: 9667
+        rv_id: 1263500
+        rule_id: wdUJQY
+        version_id: RGT0L6X
+        url: https://semgrep.dev/playground/r/RGT0L6X/python.lang.security.audit.logging.listeneval.listen-eval
+        origin: community
+  severity: WARNING
+  pattern: logging.config.listen(...)
+- id: python.lang.security.audit.dangerous-asyncio-create-exec-audit.dangerous-asyncio-create-exec-audit
+  pattern-either:
+  - patterns:
+    - pattern-not: asyncio.create_subprocess_exec($PROG, "...", ...)
+    - pattern-not: asyncio.create_subprocess_exec($PROG, ["...",...], ...)
+    - pattern: asyncio.create_subprocess_exec(...)
+  - patterns:
+    - pattern-not: asyncio.create_subprocess_exec($PROG, "=~/(sh|bash|ksh|csh|tcsh|zsh)/",
+        "-c", "...", ...)
+    - pattern: asyncio.create_subprocess_exec($PROG, "=~/(sh|bash|ksh|csh|tcsh|zsh)/",
+        "-c",...)
+  - patterns:
+    - pattern-not: asyncio.create_subprocess_exec($PROG, ["=~/(sh|bash|ksh|csh|tcsh|zsh)/",
+        "-c", "...", ...], ...)
+    - pattern: asyncio.create_subprocess_exec($PROG, ["=~/(sh|bash|ksh|csh|tcsh|zsh)/",
+        "-c", ...], ...)
+  - patterns:
+    - pattern-not: asyncio.subprocess.create_subprocess_exec($PROG, "...", ...)
+    - pattern-not: asyncio.subprocess.create_subprocess_exec($PROG, ["...",...], ...)
+    - pattern: asyncio.subprocess.create_subprocess_exec(...)
+  - patterns:
+    - pattern-not: asyncio.subprocess.create_subprocess_exec($PROG, "=~/(sh|bash|ksh|csh|tcsh|zsh)/",
+        "-c", "...", ...)
+    - pattern: asyncio.subprocess.create_subprocess_exec($PROG, "=~/(sh|bash|ksh|csh|tcsh|zsh)/",
+        "-c",...)
+  - patterns:
+    - pattern-not: asyncio.subprocess.create_subprocess_exec($PROG, ["=~/(sh|bash|ksh|csh|tcsh|zsh)/",
+        "-c", "...", ...], ...)
+    - pattern: asyncio.subprocess.create_subprocess_exec($PROG, ["=~/(sh|bash|ksh|csh|tcsh|zsh)/",
+        "-c", ...], ...)
+  message: Detected 'create_subprocess_exec' function without a static string. If
+    this data can be controlled by a malicious actor, it may be an instance of command
+    injection. Audit the use of this call to ensure it is not controllable by an external
+    resource. You may consider using 'shlex.escape()'.
+  metadata:
+    owasp:
+    - A01:2017 - Injection
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    cwe:
+    - 'CWE-78: Improper Neutralization of Special Elements used in an OS Command (''OS
+      Command Injection'')'
+    asvs:
+      section: 'V5: Validation, Sanitization and Encoding Verification Requirements'
+      control_id: 5.3.8 OS Command Injection
+      control_url: https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v53-output-encoding-and-injection-prevention-requirements
+      version: '4'
+    references:
+    - https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.create_subprocess_exec
+    - https://docs.python.org/3/library/shlex.html
+    - https://semgrep.dev/docs/cheat-sheets/python-command-injection/
+    category: security
+    technology:
+    - python
+    confidence: LOW
+    cwe2022-top25: true
+    cwe2021-top25: true
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: HIGH
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Command Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.dangerous-asyncio-create-exec-audit.dangerous-asyncio-create-exec-audit
+    shortlink: https://sg.run/5qWA
+    semgrep.dev:
+      rule:
+        r_id: 27247
+        rv_id: 1263457
+        rule_id: ZqUK73
+        version_id: A8TgdZR
+        url: https://semgrep.dev/playground/r/A8TgdZR/python.lang.security.audit.dangerous-asyncio-create-exec-audit.dangerous-asyncio-create-exec-audit
+        origin: community
+  languages:
+  - python
+  severity: ERROR
+- id: python.lang.security.audit.dangerous-subprocess-use-audit.dangerous-subprocess-use-audit
+  pattern-either:
+  - patterns:
+    - pattern-not: subprocess.$FUNC("...", ...)
+    - pattern-not: subprocess.$FUNC(["...",...], ...)
+    - pattern-not: subprocess.$FUNC(("...",...), ...)
+    - pattern-not:
+        patterns:
+        - pattern-not-inside: |
+            $ARR = ["=~/(sh|bash|ksh|csh|tcsh|zsh)/", "-c", ...]
+            ...
+        - pattern-inside: |
+            $ARR = [...]
+            ...
+        - pattern-either:
+          - pattern: subprocess.$FUNC(*$ARR, ...)
+          - pattern: subprocess.$FUNC([*$ARR, ...])
+    - pattern-not: subprocess.CalledProcessError(...)
+    - pattern-not: subprocess.SubprocessError(...)
+    - pattern: subprocess.$FUNC(...)
+  - patterns:
+    - pattern: subprocess.$FUNC("=~/(sh|bash|ksh|csh|tcsh|zsh)/","-c",...)
+    - pattern-not: subprocess.$FUNC("=~/(sh|bash|ksh|csh|tcsh|zsh)/","-c","...",...)
+  - patterns:
+    - pattern-either:
+      - pattern: subprocess.$FUNC(["=~/(sh|bash|ksh|csh|tcsh|zsh)/","-c",...],...)
+      - pattern: subprocess.$FUNC(("=~/(sh|bash|ksh|csh|tcsh|zsh)/","-c",...),...)
+    - pattern-not: subprocess.$FUNC(["=~/(sh|bash|ksh|csh|tcsh|zsh)/","-c","...",...],...)
+    - pattern-not: subprocess.$FUNC(("=~/(sh|bash|ksh|csh|tcsh|zsh)/","-c","...",...),...)
+  - patterns:
+    - pattern: subprocess.$FUNC("=~/(python)/",...)
+    - pattern-not: subprocess.$FUNC("=~/(python)/","...",...)
+  - patterns:
+    - pattern-either:
+      - pattern: subprocess.$FUNC(["=~/(python)/",...],...)
+      - pattern: subprocess.$FUNC(("=~/(python)/",...),...)
+    - pattern-not: subprocess.$FUNC(["=~/(python)/","...",...],...)
+    - pattern-not: subprocess.$FUNC(("=~/(python)/","...",...),...)
+  message: Detected subprocess function '$FUNC' without a static string. If this data
+    can be controlled by a malicious actor, it may be an instance of command injection.
+    Audit the use of this call to ensure it is not controllable by an external resource.
+    You may consider using 'shlex.escape()'.
+  metadata:
+    owasp:
+    - A01:2017 - Injection
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    cwe:
+    - 'CWE-78: Improper Neutralization of Special Elements used in an OS Command (''OS
+      Command Injection'')'
+    asvs:
+      section: 'V5: Validation, Sanitization and Encoding Verification Requirements'
+      control_id: 5.3.8 OS Command Injection
+      control_url: https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v53-output-encoding-and-injection-prevention-requirements
+      version: '4'
+    references:
+    - https://stackoverflow.com/questions/3172470/actual-meaning-of-shell-true-in-subprocess
+    - https://docs.python.org/3/library/subprocess.html
+    - https://docs.python.org/3/library/shlex.html
+    - https://semgrep.dev/docs/cheat-sheets/python-command-injection/
+    category: security
+    technology:
+    - python
+    confidence: LOW
+    cwe2022-top25: true
+    cwe2021-top25: true
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: HIGH
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Command Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.dangerous-subprocess-use-audit.dangerous-subprocess-use-audit
+    shortlink: https://sg.run/zL8G
+    semgrep.dev:
+      rule:
+        r_id: 27261
+        rv_id: 1263471
+        rule_id: ReU0QY
+        version_id: X0TzyjL
+        url: https://semgrep.dev/playground/r/X0TzyjL/python.lang.security.audit.dangerous-subprocess-use-audit.dangerous-subprocess-use-audit
+        origin: community
+  languages:
+  - python
+  severity: ERROR
+- id: python.lang.security.audit.dangerous-testcapi-run-in-subinterp-audit.dangerous-testcapi-run-in-subinterp-audit
+  patterns:
+  - pattern-either:
+    - pattern: |
+        _testcapi.run_in_subinterp($PAYLOAD, ...)
+    - pattern: |
+        test.support.run_in_subinterp($PAYLOAD, ...)
+  - pattern-not: |
+      _testcapi.run_in_subinterp("...", ...)
+  - pattern-not: |
+      test.support.run_in_subinterp("...", ...)
+  message: Found dynamic content in `run_in_subinterp`. This is dangerous if external
+    data can reach this function call because it allows a malicious actor to run arbitrary
+    Python code. Ensure no external data reaches here.
+  metadata:
+    cwe:
+    - 'CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code
+      (''Eval Injection'')'
+    owasp:
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    references:
+    - https://semgrep.dev/docs/cheat-sheets/python-command-injection/
+    category: security
+    technology:
+    - python
+    confidence: LOW
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: HIGH
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Code Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.dangerous-testcapi-run-in-subinterp-audit.dangerous-testcapi-run-in-subinterp-audit
+    shortlink: https://sg.run/jWxY
+    semgrep.dev:
+      rule:
+        r_id: 27265
+        rv_id: 1263475
+        rule_id: WAUql9
+        version_id: yeTxp4O
+        url: https://semgrep.dev/playground/r/yeTxp4O/python.lang.security.audit.dangerous-testcapi-run-in-subinterp-audit.dangerous-testcapi-run-in-subinterp-audit
+        origin: community
+  severity: WARNING
+  languages:
+  - python
+- id: python.lang.security.audit.dangerous-asyncio-exec-audit.dangerous-asyncio-exec-audit
+  pattern-either:
+  - patterns:
+    - pattern-not: $LOOP.subprocess_exec($PROTOCOL, "...", ...)
+    - pattern-not: $LOOP.subprocess_exec($PROTOCOL, ["...",...], ...)
+    - pattern: $LOOP.subprocess_exec(...)
+  - patterns:
+    - pattern-not: $LOOP.subprocess_exec($PROTOCOL, "=~/(sh|bash|ksh|csh|tcsh|zsh)/",
+        "-c", "...", ...)
+    - pattern: $LOOP.subprocess_exec($PROTOCOL, "=~/(sh|bash|ksh|csh|tcsh|zsh)/",
+        "-c",...)
+  - patterns:
+    - pattern-not: $LOOP.subprocess_exec($PROTOCOL, ["=~/(sh|bash|ksh|csh|tcsh|zsh)/",
+        "-c", "...", ...], ...)
+    - pattern: $LOOP.subprocess_exec($PROTOCOL, ["=~/(sh|bash|ksh|csh|tcsh|zsh)/",
+        "-c", ...], ...)
+  message: Detected subprocess function '$LOOP.subprocess_exec' without a static string.
+    If this data can be controlled by a malicious actor, it may be an instance of
+    command injection. Audit the use of this call to ensure it is not controllable
+    by an external resource. You may consider using 'shlex.escape()'.
+  metadata:
+    owasp:
+    - A01:2017 - Injection
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    cwe:
+    - 'CWE-78: Improper Neutralization of Special Elements used in an OS Command (''OS
+      Command Injection'')'
+    asvs:
+      section: 'V5: Validation, Sanitization and Encoding Verification Requirements'
+      control_id: 5.3.8 OS Command Injection
+      control_url: https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v53-output-encoding-and-injection-prevention-requirements
+      version: '4'
+    references:
+    - https://docs.python.org/3/library/asyncio-eventloop.html#asyncio.loop.subprocess_exec
+    - https://docs.python.org/3/library/shlex.html
+    - https://semgrep.dev/docs/cheat-sheets/python-command-injection/
+    category: security
+    technology:
+    - python
+    confidence: LOW
+    cwe2022-top25: true
+    cwe2021-top25: true
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: HIGH
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Command Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.dangerous-asyncio-exec-audit.dangerous-asyncio-exec-audit
+    shortlink: https://sg.run/RlrO
+    semgrep.dev:
+      rule:
+        r_id: 27249
+        rv_id: 1263459
+        rule_id: EwUEpA
+        version_id: DkTRbZz
+        url: https://semgrep.dev/playground/r/DkTRbZz/python.lang.security.audit.dangerous-asyncio-exec-audit.dangerous-asyncio-exec-audit
+        origin: community
+  languages:
+  - python
+  severity: ERROR
+- id: python.lang.security.audit.dangerous-asyncio-shell-audit.dangerous-asyncio-shell-audit
+  patterns:
+  - pattern-either:
+    - pattern: $LOOP.subprocess_shell($PROTOCOL, $CMD)
+    - pattern: asyncio.subprocess.create_subprocess_shell($CMD, ...)
+    - pattern: asyncio.create_subprocess_shell($CMD, ...)
+  - pattern-not-inside: |
+      $CMD = "..."
+      ...
+  - pattern-not: $LOOP.subprocess_shell($PROTOCOL, "...")
+  - pattern-not: asyncio.subprocess.create_subprocess_shell("...", ...)
+  - pattern-not: asyncio.create_subprocess_shell("...", ...)
+  message: Detected asyncio subprocess function without a static string. If this data
+    can be controlled by a malicious actor, it may be an instance of command injection.
+    Audit the use of this call to ensure it is not controllable by an external resource.
+    You may consider using 'shlex.escape()'.
+  metadata:
+    owasp:
+    - A01:2017 - Injection
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    cwe:
+    - 'CWE-78: Improper Neutralization of Special Elements used in an OS Command (''OS
+      Command Injection'')'
+    asvs:
+      section: 'V5: Validation, Sanitization and Encoding Verification Requirements'
+      control_id: 5.3.8 OS Command Injection
+      control_url: https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v53-output-encoding-and-injection-prevention-requirements
+      version: '4'
+    references:
+    - https://docs.python.org/3/library/asyncio-subprocess.html
+    - https://docs.python.org/3/library/shlex.html
+    - https://semgrep.dev/docs/cheat-sheets/python-command-injection/
+    category: security
+    technology:
+    - python
+    confidence: LOW
+    cwe2022-top25: true
+    cwe2021-top25: true
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: HIGH
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Command Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.dangerous-asyncio-shell-audit.dangerous-asyncio-shell-audit
+    shortlink: https://sg.run/Bp2W
+    semgrep.dev:
+      rule:
+        r_id: 27251
+        rv_id: 1263461
+        rule_id: L1Uk2G
+        version_id: 0bTKz8L
+        url: https://semgrep.dev/playground/r/0bTKz8L/python.lang.security.audit.dangerous-asyncio-shell-audit.dangerous-asyncio-shell-audit
+        origin: community
+  languages:
+  - python
+  severity: ERROR
+- id: python.lang.security.audit.dangerous-system-call-audit.dangerous-system-call-audit
+  patterns:
+  - pattern-not: os.$W("...", ...)
+  - pattern-either:
+    - pattern: os.system(...)
+    - pattern: getattr(os, "system")(...)
+    - pattern: __import__("os").system(...)
+    - pattern: getattr(__import__("os"), "system")(...)
+    - pattern: |
+        $X = __import__("os")
+        ...
+        $X.system(...)
+    - pattern: |
+        $X = __import__("os")
+        ...
+        getattr($X, "system")(...)
+    - pattern: |
+        $X = getattr(os, "system")
+        ...
+        $X(...)
+    - pattern: |
+        $X = __import__("os")
+        ...
+        $Y = getattr($X, "system")
+        ...
+        $Y(...)
+    - pattern: os.popen(...)
+    - pattern: os.popen2(...)
+    - pattern: os.popen3(...)
+    - pattern: os.popen4(...)
+  message: Found dynamic content used in a system call. This is dangerous if external
+    data can reach this function call because it allows a malicious actor to execute
+    commands. Use the 'subprocess' module instead, which is easier to use without
+    accidentally exposing a command injection vulnerability.
+  metadata:
+    source-rule-url: https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html
+    cwe:
+    - 'CWE-78: Improper Neutralization of Special Elements used in an OS Command (''OS
+      Command Injection'')'
+    owasp:
+    - A01:2017 - Injection
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    references:
+    - https://semgrep.dev/docs/cheat-sheets/python-command-injection/
+    asvs:
+      section: 'V5: Validation, Sanitization and Encoding Verification Requirements'
+      control_id: 5.2.4 Dyanmic Code Execution Features
+      control_url: https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v52-sanitization-and-sandboxing-requirements
+      version: '4'
+    category: security
+    technology:
+    - python
+    confidence: LOW
+    cwe2022-top25: true
+    cwe2021-top25: true
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: HIGH
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Command Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.dangerous-system-call-audit.dangerous-system-call-audit
+    shortlink: https://sg.run/2WL0
+    semgrep.dev:
+      rule:
+        r_id: 27263
+        rv_id: 1263473
+        rule_id: BYUkDg
+        version_id: 1QTypR7
+        url: https://semgrep.dev/playground/r/1QTypR7/python.lang.security.audit.dangerous-system-call-audit.dangerous-system-call-audit
+        origin: community
+  languages:
+  - python
+  severity: ERROR
+- id: python.lang.security.audit.dangerous-subinterpreters-run-string-audit.dangerous-subinterpreters-run-string-audit
+  patterns:
+  - pattern: |
+      _xxsubinterpreters.run_string($ID, $PAYLOAD, ...)
+  - pattern-not: |
+      _xxsubinterpreters.run_string($ID, "...", ...)
+  message: Found dynamic content in `run_string`. This is dangerous if external data
+    can reach this function call because it allows a malicious actor to run arbitrary
+    Python code. Ensure no external data reaches here.
+  metadata:
+    cwe:
+    - 'CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code
+      (''Eval Injection'')'
+    owasp:
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    references:
+    - https://bugs.python.org/issue43472
+    - https://semgrep.dev/docs/cheat-sheets/python-command-injection/
+    category: security
+    technology:
+    - python
+    confidence: LOW
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: HIGH
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Code Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.dangerous-subinterpreters-run-string-audit.dangerous-subinterpreters-run-string-audit
+    shortlink: https://sg.run/6lWo
+    semgrep.dev:
+      rule:
+        r_id: 27259
+        rv_id: 1263469
+        rule_id: 5rUoPK
+        version_id: pZT03dX
+        url: https://semgrep.dev/playground/r/pZT03dX/python.lang.security.audit.dangerous-subinterpreters-run-string-audit.dangerous-subinterpreters-run-string-audit
+        origin: community
+  severity: WARNING
+  languages:
+  - python
+- id: python.lang.security.audit.dangerous-spawn-process-audit.dangerous-spawn-process-audit
+  message: Found dynamic content when spawning a process. This is dangerous if external
+    data can reach this function call because it allows a malicious actor to execute
+    commands. Ensure no external data reaches here.
+  metadata:
+    source-rule-url: https://bandit.readthedocs.io/en/latest/plugins/b605_start_process_with_a_shell.html
+    cwe:
+    - 'CWE-78: Improper Neutralization of Special Elements used in an OS Command (''OS
+      Command Injection'')'
+    owasp:
+    - A01:2017 - Injection
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    references:
+    - https://semgrep.dev/docs/cheat-sheets/python-command-injection/
+    asvs:
+      section: 'V5: Validation, Sanitization and Encoding Verification Requirements'
+      control_id: 5.3.8 OS Command Injection
+      control_url: https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v53-output-encoding-and-injection-prevention-requirements
+      version: '4'
+    category: security
+    technology:
+    - python
+    confidence: LOW
+    cwe2022-top25: true
+    cwe2021-top25: true
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: HIGH
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Command Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.dangerous-spawn-process-audit.dangerous-spawn-process-audit
+    shortlink: https://sg.run/lK0y
+    semgrep.dev:
+      rule:
+        r_id: 27257
+        rv_id: 1263467
+        rule_id: PeURWE
+        version_id: o5TbD34
+        url: https://semgrep.dev/playground/r/o5TbD34/python.lang.security.audit.dangerous-spawn-process-audit.dangerous-spawn-process-audit
+        origin: community
+  languages:
+  - python
+  severity: ERROR
+  pattern-either:
+  - patterns:
+    - pattern-not: os.$METHOD($MODE, "...", ...)
+    - pattern: os.$METHOD(...)
+    - metavariable-regex:
+        metavariable: $METHOD
+        regex: (spawnl|spawnle|spawnlp|spawnlpe|spawnv|spawnve|spawnvp|spawnvp|spawnvpe|posix_spawn|posix_spawnp|startfile)
+  - patterns:
+    - pattern-not: os.$METHOD($MODE, "...", ["...","...",...], ...)
+    - pattern: os.$METHOD($MODE, $BASH, ["-c",$CMD,...],...)
+    - metavariable-regex:
+        metavariable: $METHOD
+        regex: (spawnv|spawnve|spawnvp|spawnvp|spawnvpe|posix_spawn|posix_spawnp)
+    - metavariable-regex:
+        metavariable: $BASH
+        regex: (.*)(sh|bash|ksh|csh|tcsh|zsh)
+  - patterns:
+    - pattern-not: os.$METHOD($MODE, "...", "...", "...", ...)
+    - pattern: os.$METHOD($MODE, $BASH, "-c", $CMD,...)
+    - metavariable-regex:
+        metavariable: $METHOD
+        regex: (spawnl|spawnle|spawnlp|spawnlpe)
+    - metavariable-regex:
+        metavariable: $BASH
+        regex: (.*)(sh|bash|ksh|csh|tcsh|zsh)
+- id: python.lang.security.audit.dangerous-code-run-audit.dangerous-interactive-code-run-audit
+  patterns:
+  - pattern-either:
+    - pattern: |
+        $X.push($PAYLOAD,...)
+    - pattern: |
+        $X.runsource($PAYLOAD,...)
+    - pattern: |
+        $X.runcode(code.compile_command($PAYLOAD),...)
+    - pattern: |
+        $PL = code.compile_command($PAYLOAD,...)
+        ...
+        $X.runcode($PL,...)
+  - pattern-either:
+    - pattern-inside: |
+        $X = code.InteractiveConsole(...)
+        ...
+    - pattern-inside: |
+        $X = code.InteractiveInterpreter(...)
+        ...
+  - pattern-not: |
+      $X.push("...",...)
+  - pattern-not: |
+      $X.runsource("...",...)
+  - pattern-not: |
+      $X.runcode(code.compile_command("..."),...)
+  - pattern-not: |
+      $PL = code.compile_command("...",...)
+      ...
+      $X.runcode($PL,...)
+  message: Found dynamic content inside InteractiveConsole/InteractiveInterpreter
+    method. This is dangerous if external data can reach this function call because
+    it allows a malicious actor to run arbitrary Python code. Ensure no external data
+    reaches here.
+  metadata:
+    cwe:
+    - 'CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code
+      (''Eval Injection'')'
+    owasp:
+    - A03:2021 - Injection
+    - A05:2025 - Injection
+    references:
+    - https://semgrep.dev/docs/cheat-sheets/python-command-injection/
+    category: security
+    technology:
+    - python
+    confidence: LOW
+    subcategory:
+    - audit
+    likelihood: LOW
+    impact: HIGH
+    license: Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license
+    vulnerability_class:
+    - Code Injection
+    source: https://semgrep.dev/r/python.lang.security.audit.dangerous-code-run-audit.dangerous-interactive-code-run-audit
+    shortlink: https://sg.run/WGe4
+    semgrep.dev:
+      rule:
+        r_id: 27253
+        rv_id: 1263463
+        rule_id: gxUBAE
+        version_id: qkTR7d1
+        url: https://semgrep.dev/playground/r/qkTR7d1/python.lang.security.audit.dangerous-code-run-audit.dangerous-interactive-code-run-audit
+        origin: community
+  severity: WARNING
+  languages:
+  - python

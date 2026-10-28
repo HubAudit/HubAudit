@@ -1,0 +1,34 @@
+{
+  "file_path": "/tmp/scan_workspace/ysn-rfd__text-dataset-tiny-code-script-py-format/malicious_file_embedding/full_MFE.py",
+  "file_name": "full_MFE.py",
+  "file_size": 13000,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/ysn-rfd__text-dataset-tiny-code-script-py-format/malicious_file_embedding/full_MFE.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.audit.hardcoded-password-default-argument.hardcoded-password-default-argument",
+            "message": "Hardcoded password is used as a default argument to 'start_keylogger'. This could be dangerous if a real password is not supplied.",
+            "severity": "WARNING",
+            "line": 224,
+            "snippet": "def start_keylogger(output: str = \"keylog.enc\", password: str = \"logpass\"):\n    cipher = AESCipher.derive_key(password)\n    enc_cipher = AESCipher(cipher)\n\n    def on_press(key):\n        try:\n        "
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 99.317
+    }
+  ]
+}

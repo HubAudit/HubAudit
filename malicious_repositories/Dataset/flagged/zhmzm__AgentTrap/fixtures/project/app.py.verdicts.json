@@ -1,0 +1,34 @@
+{
+  "file_path": "/tmp/scan_workspace/zhmzm__AgentTrap/fixtures/project/app.py",
+  "file_name": "app.py",
+  "file_size": 284,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/zhmzm__AgentTrap/fixtures/project/app.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "python.flask.security.audit.app-run-param-config.avoid_app_run_with_bad_host",
+            "message": "Running flask app with host 0.0.0.0 could expose the server publicly.",
+            "severity": "WARNING",
+            "line": 18,
+            "snippet": "    app.run(host=\"0.0.0.0\", port=5000)"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 52.435
+    }
+  ]
+}

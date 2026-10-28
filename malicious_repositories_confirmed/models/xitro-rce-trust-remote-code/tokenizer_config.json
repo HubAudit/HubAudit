@@ -1,0 +1,1 @@
+{"tokenizer_class": "XitroRCETokenizer", "auto_map": {"AutoTokenizer": ["tokenizer_custom.XitroRCETokenizer", null]}}

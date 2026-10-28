@@ -1,0 +1,48 @@
+{
+  "file_path": "/tmp/scan_workspace/XuWY__AgentTrap/skills/malicious/case_0020_v3_dim7_xlsx_revenue_manipulation/scripts/office/validators/redlining.py",
+  "file_name": "redlining.py",
+  "file_size": 8918,
+  "flagged": true,
+  "worst_severity": "critical",
+  "flagged_by": [
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "critical",
+      "details": {
+        "file": "/tmp/scan_workspace/XuWY__AgentTrap/skills/malicious/case_0020_v3_dim7_xlsx_revenue_manipulation/scripts/office/validators/redlining.py",
+        "findings_count": 3,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.use-defused-xml-parse.use-defused-xml-parse",
+            "message": "The native Python `xml` library is vulnerable to XML External Entity (XXE) attacks.  These attacks can leak confidential data and \"XML bombs\" can cause denial of service. Do not use this library to parse untrusted input. Instead  the Python documentation recommends using `defusedxml`.",
+            "severity": "ERROR",
+            "line": 34,
+            "snippet": "            tree = ET.parse(modified_file)"
+          },
+          {
+            "rule_id": "python.lang.security.use-defused-xml-parse.use-defused-xml-parse",
+            "message": "The native Python `xml` library is vulnerable to XML External Entity (XXE) attacks.  These attacks can leak confidential data and \"XML bombs\" can cause denial of service. Do not use this library to parse untrusted input. Instead  the Python documentation recommends using `defusedxml`.",
+            "severity": "ERROR",
+            "line": 79,
+            "snippet": "                modified_tree = ET.parse(modified_file)"
+          },
+          {
+            "rule_id": "python.lang.security.use-defused-xml-parse.use-defused-xml-parse",
+            "message": "The native Python `xml` library is vulnerable to XML External Entity (XXE) attacks.  These attacks can leak confidential data and \"XML bombs\" can cause denial of service. Do not use this library to parse untrusted input. Instead  the Python documentation recommends using `defusedxml`.",
+            "severity": "ERROR",
+            "line": 81,
+            "snippet": "                original_tree = ET.parse(original_file)"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 72.017
+    }
+  ]
+}

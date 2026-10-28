@@ -1,0 +1,78 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/src/utils.py",
+  "file_name": "utils.py",
+  "file_size": 21231,
+  "flagged": true,
+  "worst_severity": "low",
+  "flagged_by": [
+    "bandit"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/utils.py",
+        "message": "Consider possible security implications associated with the subprocess module.",
+        "line": 11
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/utils.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 363
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/utils.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 363
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/utils.py",
+        "message": "Starting a process with a partial executable path",
+        "line": 384
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "src/utils.py",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "line": 384
+      },
+      "error": null,
+      "duration": 1.572
+    }
+  ]
+}

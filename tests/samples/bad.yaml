@@ -1,0 +1,15 @@
+# Sample file - triggers checkov and trivy
+# Kubernetes pod with dangerous misconfigurations
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-pod
+spec:
+  containers:
+    - name: app
+      image: ubuntu:latest
+      securityContext:
+        privileged: true          # CKV_K8S_16 - privileged container
+        runAsRoot: true
+        allowPrivilegeEscalation: true
+      resources: {}               # CKV_K8S_11 - no resource limits

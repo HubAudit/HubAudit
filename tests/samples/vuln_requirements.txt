@@ -1,0 +1,5 @@
+# Sample requirements file with known vulnerable package versions
+# Used by pip_audit scanner tests
+django==2.2.0
+requests==2.19.0
+pillow==8.2.0

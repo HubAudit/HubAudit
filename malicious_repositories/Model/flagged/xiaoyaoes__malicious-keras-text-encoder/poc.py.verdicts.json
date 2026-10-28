@@ -1,0 +1,39 @@
+{
+  "file_path": "/tmp/scan_workspace/xiaoyaoes__malicious-keras-text-encoder/poc.py",
+  "file_name": "poc.py",
+  "file_size": 1043,
+  "flagged": true,
+  "worst_severity": "medium",
+  "flagged_by": [
+    "bandit"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "poc.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 27
+      },
+      "error": null,
+      "duration": 0.366
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "medium",
+        "file": "poc.py",
+        "message": "Probable insecure usage of temp file/directory.",
+        "line": 28
+      },
+      "error": null,
+      "duration": 0.366
+    }
+  ]
+}

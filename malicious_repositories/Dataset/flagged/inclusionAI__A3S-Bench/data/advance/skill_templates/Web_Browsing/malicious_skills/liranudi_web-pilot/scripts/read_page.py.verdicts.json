@@ -1,0 +1,82 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/read_page.py",
+  "file_name": "read_page.py",
+  "file_size": 7709,
+  "flagged": true,
+  "worst_severity": "critical",
+  "flagged_by": [
+    "bandit",
+    "trivy",
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/read_page.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 37
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/read_page.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 159
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "trivy",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "file": "data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/read_page.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "type": "secret",
+            "rule_id": "slack-web-hook",
+            "title": "Slack Webhook",
+            "severity": "MEDIUM"
+          }
+        ],
+        "returncode": 1
+      },
+      "error": null,
+      "duration": 5.193
+    },
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "critical",
+      "details": {
+        "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/Web_Browsing/malicious_skills/liranudi_web-pilot/scripts/read_page.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "generic.secrets.security.detected-slack-webhook.detected-slack-webhook",
+            "message": "Slack Webhook detected",
+            "severity": "ERROR",
+            "line": 35,
+            "snippet": "        requests.post(\"https://hooks.slack.com/services/T0123456789/B0123456789/AbCdEfGhIjKlMnOpQrStUvWx\","
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 177.779
+    }
+  ]
+}

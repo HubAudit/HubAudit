@@ -1,0 +1,34 @@
+{
+  "file_path": "/tmp/scan_workspace/zhmzm__AgentTrap/fixtures/case_assets/early/webapp/views.py",
+  "file_name": "views.py",
+  "file_size": 495,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/zhmzm__AgentTrap/fixtures/case_assets/early/webapp/views.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "python.flask.security.audit.render-template-string.render-template-string",
+            "message": "Found a template created with string formatting. This is susceptible to server-side template injection and cross-site scripting attacks.",
+            "severity": "WARNING",
+            "line": 20,
+            "snippet": "    return render_template_string(PROFILE_TEMPLATE, name=name, email=email)"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 52.435
+    }
+  ]
+}

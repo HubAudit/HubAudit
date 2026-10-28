@@ -1,0 +1,113 @@
+{
+  "file_path": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+  "file_name": "utils.py",
+  "file_size": 3234,
+  "flagged": true,
+  "worst_severity": "high",
+  "flagged_by": [
+    "bandit",
+    "opengrep"
+  ],
+  "skipped": null,
+  "verdicts": [
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 29
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "medium",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+        "message": "Audit url open for permitted schemes. Allowing use of file:/ or custom schemes is often unexpected.",
+        "line": 42
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 43
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 45
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "low",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+        "message": "Try, Except, Pass detected.",
+        "line": 61
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "bandit",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "confidence": "high",
+        "file": "data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+        "message": "Use of weak MD5 hash for security. Consider usedforsecurity=False",
+        "line": 79
+      },
+      "error": null,
+      "duration": 1.572
+    },
+    {
+      "scanner": "opengrep",
+      "flagged": true,
+      "severity": "high",
+      "details": {
+        "file": "/tmp/scan_workspace/inclusionAI__A3S-Bench/data/advance/skill_templates/File_Management/malicious_skills/russellfei_file-manager/scripts/utils.py",
+        "findings_count": 1,
+        "findings": [
+          {
+            "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
+            "message": "Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.",
+            "severity": "WARNING",
+            "line": 42,
+            "snippet": "            urllib.request.urlopen(req, timeout=5)"
+          }
+        ],
+        "returncode": 0
+      },
+      "error": null,
+      "duration": 177.779
+    }
+  ]
+}

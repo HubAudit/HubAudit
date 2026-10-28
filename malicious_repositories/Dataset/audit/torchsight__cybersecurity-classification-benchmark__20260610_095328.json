@@ -1,0 +1,4707 @@
+{
+  "scanned_at": "2026-06-10T09:53:28.163729",
+  "repo_id": "torchsight/cybersecurity-classification-benchmark",
+  "repo_type": "dataset",
+  "outcome": "malicious",
+  "duration_seconds": 0.0,
+  "total_files": 243,
+  "files_scanned": 243,
+  "files_flagged": 61,
+  "files_clean": 182,
+  "files_skipped": 0,
+  "flagged_files": [
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/manual-review/manual_review_200_blind.csv",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/manual-review/manual_review_200_key.csv",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0665.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0657.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0646.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0652.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0736.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0738.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0732.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0673.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0669.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0655.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0661.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0649.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0734.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0643.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0740.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0958.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0967.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0961.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0970.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0964.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0949.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0946.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0952.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0955.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0094.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0005.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0015.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0043.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0100.yml",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0025.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0125.json",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0026.yml",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0145.json",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0114.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0133.json",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0139.yml",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0033.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0135.yml",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0099.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0121.json",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0115.yml",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0095.yml",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0010.yml",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0048.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0105.yml",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0030.yml",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0137.json",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0143.yml",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0110.yml",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0038.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0053.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0119.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0149.json",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0020.yml",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0120.yml",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0129.json",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0109.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0104.py",
+    "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0141.json"
+  ],
+  "folder_scanner_timings": {
+    "pysentry": 0.017,
+    "bandit": 0.434,
+    "trivy": 2.983,
+    "opengrep": 26.125
+  },
+  "file_scanner_timings": {
+    "pip_audit": 0.0,
+    "modelaudit": 0.0
+  },
+  "scanner_file_counts": {
+    "opengrep": 202,
+    "bandit": 48,
+    "trivy": 50,
+    "pysentry": 0,
+    "pip_audit": 0,
+    "modelaudit": 0
+  },
+  "file_results": [
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/ground-truth.json",
+      "file_name": "ground-truth.json",
+      "file_size": 229165,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/image-key.json",
+      "file_name": "image-key.json",
+      "file_size": 13937,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/eval-500-external/ground-truth.json",
+      "file_name": "ground-truth.json",
+      "file_size": 918371,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval1000_anthropic_claude-sonnet-4-20250514.json",
+      "file_name": "eval1000_anthropic_claude-sonnet-4-20250514.json",
+      "file_size": 432267,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval_external_claude-sonnet-4-20250514.json",
+      "file_name": "eval_external_claude-sonnet-4-20250514.json",
+      "file_size": 113837,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval1000_anthropic_claude-opus-4-20250514.json",
+      "file_name": "eval1000_anthropic_claude-opus-4-20250514.json",
+      "file_size": 421366,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval_external_gemini-2.5-pro.json",
+      "file_name": "eval_external_gemini-2.5-pro.json",
+      "file_size": 114164,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval_external_torchsight-beam-q4_K_M.json",
+      "file_name": "eval_external_torchsight-beam-q4_K_M.json",
+      "file_size": 186177,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval1000_google_vertex_gemini-2.5-pro.json",
+      "file_name": "eval1000_google_vertex_gemini-2.5-pro.json",
+      "file_size": 435291,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval_external_gpt-5.json",
+      "file_name": "eval_external_gpt-5.json",
+      "file_size": 113774,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval1000_beam_q8_0.json",
+      "file_name": "eval1000_beam_q8_0.json",
+      "file_size": 429913,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval1000_openai_gpt-5.json",
+      "file_name": "eval1000_openai_gpt-5.json",
+      "file_size": 435017,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval1000_beam_f16.json",
+      "file_name": "eval1000_beam_f16.json",
+      "file_size": 429773,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval1000_beam_q4_K_M.json",
+      "file_name": "eval1000_beam_q4_K_M.json",
+      "file_size": 430028,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval1000_regex_only.json",
+      "file_name": "eval1000_regex_only.json",
+      "file_size": 200839,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval_external_torchsight-beam-q8_0.json",
+      "file_name": "eval_external_torchsight-beam-q8_0.json",
+      "file_size": 186063,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval_external_regex_only.json",
+      "file_name": "eval_external_regex_only.json",
+      "file_size": 109389,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval1000_qwen35_27b_base.json",
+      "file_name": "eval1000_qwen35_27b_base.json",
+      "file_size": 432260,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval_external_torchsight-beam-f16.json",
+      "file_name": "eval_external_torchsight-beam-f16.json",
+      "file_size": 186120,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/results/eval_external_qwen3.5-27b.json",
+      "file_name": "eval_external_qwen3.5-27b.json",
+      "file_size": 187795,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/manual-review/priority_review_18_blind.csv",
+      "file_name": "priority_review_18_blind.csv",
+      "file_size": 23951,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/manual-review/manual_review_200_blind.csv",
+      "file_name": "manual_review_200_blind.csv",
+      "file_size": 149396,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "manual-review/manual_review_200_blind.csv",
+            "findings_count": 12,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "aws-access-key-id",
+                "title": "AWS Access Key ID",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "aws-access-key-id",
+                "title": "AWS Access Key ID",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "aws-access-key-id",
+                "title": "AWS Access Key ID",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "aws-access-key-id",
+                "title": "AWS Access Key ID",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "aws-secret-access-key",
+                "title": "AWS Secret Access Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "aws-secret-access-key",
+                "title": "AWS Secret Access Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "aws-secret-access-key",
+                "title": "AWS Secret Access Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "aws-secret-access-key",
+                "title": "AWS Secret Access Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "github-pat",
+                "title": "GitHub Personal Access Token",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "private-key",
+                "title": "Asymmetric Private Key",
+                "severity": "HIGH"
+              },
+              {
+                "type": "secret",
+                "rule_id": "private-key",
+                "title": "Asymmetric Private Key",
+                "severity": "HIGH"
+              },
+              {
+                "type": "secret",
+                "rule_id": "private-key",
+                "title": "Asymmetric Private Key",
+                "severity": "HIGH"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/manual-review/manual_review_200_key.csv",
+      "file_name": "manual_review_200_key.csv",
+      "file_size": 166231,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "manual-review/manual_review_200_key.csv",
+            "findings_count": 12,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "aws-access-key-id",
+                "title": "AWS Access Key ID",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "aws-access-key-id",
+                "title": "AWS Access Key ID",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "aws-access-key-id",
+                "title": "AWS Access Key ID",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "aws-access-key-id",
+                "title": "AWS Access Key ID",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "aws-secret-access-key",
+                "title": "AWS Secret Access Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "aws-secret-access-key",
+                "title": "AWS Secret Access Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "aws-secret-access-key",
+                "title": "AWS Secret Access Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "aws-secret-access-key",
+                "title": "AWS Secret Access Key",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "github-pat",
+                "title": "GitHub Personal Access Token",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "private-key",
+                "title": "Asymmetric Private Key",
+                "severity": "HIGH"
+              },
+              {
+                "type": "secret",
+                "rule_id": "private-key",
+                "title": "Asymmetric Private Key",
+                "severity": "HIGH"
+              },
+              {
+                "type": "secret",
+                "rule_id": "private-key",
+                "title": "Asymmetric Private Key",
+                "severity": "HIGH"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/manual-review/priority_review_18_key.csv",
+      "file_name": "priority_review_18_key.csv",
+      "file_size": 25470,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0614.json",
+      "file_name": "sample-0614.json",
+      "file_size": 281,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0707.json",
+      "file_name": "sample-0707.json",
+      "file_size": 299,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0665.py",
+      "file_name": "sample-0665.py",
+      "file_size": 214,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0665.py",
+            "message": "Consider possible security implications associated with the subprocess module.",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0665.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 5
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0665.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.python-reverse-shell.python-reverse-shell",
+                "message": "Semgrep found a Python reverse shell using /bin/sh to \"118.21.231.173\" at 7741",
+                "severity": "WARNING",
+                "line": 5,
+                "snippet": "subprocess.call([\"/bin/sh\",\"-i\"])"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0657.py",
+      "file_name": "sample-0657.py",
+      "file_size": 213,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0657.py",
+            "message": "Consider possible security implications associated with the subprocess module.",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0657.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 5
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0657.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.python-reverse-shell.python-reverse-shell",
+                "message": "Semgrep found a Python reverse shell using /bin/sh to \"24.41.244.180\" at 5042",
+                "severity": "WARNING",
+                "line": 5,
+                "snippet": "subprocess.call([\"/bin/sh\",\"-i\"])"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0709.json",
+      "file_name": "sample-0709.json",
+      "file_size": 298,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0646.py",
+      "file_name": "sample-0646.py",
+      "file_size": 278,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "low",
+            "file": "malicious/sample-0646.py",
+            "message": "Possible SQL injection vector through string-based query construction.",
+            "line": 3
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0646.py",
+            "findings_count": 2,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+                "message": "Detected possible formatted SQL query. Use parameterized queries instead.",
+                "severity": "WARNING",
+                "line": 5,
+                "snippet": "    cursor.execute(query)"
+              },
+              {
+                "rule_id": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+                "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.",
+                "severity": "ERROR",
+                "line": 5,
+                "snippet": "    cursor.execute(query)"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0619.json",
+      "file_name": "sample-0619.json",
+      "file_size": 279,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0652.py",
+      "file_name": "sample-0652.py",
+      "file_size": 278,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "low",
+            "file": "malicious/sample-0652.py",
+            "message": "Possible SQL injection vector through string-based query construction.",
+            "line": 3
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0652.py",
+            "findings_count": 2,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+                "message": "Detected possible formatted SQL query. Use parameterized queries instead.",
+                "severity": "WARNING",
+                "line": 5,
+                "snippet": "    cursor.execute(query)"
+              },
+              {
+                "rule_id": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+                "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.",
+                "severity": "ERROR",
+                "line": 5,
+                "snippet": "    cursor.execute(query)"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0719.json",
+      "file_name": "sample-0719.json",
+      "file_size": 298,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0705.json",
+      "file_name": "sample-0705.json",
+      "file_size": 191,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0715.json",
+      "file_name": "sample-0715.json",
+      "file_size": 309,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0717.json",
+      "file_name": "sample-0717.json",
+      "file_size": 308,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0736.py",
+      "file_name": "sample-0736.py",
+      "file_size": 246,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0736.py",
+            "message": "Consider possible security implications associated with pickle module.",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0736.py",
+            "message": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+            "line": 4
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0736.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.deserialization.pickle.avoid-pickle",
+                "message": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.",
+                "severity": "WARNING",
+                "line": 4,
+                "snippet": "obj = pickle.loads(data)  # VULNERABLE \u2014 arbitrary code execution via __reduce__"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0609.json",
+      "file_name": "sample-0609.json",
+      "file_size": 282,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0738.py",
+      "file_name": "sample-0738.py",
+      "file_size": 246,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0738.py",
+            "message": "Consider possible security implications associated with pickle module.",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0738.py",
+            "message": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+            "line": 4
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0738.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.deserialization.pickle.avoid-pickle",
+                "message": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.",
+                "severity": "WARNING",
+                "line": 4,
+                "snippet": "obj = pickle.loads(data)  # VULNERABLE \u2014 arbitrary code execution via __reduce__"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0703.json",
+      "file_name": "sample-0703.json",
+      "file_size": 191,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0732.py",
+      "file_name": "sample-0732.py",
+      "file_size": 246,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0732.py",
+            "message": "Consider possible security implications associated with pickle module.",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0732.py",
+            "message": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+            "line": 4
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0732.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.deserialization.pickle.avoid-pickle",
+                "message": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.",
+                "severity": "WARNING",
+                "line": 4,
+                "snippet": "obj = pickle.loads(data)  # VULNERABLE \u2014 arbitrary code execution via __reduce__"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0742.json",
+      "file_name": "sample-0742.json",
+      "file_size": 166,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0673.py",
+      "file_name": "sample-0673.py",
+      "file_size": 210,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0673.py",
+            "message": "Consider possible security implications associated with the subprocess module.",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0673.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 5
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0673.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.python-reverse-shell.python-reverse-shell",
+                "message": "Semgrep found a Python reverse shell using /bin/sh to \"91.7.67.32\" at 9801",
+                "severity": "WARNING",
+                "line": 5,
+                "snippet": "subprocess.call([\"/bin/sh\",\"-i\"])"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0669.py",
+      "file_name": "sample-0669.py",
+      "file_size": 214,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0669.py",
+            "message": "Consider possible security implications associated with the subprocess module.",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0669.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 5
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0669.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.python-reverse-shell.python-reverse-shell",
+                "message": "Semgrep found a Python reverse shell using /bin/sh to \"112.251.40.139\" at 9787",
+                "severity": "WARNING",
+                "line": 5,
+                "snippet": "subprocess.call([\"/bin/sh\",\"-i\"])"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0713.json",
+      "file_name": "sample-0713.json",
+      "file_size": 305,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0655.py",
+      "file_name": "sample-0655.py",
+      "file_size": 278,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "low",
+            "file": "malicious/sample-0655.py",
+            "message": "Possible SQL injection vector through string-based query construction.",
+            "line": 3
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0655.py",
+            "findings_count": 2,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+                "message": "Detected possible formatted SQL query. Use parameterized queries instead.",
+                "severity": "WARNING",
+                "line": 5,
+                "snippet": "    cursor.execute(query)"
+              },
+              {
+                "rule_id": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+                "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.",
+                "severity": "ERROR",
+                "line": 5,
+                "snippet": "    cursor.execute(query)"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0701.json",
+      "file_name": "sample-0701.json",
+      "file_size": 191,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0697.json",
+      "file_name": "sample-0697.json",
+      "file_size": 191,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0661.py",
+      "file_name": "sample-0661.py",
+      "file_size": 213,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0661.py",
+            "message": "Consider possible security implications associated with the subprocess module.",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0661.py",
+            "message": "subprocess call - check for execution of untrusted input.",
+            "line": 5
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0661.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.python-reverse-shell.python-reverse-shell",
+                "message": "Semgrep found a Python reverse shell using /bin/sh to \"21.80.165.143\" at 7369",
+                "severity": "WARNING",
+                "line": 5,
+                "snippet": "subprocess.call([\"/bin/sh\",\"-i\"])"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0711.json",
+      "file_name": "sample-0711.json",
+      "file_size": 303,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0604.json",
+      "file_name": "sample-0604.json",
+      "file_size": 269,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0699.json",
+      "file_name": "sample-0699.json",
+      "file_size": 191,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0649.py",
+      "file_name": "sample-0649.py",
+      "file_size": 278,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "low",
+            "file": "malicious/sample-0649.py",
+            "message": "Possible SQL injection vector through string-based query construction.",
+            "line": 3
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0649.py",
+            "findings_count": 2,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+                "message": "Detected possible formatted SQL query. Use parameterized queries instead.",
+                "severity": "WARNING",
+                "line": 5,
+                "snippet": "    cursor.execute(query)"
+              },
+              {
+                "rule_id": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+                "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.",
+                "severity": "ERROR",
+                "line": 5,
+                "snippet": "    cursor.execute(query)"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0748.json",
+      "file_name": "sample-0748.json",
+      "file_size": 167,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0745.json",
+      "file_name": "sample-0745.json",
+      "file_size": 167,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0734.py",
+      "file_name": "sample-0734.py",
+      "file_size": 246,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0734.py",
+            "message": "Consider possible security implications associated with pickle module.",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0734.py",
+            "message": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+            "line": 4
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0734.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.deserialization.pickle.avoid-pickle",
+                "message": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.",
+                "severity": "WARNING",
+                "line": 4,
+                "snippet": "obj = pickle.loads(data)  # VULNERABLE \u2014 arbitrary code execution via __reduce__"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0643.py",
+      "file_name": "sample-0643.py",
+      "file_size": 278,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "low",
+            "file": "malicious/sample-0643.py",
+            "message": "Possible SQL injection vector through string-based query construction.",
+            "line": 3
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0643.py",
+            "findings_count": 2,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+                "message": "Detected possible formatted SQL query. Use parameterized queries instead.",
+                "severity": "WARNING",
+                "line": 5,
+                "snippet": "    cursor.execute(query)"
+              },
+              {
+                "rule_id": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+                "message": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.",
+                "severity": "ERROR",
+                "line": 5,
+                "snippet": "    cursor.execute(query)"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0624.json",
+      "file_name": "sample-0624.json",
+      "file_size": 305,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0740.py",
+      "file_name": "sample-0740.py",
+      "file_size": 246,
+      "flagged": true,
+      "worst_severity": "high",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0740.py",
+            "message": "Consider possible security implications associated with pickle module.",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "high",
+            "file": "malicious/sample-0740.py",
+            "message": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+            "line": 4
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "high",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/malicious/sample-0740.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "python.lang.security.deserialization.pickle.avoid-pickle",
+                "message": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.",
+                "severity": "WARNING",
+                "line": 4,
+                "snippet": "obj = pickle.loads(data)  # VULNERABLE \u2014 arbitrary code execution via __reduce__"
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/financial/sample-0323.json",
+      "file_name": "sample-0323.json",
+      "file_size": 178,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/financial/sample-0314.json",
+      "file_name": "sample-0314.json",
+      "file_size": 177,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/financial/sample-0317.json",
+      "file_name": "sample-0317.json",
+      "file_size": 168,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/financial/sample-0302.json",
+      "file_name": "sample-0302.json",
+      "file_size": 168,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/financial/sample-0311.json",
+      "file_name": "sample-0311.json",
+      "file_size": 174,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/financial/sample-0320.json",
+      "file_name": "sample-0320.json",
+      "file_size": 168,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/financial/sample-0305.json",
+      "file_name": "sample-0305.json",
+      "file_size": 174,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/financial/sample-0308.json",
+      "file_name": "sample-0308.json",
+      "file_size": 178,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0924.yml",
+      "file_name": "sample-0924.yml",
+      "file_size": 260,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0976.json",
+      "file_name": "sample-0976.json",
+      "file_size": 351,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0930.yml",
+      "file_name": "sample-0930.yml",
+      "file_size": 259,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0973.json",
+      "file_name": "sample-0973.json",
+      "file_size": 335,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0842.py",
+      "file_name": "sample-0842.py",
+      "file_size": 768,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0768.toml",
+      "file_name": "sample-0768.toml",
+      "file_size": 127,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0958.py",
+      "file_name": "sample-0958.py",
+      "file_size": 630,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "safe/sample-0958.py",
+            "message": "Possible hardcoded password: 'not-a-real-secret'",
+            "line": 7
+          },
+          "error": null,
+          "duration": 0.434
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0781.yml",
+      "file_name": "sample-0781.yml",
+      "file_size": 155,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0753.toml",
+      "file_name": "sample-0753.toml",
+      "file_size": 122,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0921.yml",
+      "file_name": "sample-0921.yml",
+      "file_size": 255,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0967.py",
+      "file_name": "sample-0967.py",
+      "file_size": 630,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "safe/sample-0967.py",
+            "message": "Possible hardcoded password: 'not-a-real-secret'",
+            "line": 7
+          },
+          "error": null,
+          "duration": 0.434
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0961.py",
+      "file_name": "sample-0961.py",
+      "file_size": 630,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "safe/sample-0961.py",
+            "message": "Possible hardcoded password: 'not-a-real-secret'",
+            "line": 7
+          },
+          "error": null,
+          "duration": 0.434
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0762.json",
+      "file_name": "sample-0762.json",
+      "file_size": 131,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0763.toml",
+      "file_name": "sample-0763.toml",
+      "file_size": 122,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0988.json",
+      "file_name": "sample-0988.json",
+      "file_size": 335,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-1000.json",
+      "file_name": "sample-1000.json",
+      "file_size": 337,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0834.py",
+      "file_name": "sample-0834.py",
+      "file_size": 763,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0970.py",
+      "file_name": "sample-0970.py",
+      "file_size": 630,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "safe/sample-0970.py",
+            "message": "Possible hardcoded password: 'not-a-real-secret'",
+            "line": 7
+          },
+          "error": null,
+          "duration": 0.434
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0918.yml",
+      "file_name": "sample-0918.yml",
+      "file_size": 258,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0964.py",
+      "file_name": "sample-0964.py",
+      "file_size": 630,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "safe/sample-0964.py",
+            "message": "Possible hardcoded password: 'not-a-real-secret'",
+            "line": 7
+          },
+          "error": null,
+          "duration": 0.434
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0994.json",
+      "file_name": "sample-0994.json",
+      "file_size": 348,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0757.json",
+      "file_name": "sample-0757.json",
+      "file_size": 128,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0858.py",
+      "file_name": "sample-0858.py",
+      "file_size": 765,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0773.toml",
+      "file_name": "sample-0773.toml",
+      "file_size": 125,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0933.yml",
+      "file_name": "sample-0933.yml",
+      "file_size": 262,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0936.yml",
+      "file_name": "sample-0936.yml",
+      "file_size": 267,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0939.yml",
+      "file_name": "sample-0939.yml",
+      "file_size": 261,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0838.py",
+      "file_name": "sample-0838.py",
+      "file_size": 764,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0830.py",
+      "file_name": "sample-0830.py",
+      "file_size": 765,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0772.json",
+      "file_name": "sample-0772.json",
+      "file_size": 126,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0949.py",
+      "file_name": "sample-0949.py",
+      "file_size": 630,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "safe/sample-0949.py",
+            "message": "Possible hardcoded password: 'not-a-real-secret'",
+            "line": 7
+          },
+          "error": null,
+          "duration": 0.434
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0945.yml",
+      "file_name": "sample-0945.yml",
+      "file_size": 257,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0946.py",
+      "file_name": "sample-0946.py",
+      "file_size": 630,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "safe/sample-0946.py",
+            "message": "Possible hardcoded password: 'not-a-real-secret'",
+            "line": 7
+          },
+          "error": null,
+          "duration": 0.434
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0782.json",
+      "file_name": "sample-0782.json",
+      "file_size": 129,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0982.json",
+      "file_name": "sample-0982.json",
+      "file_size": 338,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0952.py",
+      "file_name": "sample-0952.py",
+      "file_size": 630,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "safe/sample-0952.py",
+            "message": "Possible hardcoded password: 'not-a-real-secret'",
+            "line": 7
+          },
+          "error": null,
+          "duration": 0.434
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0751.yml",
+      "file_name": "sample-0751.yml",
+      "file_size": 154,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0846.py",
+      "file_name": "sample-0846.py",
+      "file_size": 765,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0766.yml",
+      "file_name": "sample-0766.yml",
+      "file_size": 155,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0767.json",
+      "file_name": "sample-0767.json",
+      "file_size": 128,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0997.json",
+      "file_name": "sample-0997.json",
+      "file_size": 338,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0771.yml",
+      "file_name": "sample-0771.yml",
+      "file_size": 154,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0955.py",
+      "file_name": "sample-0955.py",
+      "file_size": 630,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "safe/sample-0955.py",
+            "message": "Possible hardcoded password: 'not-a-real-secret'",
+            "line": 7
+          },
+          "error": null,
+          "duration": 0.434
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0758.toml",
+      "file_name": "sample-0758.toml",
+      "file_size": 129,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0862.py",
+      "file_name": "sample-0862.py",
+      "file_size": 764,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0777.json",
+      "file_name": "sample-0777.json",
+      "file_size": 126,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0826.py",
+      "file_name": "sample-0826.py",
+      "file_size": 764,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0752.json",
+      "file_name": "sample-0752.json",
+      "file_size": 127,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0927.yml",
+      "file_name": "sample-0927.yml",
+      "file_size": 262,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0942.yml",
+      "file_name": "sample-0942.yml",
+      "file_size": 258,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0854.py",
+      "file_name": "sample-0854.py",
+      "file_size": 764,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0761.yml",
+      "file_name": "sample-0761.yml",
+      "file_size": 155,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0979.json",
+      "file_name": "sample-0979.json",
+      "file_size": 350,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0850.py",
+      "file_name": "sample-0850.py",
+      "file_size": 767,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0776.yml",
+      "file_name": "sample-0776.yml",
+      "file_size": 155,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0756.yml",
+      "file_name": "sample-0756.yml",
+      "file_size": 154,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0783.toml",
+      "file_name": "sample-0783.toml",
+      "file_size": 128,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0991.json",
+      "file_name": "sample-0991.json",
+      "file_size": 348,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0985.json",
+      "file_name": "sample-0985.json",
+      "file_size": 348,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/safe/sample-0778.toml",
+      "file_name": "sample-0778.toml",
+      "file_size": 123,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0265.json",
+      "file_name": "sample-0265.json",
+      "file_size": 1501,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0193.json",
+      "file_name": "sample-0193.json",
+      "file_size": 337,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0243.csv",
+      "file_name": "sample-0243.csv",
+      "file_size": 593,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0163.json",
+      "file_name": "sample-0163.json",
+      "file_size": 326,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0261.json",
+      "file_name": "sample-0261.json",
+      "file_size": 741,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0207.csv",
+      "file_name": "sample-0207.csv",
+      "file_size": 179,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0183.json",
+      "file_name": "sample-0183.json",
+      "file_size": 319,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0253.json",
+      "file_name": "sample-0253.json",
+      "file_size": 779,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0235.csv",
+      "file_name": "sample-0235.csv",
+      "file_size": 821,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0275.json",
+      "file_name": "sample-0275.json",
+      "file_size": 298,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0245.csv",
+      "file_name": "sample-0245.csv",
+      "file_size": 730,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0249.json",
+      "file_name": "sample-0249.json",
+      "file_size": 987,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0167.csv",
+      "file_name": "sample-0167.csv",
+      "file_size": 397,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0192.csv",
+      "file_name": "sample-0192.csv",
+      "file_size": 395,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0277.json",
+      "file_name": "sample-0277.json",
+      "file_size": 291,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0231.csv",
+      "file_name": "sample-0231.csv",
+      "file_size": 462,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0188.json",
+      "file_name": "sample-0188.json",
+      "file_size": 327,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0251.json",
+      "file_name": "sample-0251.json",
+      "file_size": 1244,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0201.csv",
+      "file_name": "sample-0201.csv",
+      "file_size": 161,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0198.csv",
+      "file_name": "sample-0198.csv",
+      "file_size": 185,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0216.csv",
+      "file_name": "sample-0216.csv",
+      "file_size": 177,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0247.json",
+      "file_name": "sample-0247.json",
+      "file_size": 1258,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0259.json",
+      "file_name": "sample-0259.json",
+      "file_size": 1009,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0182.csv",
+      "file_name": "sample-0182.csv",
+      "file_size": 433,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0178.json",
+      "file_name": "sample-0178.json",
+      "file_size": 318,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0227.csv",
+      "file_name": "sample-0227.csv",
+      "file_size": 766,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0172.csv",
+      "file_name": "sample-0172.csv",
+      "file_size": 384,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0237.csv",
+      "file_name": "sample-0237.csv",
+      "file_size": 746,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0279.json",
+      "file_name": "sample-0279.json",
+      "file_size": 293,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0223.csv",
+      "file_name": "sample-0223.csv",
+      "file_size": 356,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0273.json",
+      "file_name": "sample-0273.json",
+      "file_size": 289,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0255.json",
+      "file_name": "sample-0255.json",
+      "file_size": 994,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0257.json",
+      "file_name": "sample-0257.json",
+      "file_size": 1522,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0168.json",
+      "file_name": "sample-0168.json",
+      "file_size": 328,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0152.csv",
+      "file_name": "sample-0152.csv",
+      "file_size": 407,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0213.csv",
+      "file_name": "sample-0213.csv",
+      "file_size": 153,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0221.csv",
+      "file_name": "sample-0221.csv",
+      "file_size": 332,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0204.csv",
+      "file_name": "sample-0204.csv",
+      "file_size": 160,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0269.json",
+      "file_name": "sample-0269.json",
+      "file_size": 763,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0271.json",
+      "file_name": "sample-0271.json",
+      "file_size": 296,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0267.json",
+      "file_name": "sample-0267.json",
+      "file_size": 1501,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0281.json",
+      "file_name": "sample-0281.json",
+      "file_size": 289,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0210.csv",
+      "file_name": "sample-0210.csv",
+      "file_size": 158,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0233.csv",
+      "file_name": "sample-0233.csv",
+      "file_size": 457,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0187.csv",
+      "file_name": "sample-0187.csv",
+      "file_size": 413,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0225.csv",
+      "file_name": "sample-0225.csv",
+      "file_size": 846,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0162.csv",
+      "file_name": "sample-0162.csv",
+      "file_size": 402,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0157.csv",
+      "file_name": "sample-0157.csv",
+      "file_size": 399,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0158.json",
+      "file_name": "sample-0158.json",
+      "file_size": 333,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0173.json",
+      "file_name": "sample-0173.json",
+      "file_size": 337,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0219.csv",
+      "file_name": "sample-0219.csv",
+      "file_size": 166,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0285.json",
+      "file_name": "sample-0285.json",
+      "file_size": 295,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0263.json",
+      "file_name": "sample-0263.json",
+      "file_size": 1231,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0283.json",
+      "file_name": "sample-0283.json",
+      "file_size": 287,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0177.csv",
+      "file_name": "sample-0177.csv",
+      "file_size": 415,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0239.csv",
+      "file_name": "sample-0239.csv",
+      "file_size": 324,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0241.csv",
+      "file_name": "sample-0241.csv",
+      "file_size": 858,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0229.csv",
+      "file_name": "sample-0229.csv",
+      "file_size": 851,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/pii/sample-0153.json",
+      "file_name": "sample-0153.json",
+      "file_size": 326,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0075.yml",
+      "file_name": "sample-0075.yml",
+      "file_size": 147,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0094.py",
+      "file_name": "sample-0094.py",
+      "file_size": 311,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0094.py",
+            "message": "Possible hardcoded password: '74tjL833w6lljwqMHyflvT4Lj3abOj4FDO0ZbQxE9KS3ppoJRJQPArnAxnaKhbsdnSVEJ59xPYb/YgJ3wB4tJQZ16L9foPuO8mldTnHg3FE1IhE7Xf9g6YW86s/kcuyBWvnB7fRh1y4D'",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "credentials/sample-0094.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "gcp-service-account",
+                "title": "Google (GCP) Service-account",
+                "severity": "CRITICAL"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0127.yml",
+      "file_name": "sample-0127.yml",
+      "file_size": 233,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0057.yml",
+      "file_name": "sample-0057.yml",
+      "file_size": 116,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0063.yml",
+      "file_name": "sample-0063.yml",
+      "file_size": 111,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0123.yml",
+      "file_name": "sample-0123.yml",
+      "file_size": 233,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0064.json",
+      "file_name": "sample-0064.json",
+      "file_size": 117,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0005.py",
+      "file_name": "sample-0005.py",
+      "file_size": 349,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0005.py",
+            "message": "Possible hardcoded password: 'xoxb-2889074-1526928976-cHM+tBiAyXQXlbTIJ4YobIA9'",
+            "line": 2
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0005.py",
+            "message": "Possible hardcoded password: '2a120ddd58b0da30382bdb5c84d577ce'",
+            "line": 3
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "low",
+            "file": "credentials/sample-0005.py",
+            "message": "Call to requests without timeout",
+            "line": 5
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0005.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 3,
+                "snippet": "SLACK_SIGNING_SECRET = \"2a120ddd58b0da30382bdb5c84d577ce\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0015.py",
+      "file_name": "sample-0015.py",
+      "file_size": 349,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0015.py",
+            "message": "Possible hardcoded password: 'xoxb-7620395-7653241355-6Iyq3CltV0t2Qi/ORNVZGJ1o'",
+            "line": 2
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0015.py",
+            "message": "Possible hardcoded password: 'beef8cd95fc8086e5f395bd1376f2858'",
+            "line": 3
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "low",
+            "file": "credentials/sample-0015.py",
+            "message": "Call to requests without timeout",
+            "line": 5
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0015.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 3,
+                "snippet": "SLACK_SIGNING_SECRET = \"beef8cd95fc8086e5f395bd1376f2858\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0043.py",
+      "file_name": "sample-0043.py",
+      "file_size": 221,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0043.py",
+            "message": "Possible hardcoded password: 'uQZrmUMV180^'",
+            "line": 6
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0043.py",
+            "message": "Possible hardcoded password: 'hRuMpbrY620!'",
+            "line": 9
+          },
+          "error": null,
+          "duration": 0.434
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0070.json",
+      "file_name": "sample-0070.json",
+      "file_size": 137,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0100.yml",
+      "file_name": "sample-0100.yml",
+      "file_size": 274,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0100.yml",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 3,
+                "snippet": "  client_secret: \"326d7d672984c41dee47b9a8f486f7217915c7e39ca77a2e526a7a6ba5da42e1\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0025.py",
+      "file_name": "sample-0025.py",
+      "file_size": 349,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0025.py",
+            "message": "Possible hardcoded password: 'xoxb-3149319-7785940292-Mvqiszuue3VhU+dm4FeT4E9h'",
+            "line": 2
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0025.py",
+            "message": "Possible hardcoded password: 'cd3a1559868c5360ee252525b182adcf'",
+            "line": 3
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "low",
+            "file": "credentials/sample-0025.py",
+            "message": "Call to requests without timeout",
+            "line": 5
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0025.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 3,
+                "snippet": "SLACK_SIGNING_SECRET = \"cd3a1559868c5360ee252525b182adcf\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0125.json",
+      "file_name": "sample-0125.json",
+      "file_size": 380,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "credentials/sample-0125.json",
+            "findings_count": 2,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "gcp-service-account",
+                "title": "Google (GCP) Service-account",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "private-key",
+                "title": "Asymmetric Private Key",
+                "severity": "HIGH"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0131.yml",
+      "file_name": "sample-0131.yml",
+      "file_size": 233,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0026.yml",
+      "file_name": "sample-0026.yml",
+      "file_size": 184,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "trivy",
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "file": "credentials/sample-0026.yml",
+            "findings_count": 1,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "sendgrid-api-token",
+                "title": "SendGrid API token",
+                "severity": "MEDIUM"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        },
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0026.yml",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-sendgrid-api-key.detected-sendgrid-api-key",
+                "message": "SendGrid API Key detected",
+                "severity": "ERROR",
+                "line": 3,
+                "snippet": "  api_key: \"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\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0145.json",
+      "file_name": "sample-0145.json",
+      "file_size": 379,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "credentials/sample-0145.json",
+            "findings_count": 2,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "gcp-service-account",
+                "title": "Google (GCP) Service-account",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "private-key",
+                "title": "Asymmetric Private Key",
+                "severity": "HIGH"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0114.py",
+      "file_name": "sample-0114.py",
+      "file_size": 308,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0114.py",
+            "message": "Possible hardcoded password: 'X1sDjH06GwlhpXj1MXqHfLeI86lXBP4nc0juiGI0TPuVOic+itbDYkuMb6fz8OBvlMdP4i1z/JXX8urR3SpDrbcf1gVN2gEN6T/FtQH0zv4aVxqRmE4x2RBjWTI99Si0whvzOvBUY5/r'",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "credentials/sample-0114.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "gcp-service-account",
+                "title": "Google (GCP) Service-account",
+                "severity": "CRITICAL"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0069.yml",
+      "file_name": "sample-0069.yml",
+      "file_size": 116,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0133.json",
+      "file_name": "sample-0133.json",
+      "file_size": 377,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "credentials/sample-0133.json",
+            "findings_count": 2,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "gcp-service-account",
+                "title": "Google (GCP) Service-account",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "private-key",
+                "title": "Asymmetric Private Key",
+                "severity": "HIGH"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0139.yml",
+      "file_name": "sample-0139.yml",
+      "file_size": 233,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0139.yml",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 4,
+                "snippet": "  client_secret: \"LAYH4DGqrnB0Dosc0tcl2IxLBWZbmTsMFbukcNWpuRTI\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0033.py",
+      "file_name": "sample-0033.py",
+      "file_size": 229,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0033.py",
+            "message": "Possible hardcoded password: 'EovuGIHI249@'",
+            "line": 6
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0033.py",
+            "message": "Possible hardcoded password: 'VlboxuJO545!'",
+            "line": 9
+          },
+          "error": null,
+          "duration": 0.434
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0135.yml",
+      "file_name": "sample-0135.yml",
+      "file_size": 233,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0135.yml",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 4,
+                "snippet": "  client_secret: \"rfVERVB0CTAL5FCgxBwnvxF4GGgeWaQH/mnkv5VQGHqK\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0099.py",
+      "file_name": "sample-0099.py",
+      "file_size": 309,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0099.py",
+            "message": "Possible hardcoded password: 'TSjouzlbH3D7p3fAqUFGAlOTlDczS3WiK1sKUItyEpzS/dvAPwjHjnDrJHeoilWPMs/wL8zwY2LBmup2cybjZ9Xs2T9NGomYasxu6WGM/wVtH1uVc7QoxCYajOwkTpgVxLM2N8iezGBT'",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "credentials/sample-0099.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "gcp-service-account",
+                "title": "Google (GCP) Service-account",
+                "severity": "CRITICAL"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0121.json",
+      "file_name": "sample-0121.json",
+      "file_size": 375,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "credentials/sample-0121.json",
+            "findings_count": 2,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "gcp-service-account",
+                "title": "Google (GCP) Service-account",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "private-key",
+                "title": "Asymmetric Private Key",
+                "severity": "HIGH"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0115.yml",
+      "file_name": "sample-0115.yml",
+      "file_size": 274,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0115.yml",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 3,
+                "snippet": "  client_secret: \"3f0713759eff7981367286ce679db1b45e906a6c3068dfb189f3fb9d966bc04d\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0067.json",
+      "file_name": "sample-0067.json",
+      "file_size": 117,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0095.yml",
+      "file_name": "sample-0095.yml",
+      "file_size": 274,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0095.yml",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 3,
+                "snippet": "  client_secret: \"87cba067627577a8be0e77d269dcab9316adc2a7383b9ad58783a5313b387f1a\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0010.yml",
+      "file_name": "sample-0010.yml",
+      "file_size": 178,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0010.yml",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-api-key.detected-generic-api-key",
+                "message": "Generic API Key detected",
+                "severity": "ERROR",
+                "line": 2,
+                "snippet": "  api_key: \"58b49ddba88df9df97a518ccff8daef0\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0058.json",
+      "file_name": "sample-0058.json",
+      "file_size": 115,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0066.yml",
+      "file_name": "sample-0066.yml",
+      "file_size": 130,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0048.py",
+      "file_name": "sample-0048.py",
+      "file_size": 242,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0048.py",
+            "message": "Possible hardcoded password: 'BXxlvQrz945!'",
+            "line": 6
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0048.py",
+            "message": "Possible hardcoded password: 'ngpJzvoJ191^'",
+            "line": 9
+          },
+          "error": null,
+          "duration": 0.434
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0105.yml",
+      "file_name": "sample-0105.yml",
+      "file_size": 274,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0105.yml",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 3,
+                "snippet": "  client_secret: \"756d2d32ffaa8e948f0e3941732101860ff43d0b76b85f1e0ca8970e2a6437ca\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0030.yml",
+      "file_name": "sample-0030.yml",
+      "file_size": 183,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0030.yml",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-api-key.detected-generic-api-key",
+                "message": "Generic API Key detected",
+                "severity": "ERROR",
+                "line": 2,
+                "snippet": "  api_key: \"31b356cbe40d15f40e65a4be0ab5e8f1\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0137.json",
+      "file_name": "sample-0137.json",
+      "file_size": 379,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "credentials/sample-0137.json",
+            "findings_count": 2,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "gcp-service-account",
+                "title": "Google (GCP) Service-account",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "private-key",
+                "title": "Asymmetric Private Key",
+                "severity": "HIGH"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0017.json",
+      "file_name": "sample-0017.json",
+      "file_size": 170,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0143.yml",
+      "file_name": "sample-0143.yml",
+      "file_size": 233,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0143.yml",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 4,
+                "snippet": "  client_secret: \"DN3hJD3duPr9fm5bRFJWcRWJQ9LWMeZoOfdei10H3hsw\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0006.yml",
+      "file_name": "sample-0006.yml",
+      "file_size": 176,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0110.yml",
+      "file_name": "sample-0110.yml",
+      "file_size": 274,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0110.yml",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 3,
+                "snippet": "  client_secret: \"32702c7ea071ebd65f6281032248bc2aa5c3baf8517befb815e744758bbc95b0\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0027.json",
+      "file_name": "sample-0027.json",
+      "file_size": 170,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0038.py",
+      "file_name": "sample-0038.py",
+      "file_size": 239,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0038.py",
+            "message": "Possible hardcoded password: 'OTxznUkG010@'",
+            "line": 6
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0038.py",
+            "message": "Possible hardcoded password: 'xRGkqrqc849^'",
+            "line": 9
+          },
+          "error": null,
+          "duration": 0.434
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0061.json",
+      "file_name": "sample-0061.json",
+      "file_size": 119,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0053.py",
+      "file_name": "sample-0053.py",
+      "file_size": 241,
+      "flagged": true,
+      "worst_severity": "low",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0053.py",
+            "message": "Possible hardcoded password: 'IUqflfIz472$'",
+            "line": 6
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0053.py",
+            "message": "Possible hardcoded password: 'ZHemNsPU963^'",
+            "line": 9
+          },
+          "error": null,
+          "duration": 0.434
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0119.py",
+      "file_name": "sample-0119.py",
+      "file_size": 311,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0119.py",
+            "message": "Possible hardcoded password: 'PqP995eqxJZzuOdb9fzvE+I8kV3367IsQ+2te2NJKNwHpMMiYTXXXhBxyNa/gxyeolLvzhnr8Eer9P5Adrp1XWn9Q6Bt7ku1tDMgeEuRn66p0N9DcVhy1XUwIOtKcpxixU9k6nI82wsU'",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "credentials/sample-0119.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "gcp-service-account",
+                "title": "Google (GCP) Service-account",
+                "severity": "CRITICAL"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0007.json",
+      "file_name": "sample-0007.json",
+      "file_size": 166,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0147.yml",
+      "file_name": "sample-0147.yml",
+      "file_size": 233,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0149.json",
+      "file_name": "sample-0149.json",
+      "file_size": 378,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "credentials/sample-0149.json",
+            "findings_count": 2,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "gcp-service-account",
+                "title": "Google (GCP) Service-account",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "private-key",
+                "title": "Asymmetric Private Key",
+                "severity": "HIGH"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0060.yml",
+      "file_name": "sample-0060.yml",
+      "file_size": 135,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0020.yml",
+      "file_name": "sample-0020.yml",
+      "file_size": 180,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0020.yml",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-api-key.detected-generic-api-key",
+                "message": "Generic API Key detected",
+                "severity": "ERROR",
+                "line": 2,
+                "snippet": "  api_key: \"d138cd23414a53251a2fcc08d34a0446\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0120.yml",
+      "file_name": "sample-0120.yml",
+      "file_size": 274,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "opengrep"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "opengrep",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0120.yml",
+            "findings_count": 1,
+            "findings": [
+              {
+                "rule_id": "generic.secrets.security.detected-generic-secret.detected-generic-secret",
+                "message": "Generic Secret detected",
+                "severity": "ERROR",
+                "line": 3,
+                "snippet": "  client_secret: \"fca95ac41d98aaadde35607848ddb6a9383da901f89fb7ec2f0b5a182d053964\""
+              }
+            ],
+            "returncode": 0
+          },
+          "error": null,
+          "duration": 26.125
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0129.json",
+      "file_name": "sample-0129.json",
+      "file_size": 381,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "credentials/sample-0129.json",
+            "findings_count": 2,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "gcp-service-account",
+                "title": "Google (GCP) Service-account",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "private-key",
+                "title": "Asymmetric Private Key",
+                "severity": "HIGH"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0109.py",
+      "file_name": "sample-0109.py",
+      "file_size": 311,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0109.py",
+            "message": "Possible hardcoded password: 'zBj7oYCtByBcww6TgaBePtvT9WEQObyOmjIZMs4lzCJxFLN32XD//JwTCE+y92or2YGOD9u/CkY/M84cwxKzCJ/I87h6Lk1xJJLy0vOVxM/iAvJ8+N3FA3rE+tt7Jx4ElySPbjoKZsIx'",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "credentials/sample-0109.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "gcp-service-account",
+                "title": "Google (GCP) Service-account",
+                "severity": "CRITICAL"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0104.py",
+      "file_name": "sample-0104.py",
+      "file_size": 310,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "bandit",
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "low",
+          "details": {
+            "confidence": "medium",
+            "file": "credentials/sample-0104.py",
+            "message": "Possible hardcoded password: 'rYrmtlY+lDiHp1dIKekbrR5BVbUNi6jfXucRvwM5w1aX922RFdbc6wQ5DQvqS0bxwV0I4VRPh4eecJF8roGPxadLIP0FOidPUsShnaBGRejrbqwaPD+C5Cz+YNVFQBtFEsSvBSr9hJpG'",
+            "line": 1
+          },
+          "error": null,
+          "duration": 0.434
+        },
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "credentials/sample-0104.py",
+            "findings_count": 1,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "gcp-service-account",
+                "title": "Google (GCP) Service-account",
+                "severity": "CRITICAL"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0141.json",
+      "file_name": "sample-0141.json",
+      "file_size": 376,
+      "flagged": true,
+      "worst_severity": "critical",
+      "flagged_by": [
+        "trivy"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "trivy",
+          "flagged": true,
+          "severity": "critical",
+          "details": {
+            "file": "credentials/sample-0141.json",
+            "findings_count": 2,
+            "findings": [
+              {
+                "type": "secret",
+                "rule_id": "gcp-service-account",
+                "title": "Google (GCP) Service-account",
+                "severity": "CRITICAL"
+              },
+              {
+                "type": "secret",
+                "rule_id": "private-key",
+                "title": "Asymmetric Private Key",
+                "severity": "HIGH"
+              }
+            ],
+            "returncode": 1
+          },
+          "error": null,
+          "duration": 2.983
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0073.json",
+      "file_name": "sample-0073.json",
+      "file_size": 148,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0016.yml",
+      "file_name": "sample-0016.yml",
+      "file_size": 181,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    },
+    {
+      "file_path": "/tmp/scan_workspace/torchsight__cybersecurity-classification-benchmark/credentials/sample-0072.yml",
+      "file_name": "sample-0072.yml",
+      "file_size": 131,
+      "flagged": false,
+      "worst_severity": "info",
+      "flagged_by": [],
+      "skipped": null,
+      "verdicts": []
+    }
+  ],
+  "project_verdicts": []
+}

